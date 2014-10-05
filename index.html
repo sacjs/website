@@ -2,17 +2,45 @@
 layout: default
 ---
 
-<div class="home">
-  <h1 class="page-heading">Latest News</h1>
-  <ul class="post-list">
-    {% for post in site.posts limit:1 %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+<main>
+  <section site="content hero">
+    <div flex wrapper>
+      <aside></aside>
+      <div main bifurcate>
+        <span>People. Javascript.</span>
+        <span>Sacramento</span>
+      </div>
+      <aside></aside>
+    </div>
+  </section>
+  <aside site="content secondary">{% if site.events %}
+    <div wrapper>
+    </div>
+  {% endif %}</aside>
+  <section site="content primary">
+    <div wrapper>
+      <header subhead>Latest News</header>
+      <ul unstyled>
+        {% for post in site.posts limit:1 %}
+          <li>
+            <span post="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            {% if post.content contains "<!-- more -->" %}
+              {{ post.content | split:"<!-- more -->" | first % }}
+            {% else %}
+              {{ post.content | strip_html | truncatewords:100 }}
+            {% endif %}
+            <p>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="rss-subscribe">
+        subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+      </p>
+    </div>
+  </section>
+</main>

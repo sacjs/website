@@ -5,7 +5,7 @@ date:   2014-09-30 19:19:36
 categories: sacjs
 ---
 
-Hello, and thanks for visiting SacJS, Sacramento's very own Javascript user
+Hello, and thanks for visiting SacJS, Sacramento's very own Javascript meetup
 group!
 
 We are excited to start building a great community focused on all things
@@ -15,6 +15,8 @@ like [Polymer][polymer] and [React][react], tooling like
 and [Johnny-Five][johnnyfive], libraries like [D3][d3] and [Lodash][lodash],
 conferences like [JSConf][jsconf] and [JSFest][jsfest], and everything else
 that is out there or yet to be created!
+
+<!-- more -->
 
 But in order to build a community and start learning and teaching about new
 things, we need one very important thing.

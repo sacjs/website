@@ -1,0 +1,27 @@
+// Our variables
+$base-font-family: Karma, Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     1.875rem;
+
+$primary-brand-color:   #b51737;
+$secondary-brand-color: #f5db3a;
+$tertiary-brand-color:  lighten(desaturate($secondary-brand-color, 40%), 20%);
+$brand-color:           $primary-brand-color;
+$text-color:            #514028;
+$background-color:      #fefefe;
+$header-background-color: $background-color;
+$hero-background-color: $secondary-brand-color;
+$content-primary-color: inherit;
+$content-secondary-color: $primary-brand-color;
+
+$grey-color:       lighten($text-color, 2.5%);
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$header-height: 5rem;
+
+$on-palm:          600px;
+$on-laptop:        800px;

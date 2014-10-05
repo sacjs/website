@@ -1,0 +1,131 @@
+[site~='header'] {
+  [flex] {
+    align-items: center;
+    min-height: $header-height;
+  }
+}
+
+[site~='title'] {
+  display: block;
+  flex: 1;
+  font-family: Cutive;
+  [site='logo'] {
+    margin-right: .75rem;
+  }
+}
+
+[site='nav'] {
+  [icon~='menu'] {
+    display: none;
+  }
+
+  a {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: .5625rem;
+    right: 2rem;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    [icon~='menu'] {
+      display: block;
+      float: right;
+      width: 2.25rem;
+      height: 2.25rem;
+      line-height: 0;
+      padding: 10px 0;
+      text-align: center;
+
+      > svg {
+        width: 1.125rem;
+        height: .9375rem;
+
+        path {
+          fill: $grey-color-dark;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover {
+      .trigger {
+        display: block;
+        padding-bottom: 5px;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
+
+[site~='content'] {
+  &,
+  > [flex] {
+    min-height: $header-height * 3;
+  }
+  [flex] {
+    align-items: center;
+  }
+}
+
+[site~='hero'] {
+  margin-top: $header-height * -1;
+  background: $hero-background-color url(/images/bear_yellow.png) center bottom no-repeat;
+  background-size: cover;
+  background-position: 50% 25%;
+  [main] {
+    flex: 1;
+    text-align: center;
+    font-family: 'Cutive';
+    font-size: 4rem;
+  }
+  & > [flex] {
+    min-height: $header-height * 6;
+  }
+}
+
+[site='content primary'] {
+  background: $content-primary-color;
+}
+
+[site='content secondary'] {
+  background: $content-secondary-color;
+  &:empty {
+    min-height: $header-height - 2;
+  }
+}
+
+[site='footer'] {
+  nav {
+    flex: 4;
+  }
+  aside {
+    flex: 1;
+  }
+  @include media-query($on-palm) {
+    [flex] {
+      display: block;
+    }
+  }
+  p {
+    font-size: .75rem;
+  }
+}
