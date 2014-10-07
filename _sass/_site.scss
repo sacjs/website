@@ -1,3 +1,9 @@
+%caption {
+  font-size: .6rem;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
 [site~='header'] {
   [flex] {
     align-items: center;
@@ -102,6 +108,11 @@
 
 [site='content primary'] {
   background: $content-primary-color;
+  footer {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @extend %caption;
+  }
 }
 
 [site~='content'] {
@@ -117,6 +128,7 @@
 }
 
 [site='footer'] {
+  margin-top: 2rem;
   nav {
     flex: 4;
   }
@@ -129,6 +141,6 @@
     }
   }
   p {
-    font-size: .75rem;
+    @extend %caption;
   }
 }
