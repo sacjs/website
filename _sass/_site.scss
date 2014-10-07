@@ -27,7 +27,12 @@
 
   a {
     color: $text-color;
-    line-height: $base-line-height;
+    @extend %link-button;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(lighten($secondary-brand-color, .75), .75);
+    }
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
