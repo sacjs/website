@@ -1,0 +1,27 @@
+[event] {
+  margin-bottom: 1rem;
+  color: white;
+  [flex] {
+    align-items: flex-start;
+  }
+  a {
+    color: $tertiary-brand-color;
+  }
+}
+
+[event~='content'] {
+  flex: 2;
+}
+
+[event~='program'] {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+[event~='logo'] {
+  margin-right: 2rem;
+  text-align: center;
+  &:empty {
+    display: none;
+  }
+}

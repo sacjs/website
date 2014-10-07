@@ -2,7 +2,7 @@
 layout: post
 title:  Welcome to SacJS!
 date:   2014-09-30 19:19:36
-categories: sacjs
+category: posts
 ---
 
 Hello, and thanks for visiting SacJS, Sacramento's very own Javascript meetup

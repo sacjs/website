@@ -81,9 +81,6 @@
   > [flex] {
     min-height: $header-height * 3;
   }
-  [flex] {
-    align-items: center;
-  }
 }
 
 [site~='hero'] {
@@ -99,6 +96,7 @@
   }
   & > [flex] {
     min-height: $header-height * 6;
+    align-items: center;
   }
 }
 
@@ -106,10 +104,15 @@
   background: $content-primary-color;
 }
 
-[site='content secondary'] {
-  background: $content-secondary-color;
-  &:empty {
-    min-height: $header-height - 2;
+[site~='content'] {
+  &[site~='secondary'] {
+    background: $content-secondary-color;
+    &:empty {
+      min-height: $header-height - 2;
+    }
+    [subhead] {
+      color: $secondary-brand-color;
+    }
   }
 }
 

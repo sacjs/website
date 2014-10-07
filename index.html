@@ -5,7 +5,6 @@ layout: default
 <main>
   <section site="content hero">
     <div flex wrapper>
-      <aside></aside>
       <div main bifurcate>
         <span>People. Javascript.</span>
         <span>Sacramento</span>
@@ -13,15 +12,62 @@ layout: default
       <aside></aside>
     </div>
   </section>
-  <aside site="content secondary">{% if site.events %}
+  {% assign events = site.categories.events | where:'featured', true %}
+  <aside site="content secondary">{% if events.size > 0 %}
     <div wrapper>
+      <header subhead>
+        {% if events.size == 1 %}
+          Next Event
+        {% else %}
+          Upcoming Events
+        {% endif %}
+      </header>
+      {% for event in events %}
+        <div event flex>
+          <section event="content">
+            <h2>
+              <a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
+            </h2>
+            {% if event.content contains "<!-- more -->" %}
+              {{ event.content | split:"<!-- more -->" | first % }}
+            {% else %}
+              {{ event.content | strip_html | truncatewords:100 }}
+            {% endif %}
+            <p>
+              <a readmore="inverted" href="{{ event.url | prepend: site.baseurl }}">Read more</a>
+            </p>
+          </section>
+          <aside event="program">
+            <aside event="logo">{% if event.logo %}
+              <img src="{{ event.logo }}" width="100"/>
+            {% elsif event.tags contains 'beerjs' %}
+              <img src="/images/beerjs.svg" width="100"/>
+            {% endif %}</aside>
+            <dl horizontal>
+              <dt class="icon-calendar"></dt>
+              <dd>
+                {{ event.date | date: "%b %-d, %Y" }}
+                at
+                {{ event.date | date: "%-I:%M%P" }}
+              </dd>
+
+              <dt class="icon-location"></dt>
+              <dd>
+                <a href="{{ event.location_url }}" rel="external" target="_blank">
+                  {{ event.location }}
+                </a>
+              </dd>
+            </dl>
+          </aside>
+        </div>
+      {% endfor %}
     </div>
   {% endif %}</aside>
   <section site="content primary">
     <div wrapper>
       <header subhead>Latest News</header>
       <ul unstyled>
-        {% for post in site.posts limit:1 %}
+        {% for post in site.categories.posts limit:1 %}
           <li>
             <span post="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h2>
@@ -30,10 +76,10 @@ layout: default
             {% if post.content contains "<!-- more -->" %}
               {{ post.content | split:"<!-- more -->" | first % }}
             {% else %}
-              {{ post.content | strip_html | truncatewords:100 }}
+              {{ post.content }}
             {% endif %}
             <p>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+              <a readmore href="{{ post.url | prepend: site.baseurl }}">Read more</a>
             </p>
           </li>
         {% endfor %}

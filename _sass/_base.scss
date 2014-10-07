@@ -62,6 +62,17 @@ li {
   }
 }
 
+dl {
+  &[horizontal] {
+    dt {
+      float: left;
+    }
+    dd {
+      margin-left: 2rem;
+    }
+  }
+}
+
 /**
  * Headings
  */
@@ -113,6 +124,35 @@ a {
   &:hover {
     color: $text-color;
     text-decoration: underline;
+  }
+}
+
+[readmore] {
+  display: inline-block;
+  padding: .475rem 1rem .375rem;
+  line-height: 1.625rem;
+  text-align: center;
+  outline: solid 1px $primary-brand-color;
+  &,
+  &:visited {
+    color: $primary-brand-color;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $tertiary-brand-color;
+    background-color: $primary-brand-color;
+  }
+}
+
+[readmore~='inverted'] {
+  outline: solid 1px $tertiary-brand-color;
+  &,
+  &:visited {
+    color: $tertiary-brand-color;
+  }
+  &:hover {
+    color: $primary-brand-color;
+    background-color: $tertiary-brand-color;
   }
 }
 
