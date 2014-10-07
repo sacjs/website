@@ -63,9 +63,16 @@ li {
 }
 
 dl {
+  dt {
+    margin-top: 1rem;
+  }
+  dd {
+    margin-left: 2rem;
+  }
   &[horizontal] {
     dt {
       float: left;
+      margin-top: 0;
     }
     dd {
       margin-left: 2rem;
