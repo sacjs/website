@@ -5,7 +5,7 @@ date:   2014-10-08 18:00:00 -0700
 tags:
   - beerjs
 category: events
-featured: true
+featured: false
 location: New Helvetia Brewing Company
 location_url: http://newhelvetiabrew.com/
 ---
