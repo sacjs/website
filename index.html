@@ -28,6 +28,13 @@ layout: default
             <h2>
               <a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
             </h2>
+            {% if event.tags %}
+              <ul unstyled horizontal tags="subheading">
+                {% for tag in event.tags %}
+                  <li>{{tag}}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
             {% if event.content contains "<!-- more -->" %}
               {{ event.content | split:"<!-- more -->" | first % }}
             {% else %}
@@ -73,6 +80,13 @@ layout: default
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
+            {% if post.tags %}
+              <ul unstyled horizontal tags="subheading">
+                {% for tag in post.tags %}
+                  <li>{{tag}}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
             {% if post.content contains "<!-- more -->" %}
               {{ post.content | split:"<!-- more -->" | first % }}
             {% else %}

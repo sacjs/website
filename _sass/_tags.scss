@@ -1,0 +1,16 @@
+[tags="subheading"] {
+  font-size: .75rem;
+  li {
+    &::after {
+      padding-right: 5px;
+      content: '\2022';
+      padding-left: 5px;
+    }
+    &:last-child {
+      &::after {
+        padding: 0;
+        content: none;
+      }
+    }
+  }
+}

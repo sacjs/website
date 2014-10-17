@@ -7,6 +7,13 @@ layout: default
       <h1 post="title">
         {{ page.title }}
       </h1>
+      {% if page.tags %}
+        <ul unstyled horizontal tags="subheading">
+          {% for tag in page.tags %}
+            <li>{{tag}}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
       <p post="meta">
         {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
       </p>
