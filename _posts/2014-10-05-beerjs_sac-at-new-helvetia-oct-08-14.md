@@ -3,7 +3,7 @@ layout: post
 title:  BeerJS SAC
 date:   2014-10-08 18:00:00 -0700
 tags:
-  - beerjs
+  - BeerJS
 category: events
 featured: false
 location: New Helvetia Brewing Company
