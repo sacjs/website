@@ -6,7 +6,7 @@ tags:
   - BeerJS
   - Community Support
 category: events
-featured: true
+featured: false
 location: Hacker Lab
 location_url: http://hackerlab.org/
 ---
