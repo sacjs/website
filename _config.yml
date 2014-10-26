@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://sacjs.github.io
 twitter_username: sac_js
 github_username:  sacjs
+meetup_group_name: The-Sacramento-Javascript-Meetup
+meetup_group_text: Join us!
 timezone: America/Los_Angeles
 
 # Build settings

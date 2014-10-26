@@ -38,6 +38,15 @@
             </a>
           </li>
         {% endif %}
+
+        {% if site.meetup_group_name %}
+          <li>
+            <a href="http://meetup.com/{{ site.meetup_group_name }}">
+              <span class="icon icon-meetup"></span>
+              <span class="username">{{ site.meetup_group_text }}</span>
+            </a>
+          </li>
+        {% endif %}
       </ul>
     </aside>
   </div>

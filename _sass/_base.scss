@@ -241,3 +241,11 @@ pre {
     }
   }
 }
+
+// The Meetup icon is a bit wider than the rest
+.icon-meetup {
+  &::before {
+    width: auto;
+    min-width: 1em;
+  }
+}

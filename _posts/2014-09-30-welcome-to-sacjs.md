@@ -24,7 +24,8 @@ things, we need one very important thing.
 **People!**
 
 That means you! So follow us on Twitter at [@Sac_JS](http://twitter.com/sac_js)
-and at least say hello!
+and join our group on [Meetup](http://meetup.com/{{site.meetup_group_name}}).
+Say hello!
 
 And while we're getting to know each other, do you:
 

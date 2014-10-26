@@ -1,5 +1,8 @@
 
 .icon-calendar:before { content: '\e800'; } /* '' */
 .icon-location:before { content: '\e801'; } /* '' */
+.icon-meetup:before { content: '\e802'; } /* '' */
 .icon-torso:before { content: '\e803'; } /* '' */
 .icon-lock-1:before { content: '\e804'; } /* '' */
+.icon-github-circled:before { content: '\e805'; } /* '' */
+.icon-twitter:before { content: '\e806'; } /* '' */
