@@ -5,7 +5,7 @@ date:   2014-10-28 18:30:00 -0700
 tags:
   - Community Support
 category: events
-featured: true
+featured: false
 location: Hacker Lab
 location_url: http://hackerlab.org/
 ---
