@@ -13,13 +13,11 @@ location_url: https://www.google.com/maps/place/Streets+of+London/@38.5589138,-1
 Join us for people && Javascript && beer!
 
 **Pay Attention!** This event will be at the **West Sacramento**
-[Streets of London location](https://www.google.com/maps/place/Streets+of+London/@38.5589138,-121.5036519,14z/data=!3m1!5s0x809ad3e0104545f5:0x7edf0a3ae4cce385!4m5!1m2!2m1!1sstreets+of+london!3m1!1s0x0000000000000000:0x27a2577cf21a1e99):
+[Streets of London location][streets_map]:
 
-> Streets of London
-
-> 2200 Lake Washington Blvd
-
-> West Sacramento, CA 95691
+<address>Streets of London
+2200 Lake Washington Blvd
+West Sacramento, CA 95691</address>
 
 Interested in joining us? RSVP on
 [Meetup](http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/216877082/).
@@ -36,3 +34,5 @@ said that, it is still BeerJS so anything in the world of Javascript is fair gam
 
 BeerJS is an informal way to for like minded Sacramentoans to gather around and
 chat about Javascript over a nice, tasty, beverage.
+
+[streets_map]: https://www.google.com/maps/place/Streets+of+London/@38.5589138,-121.5036519,14z/data=!3m1!5s0x809ad3e0104545f5:0x7edf0a3ae4cce385!4m5!1m2!2m1!1sstreets+of+london!3m1!1s0x0000000000000000:0x27a2577cf21a1e99
