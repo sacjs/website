@@ -64,6 +64,33 @@ layout: default
                   {{ event.location }}
                 </a>
               </dd>
+
+              {% if event.meetup_rsvp_url %}
+              <dt class="icon-meetup"></dt>
+              <dd>
+                <a href="{{ event.meetup_event_url }}" rel="external" target="_blank">
+                  RSVP on Meetup.com!
+                </a>
+              </dd>
+              {% endif %}
+
+              {% if event.github_issue_url %}
+              <dt class="icon-github-circled"></dt>
+              <dd>
+                <a href="{{ event.github_issue_url }}" rel="external" target="_blank">
+                  Questions? Comments?
+                </a>
+              </dd>
+              {% endif %}
+
+              {% if site.twitter_username %}
+              <dt class="icon-twitter"></dt>
+              <dd>
+                <a href="https://twitter.com/{{ site.twitter_username }}">
+                  Send us a tweet!
+                </a>
+              <dd>
+              {% endif %}
             </dl>
           </aside>
         </div>
