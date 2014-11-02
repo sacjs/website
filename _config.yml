@@ -3,6 +3,7 @@ title: SacJS
 email: derek@jsconf.us
 description: >
   The Sacramento Javascript Meetup Group
+default_author: The SacJS Team
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://sacjs.github.io
 twitter_username: sac_js

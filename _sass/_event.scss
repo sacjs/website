@@ -1,4 +1,4 @@
-[event] {
+[event=''] {
   margin-bottom: 1rem;
   color: $featured-text-color;
   [flex] {
@@ -21,11 +21,17 @@
 }
 
 [event~='program'] {
-  flex: 1;
+  [event] & {
+    flex: 1;
+  }
+  [post~='header'] & {
+    float: right;
+  }
   margin-left: 2rem;
 }
 
 [event~='logo'] {
+  @extend %vertical-rhythm;
   margin-right: 2rem;
   text-align: center;
   &:empty {

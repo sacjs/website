@@ -1,0 +1,55 @@
+{% if event %}
+  {% assign context = event %}
+{% endif %}
+{% unless context %}
+  {% assign context = page %}
+{% endunless %}
+<aside event="program">
+  <div event="logo">{% if context.logo %}
+    <img src="{{ context.logo }}" width="100"/>
+  {% elsif context.tags contains 'BeerJS' %}
+    <img src="/images/beerjs.svg" width="100"/>
+  {% endif %}</div>
+  <dl horizontal>
+    <dt class="icon-calendar"></dt>
+    <dd>
+      {{ context.date | date: "%b %-d, %Y" }}
+      at
+      {{ context.date | date: "%-I:%M%P" }}
+    </dd>
+
+    <dt class="icon-location"></dt>
+    <dd>
+      <a href="{{ context.location_url }}" rel="external" target="_blank">
+        {{ context.location }}
+      </a>
+    </dd>
+
+    {% if context.meetup_rsvp_url %}
+    <dt class="icon-meetup"></dt>
+    <dd>
+      <a href="{{ context.meetup_event_url }}" rel="external" target="_blank">
+        RSVP on Meetup.com!
+      </a>
+    </dd>
+    {% endif %}
+
+    {% if context.github_issue_url %}
+    <dt class="icon-github-circled"></dt>
+    <dd>
+      <a href="{{ context.github_issue_url }}" rel="external" target="_blank">
+        Questions? Comments?
+      </a>
+    </dd>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <dt class="icon-twitter"></dt>
+    <dd>
+      <a href="https://twitter.com/{{ site.twitter_username }}">
+        Send us a tweet!
+      </a>
+    <dd>
+    {% endif %}
+  </dl>
+</aside>

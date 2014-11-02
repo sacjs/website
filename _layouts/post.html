@@ -15,7 +15,13 @@ layout: default
         </ul>
       {% endif %}
       <p post="meta">
-        {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+        {% if page.category == 'events' %}
+          {% include event_program.html %}
+        {% endif %}
+        {% if page.category != 'events' %}
+          Posted on {{ page.date | date: "%b %-d, %Y" }}
+          by {{ page.author || site.default_author }}
+        {% endif %}
       </p>
     </header>
     <article post="content">
