@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Sacramento Famo.us Meetup
-date:   2014-10-22 19:00:00 -0700
+date:   2014-10-22 19:00:00
 tags:
   - BeerJS
   - Community Support

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Sacramento AngularJS Meetup
-date:   2014-10-28 18:30:00 -0700
+date:   2014-10-28 18:30:00
 tags:
   - Community Support
 category: events

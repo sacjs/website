@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  BeerJS SAC
-date:   2014-10-08 18:00:00 -0700
+date:   2014-10-08 18:00:00
 tags:
   - BeerJS
 category: events
