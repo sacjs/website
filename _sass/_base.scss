@@ -104,7 +104,7 @@ h6 {
   font-family: Cutive, Times Roman, serif;
   font-size: .9rem;
   font-weight: 400;
-  color: $brand-color;
+  color: $primary-brand-color;
   text-transform: uppercase;
 }
 
@@ -127,16 +127,17 @@ h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $link-color;
   text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
-  &:hover {
-    color: $text-color;
+  p & {
     text-decoration: underline;
+  }
+  &:hover,
+  &:active {
+    color: $link-hover-color;
+  }
+  &:visited {
+    color: $link-visited-color;
   }
 }
 
@@ -149,27 +150,33 @@ a {
 
 [readmore] {
   @extend %link-button;
-  outline: solid 1px $primary-brand-color;
+  outline: solid 1px $link-color;
+  text-decoration: none;
   &,
   &:visited {
-    color: $primary-brand-color;
+    color: $link-color;
   }
+  &:active,
   &:hover {
     text-decoration: none;
-    color: $tertiary-brand-color;
-    background-color: $primary-brand-color;
+    color: $senary-brand-color;
+    background-color: $link-color;
   }
 }
 
 [readmore~='inverted'] {
-  outline: solid 1px $tertiary-brand-color;
   &,
-  &:visited {
-    color: $tertiary-brand-color;
-  }
-  &:hover {
-    color: $primary-brand-color;
-    background-color: $tertiary-brand-color;
+  [event] & {
+    outline: solid 1px $featured-link-color;
+    &,
+    &:visited {
+      color: $featured-link-color;
+    }
+    &:active,
+    &:hover {
+      color: $primary-brand-color;
+      background-color: $featured-link-hover-color;
+    }
   }
 }
 
@@ -205,7 +212,7 @@ code {
   font-size: .9rem;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $background-color;
 }
 
 code {

@@ -5,23 +5,35 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     1.875rem;
+$header-height:    5rem;
 
-$primary-brand-color:   #b51737;
-$secondary-brand-color: #f5db3a;
-$tertiary-brand-color:  lighten(desaturate($secondary-brand-color, 40%), 20%);
-$brand-color:           $primary-brand-color;
-$text-color:            #514028;
-$background-color:      #fefefe;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$primary-brand-color:     #b51737;
+$secondary-brand-color:   #f5db3a;
+$tertiary-brand-color:    #514028;
+$quaternary-brand-color:  #fff9c2;
+$quinary-brand-color:     #99b582;
+$senary-brand-color:      #fefefe;
+
+$background-color:        $senary-brand-color;
+$text-color:              $tertiary-brand-color;
+$link-color:              $primary-brand-color;
+$link-hover-color:        lighten($link-color, 15%);
+$link-visited-color:      $quinary-brand-color;
+
+$featured-text-color:     $senary-brand-color;
+$featured-link-color:     $quaternary-brand-color;
+$featured-link-hover-color: $quaternary-brand-color;
+$featured-link-visited-color: $featured-link-hover-color;
+
 $header-background-color: $background-color;
-$hero-background-color: $secondary-brand-color;
-$content-primary-color: inherit;
+$hero-background-color:   $secondary-brand-color;
+$hero-link-color:         $quaternary-brand-color;
+$content-primary-color:   inherit;
 $content-secondary-color: $primary-brand-color;
 
 $grey-color:       lighten($text-color, 2.5%);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-
-$header-height: 5rem;
-
-$on-palm:          600px;
-$on-laptop:        800px;

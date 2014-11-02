@@ -1,6 +1,11 @@
 [tags="subheading"] {
   font-size: .75rem;
   li {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    background: $secondary-brand-color;
+    padding: 0 .5rem;
+    color: $text-color;
     &::after {
       padding-right: 5px;
       content: '\2022';

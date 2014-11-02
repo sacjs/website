@@ -1,11 +1,18 @@
 [event] {
   margin-bottom: 1rem;
-  color: white;
+  color: $featured-text-color;
   [flex] {
     align-items: flex-start;
   }
   a {
-    color: $tertiary-brand-color;
+    color: $featured-link-color;
+    &:hover,
+    &:active {
+      color: $featured-link-hover-color;
+    }
+    &:visited {
+      color: $featured-link-visited-color;
+    }
   }
 }
 
