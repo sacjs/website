@@ -8,7 +8,7 @@ category: events
 featured: true
 location: Streets of London
 location_url: https://www.google.com/maps/place/Streets+of+London/@38.5589138,-121.5036519,14z/data=!3m1!5s0x809ad3e0104545f5:0x7edf0a3ae4cce385!4m5!1m2!2m1!1sstreets+of+london!3m1!1s0x0000000000000000:0x27a2577cf21a1e99
-meetup_rsvp_url: http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/216877082/
+meetup_id: 216877082
 github_issue_url: https://github.com/beerjs/sac/issues/8
 ---
 
@@ -16,7 +16,7 @@ Join us for people && Javascript && beer at the **West Sacramento**
 [Streets of London location]({{ page.location_url }})
 
 Interested in joining us? RSVP on
-[Meetup]({{ page.meetup_rsvp_url }}).
+[Meetup](http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/{{ page.meetup_id }}/).
 
 Have a question? Comment on our
 [GitHub page]({{ page.github_issue_url }}) or

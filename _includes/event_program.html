@@ -25,15 +25,6 @@
       </a>
     </dd>
 
-    {% if context.meetup_rsvp_url %}
-    <dt class="icon-meetup"></dt>
-    <dd>
-      <a href="{{ context.meetup_event_url }}" rel="external" target="_blank">
-        RSVP on Meetup.com!
-      </a>
-    </dd>
-    {% endif %}
-
     {% if context.github_issue_url %}
     <dt class="icon-github-circled"></dt>
     <dd>
@@ -43,13 +34,14 @@
     </dd>
     {% endif %}
 
-    {% if site.twitter_username %}
-    <dt class="icon-twitter"></dt>
+    {% if context.meetup_id %}
+    <dt class="icon-meetup"></dt>
     <dd>
-      <a href="https://twitter.com/{{ site.twitter_username }}">
-        Send us a tweet!
+      <span meetup-id="{{ context.meetup_id }}"></span>
+      <a href="http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/{{ context.meetup_id }}/" rel="external" target="_blank">
+        RSVP today!
       </a>
-    <dd>
+    </dd>
     {% endif %}
   </dl>
 </aside>

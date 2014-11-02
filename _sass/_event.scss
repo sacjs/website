@@ -22,7 +22,7 @@
 
 [event~='program'] {
   [event] & {
-    flex: 1;
+    flex: 1.075;
   }
   [post~='header'] & {
     float: right;
@@ -36,5 +36,13 @@
   text-align: center;
   &:empty {
     display: none;
+  }
+}
+
+[meetup-id] {
+  &:not(:empty) {
+    &::after {
+      content: ',';
+    }
   }
 }
