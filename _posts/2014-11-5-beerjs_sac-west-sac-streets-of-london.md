@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  BeerJS - West Sac Streets of London
-date:   2014-11-06 18:00:00
+date:   2014-11-05 18:00:00
 tags:
   - BeerJS
 category: events
