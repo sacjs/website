@@ -38,7 +38,7 @@
     <dt class="icon-meetup"></dt>
     <dd>
       <span meetup-id="{{ context.meetup_id }}"></span>
-      <a href="http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/{{ context.meetup_id }}/" rel="external" target="_blank">
+      <a href="http://www.meetup.com/{{context.meetup_group_name || site.meetup_group_name }}/events/{{ context.meetup_id }}/" rel="external" target="_blank">
         RSVP today!
       </a>
     </dd>
