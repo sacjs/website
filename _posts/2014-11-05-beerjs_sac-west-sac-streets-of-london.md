@@ -16,7 +16,7 @@ Join us for people && Javascript && beer at the **West Sacramento**
 [Streets of London location]({{ page.location_url }})
 
 Interested in joining us? RSVP on
-[Meetup](http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/{{ page.meetup_id }}/).
+[Meetup](http://www.meetup.com/{{ page.meetup_group_name || site.meetup_group_name }}/events/{{ page.meetup_id }}/).
 
 Have a question? Comment on our
 [GitHub page]({{ page.github_issue_url }}) or
