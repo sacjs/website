@@ -5,7 +5,7 @@ date:   2014-11-05 18:00:00
 tags:
   - BeerJS
 category: events
-featured: true
+featured: false
 location: Streets of London
 location_url: https://www.google.com/maps/place/Streets+of+London/@38.5589138,-121.5036519,14z/data=!3m1!5s0x809ad3e0104545f5:0x7edf0a3ae4cce385!4m5!1m2!2m1!1sstreets+of+london!3m1!1s0x0000000000000000:0x27a2577cf21a1e99
 meetup_id: 216877082
