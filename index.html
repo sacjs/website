@@ -55,7 +55,7 @@ layout: default
       <ul unstyled>
         {% for post in site.categories.posts limit:1 %}
           <li>
-            <span post="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span post="meta">{{ post.date | date: "%A, %B %-d, %Y" }}</span>
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>

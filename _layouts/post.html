@@ -19,7 +19,7 @@ layout: default
           {% include event_program.html %}
         {% endif %}
         {% if page.category != 'events' %}
-          Posted on {{ page.date | date: "%b %-d, %Y" }}
+          Posted on {{ page.date | date: "%A, %B %-d, %Y" }}
           by {{ page.author || site.default_author }}
         {% endif %}
       </p>
