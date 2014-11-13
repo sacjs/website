@@ -5,7 +5,7 @@ date:   2014-11-12 19:00:00
 tags:
   - Community Support
 category: events
-featured: true
+featured: false
 location: Hacker Lab
 location_url: http://hackerlab.org/
 meetup_group_name: Sacramento-Famo-us-Meetup
