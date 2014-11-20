@@ -7,6 +7,6 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="//fonts.googleapis.com/css?family=Cutive|Karma" rel="stylesheet" type="text/css">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} - {{site.description }} {% endif %}</title>
+  <title>{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }} - {{site.description }} {% endif %}</title>
   <meta name="description" content="{{ site.title }} {{ site.description }}">
 </head>
