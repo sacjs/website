@@ -5,7 +5,7 @@ date:   2014-11-22 09:00:00
 tags:
   - CoffeeJS
 category: events
-featured: true
+featured: false
 location: Temple Coffee (Downtown)
 location_url: http://templecoffee.com/about/locations/
 meetup_id: 218793049
