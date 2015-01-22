@@ -4,9 +4,9 @@ title:  Javascript Powered Hardware with Tessel
 date:   2015-01-29 18:30:00
 tags:
   - Meetup
+  - Beginner
   - Hardware
   - IoT
-  - Beginner
 category: events
 featured: true
 location: The Hacker Lab
