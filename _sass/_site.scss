@@ -6,6 +6,7 @@
 
 [site~='header'] {
   [flex] {
+    -webkit-align-items: center;
     align-items: center;
     min-height: $header-height;
   }
@@ -13,6 +14,7 @@
 
 [site~='title'] {
   display: block;
+  -webkit-flex: 1;
   flex: 1;
   font-family: Cutive;
   [site='logo'] {
@@ -100,6 +102,7 @@
   background-size: cover;
   background-position: 50% 25%;
   [main] {
+    -webkit-flex: 1;
     flex: 1;
     text-align: center;
     font-family: Cutive;
@@ -135,9 +138,11 @@
 [site='footer'] {
   margin-top: 2rem;
   nav {
+    -webkit-flex: 4;
     flex: 4;
   }
   aside {
+    -webkit-flex: 1;
     flex: 1;
   }
   @include media-query($on-palm) {
