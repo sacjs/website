@@ -13,6 +13,7 @@ location: The Hacker Lab
 location_url: http://hackerlab.org/contact-us/
 meetup_id: 219997765
 meetup_group_name: The-Sacramento-Javascript-Meetup
+logo: /images/sponsors/tessel.png
 ---
 
 Interested in the "Internet of Things" but don't have time to learn yet another
