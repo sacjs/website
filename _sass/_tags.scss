@@ -6,16 +6,6 @@
     background: $secondary-brand-color;
     padding: 0 .5rem;
     color: $text-color;
-    &::after {
-      padding-right: 5px;
-      content: '\2022';
-      padding-left: 5px;
-    }
-    &:last-child {
-      &::after {
-        padding: 0;
-        content: none;
-      }
-    }
+    margin-right: 5px;
   }
 }
