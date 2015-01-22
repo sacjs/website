@@ -50,6 +50,5 @@ sure to RSVP ASAP!
 Interested in joining us? RSVP on
 [Meetup](http://www.meetup.com/{{ page.meetup_group_name || site.meetup_group_name }}/events/{{ page.meetup_id }}/).
 
-Have a question? Comment on our
-[GitHub page]({{ page.github_issue_url }}) or
-[send us a tweet](https://twitter.com/beerjs_sac)!
+Have a question? [Send us a tweet](https://twitter.com/sac_js) or message us
+on [Meetup](http://www.meetup.com/{{ page.meetup_group_name || site.meetup_group_name }})!
