@@ -8,7 +8,7 @@ tags:
   - Hardware
   - IoT
 category: events
-featured: true
+featured: false
 location: The Hacker Lab
 location_url: http://hackerlab.org/contact-us/
 meetup_id: 219997765
