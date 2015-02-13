@@ -5,7 +5,7 @@ date:   2015-02-12 18:00:00
 tags:
   - BeerJS
 category: events
-featured: true
+featured: false
 location: Pour House
 location_url: http://pourhousesacramento.com/
 meetup_id: 220378062
