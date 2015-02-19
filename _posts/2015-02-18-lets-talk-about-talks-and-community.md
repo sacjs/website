@@ -30,6 +30,10 @@ the story of how [Oakland DanceJS](https://twitter.com/oaklanddancejs) got
 started and will offer you a healthy dose of encouragement to helping our own
 community grow, or maybe even get you to start your own!
 
+Closing out the evening will be [Benjamin Coe](https://twitter.com/benjamincoe),
+from [NPM](https://twitter.com/npmjs) who will tell you how and why you should
+be using a package manager for your next Javascript project.
+
 Interested in joining us? RSVP on
 [Meetup](http://www.meetup.com/{{ page.meetup_group_name || site.meetup_group_name }}/events/{{ page.meetup_id }}/).
 
