@@ -20,13 +20,15 @@ getting out and forging new friendships with your peers!
 
 <!-- more -->
 
-Rdio's Bryan Hughes, founder of NodeBotsSF, is going to kick things off by
-speaking about, well, speaking! Learn what it takes to put yourself out there
-and present your ideas to your community!
+[Rdio's](http://www.rdio.com) [Bryan Hughes](https://twitter.com/nebrius),
+founder of [NodeBotsSF](https://twitter.com/nodebotssf), is going to kick
+things off by speaking about, well, speaking! Learn what it takes to put
+yourself out there and present your ideas to your community!
 
-Next up, Emily Rose will be regaling us with the story of how Oakland DanceJS
-got started and will offer you a healthy dose of encouragement to helping our
-own community grow, or maybe even get you to start your own!
+Next up, [Emily Rose](https://twitter.com/nexxylove) will be regaling us with
+the story of how [Oakland DanceJS](https://twitter.com/oaklanddancejs) got
+started and will offer you a healthy dose of encouragement to helping our own
+community grow, or maybe even get you to start your own!
 
 Interested in joining us? RSVP on
 [Meetup](http://www.meetup.com/{{ page.meetup_group_name || site.meetup_group_name }}/events/{{ page.meetup_id }}/).
