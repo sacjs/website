@@ -25,10 +25,14 @@ founder of [NodeBotsSF](https://twitter.com/nodebotssf), is going to kick
 things off by speaking about, well, speaking! Learn what it takes to put
 yourself out there and present your ideas to your community!
 
+Slides from Bryan's talk can be found on [Presentate](https://presentate.com/nebrius/talks/speaking-is-awesome).
+
 Next up, [Emily Rose](https://twitter.com/nexxylove) will be regaling us with
 the story of how [Oakland DanceJS](https://twitter.com/oaklanddancejs) got
 started and will offer you a healthy dose of encouragement to helping our own
 community grow, or maybe even get you to start your own!
+
+Slides from Emily's talk can be found at [emilyrose/dancejs-origins](https://github.com/emilyrose/dancejs-origins).
 
 Closing out the evening will be [Benjamin Coe](https://twitter.com/benjamincoe),
 from [NPM](https://twitter.com/npmjs) who will tell you how and why you should
