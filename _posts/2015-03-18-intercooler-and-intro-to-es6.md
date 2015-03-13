@@ -16,6 +16,8 @@ meetup_group_name: The-Sacramento-Javascript-Meetup
 It's time for another installment of SacJS! This time we are keeping things
 local with two talks from fellow Sacramentans.
 
+<!-- more -->
+
 First up will be Carson Gross, CEO and Co-Founder of LeadDyno, who will show
 off his Javascript library that allows you to add AJAX functionality with simple
 HTML5 Attributes!
