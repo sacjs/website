@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Let's Talk About Talks (and Community!)
+title:  Intercooler and Intro to ES6
 date:   2015-03-18 19:00:00
 tags:
   - Meetup
