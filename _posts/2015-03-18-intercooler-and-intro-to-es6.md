@@ -6,7 +6,7 @@ tags:
   - Meetup
   - Beginner
 category: events
-featured: true
+featured: false
 location: The Urban Hive
 location_url: http://www.theurbanhive.com/#yui_3_17_2_1_1424386932253_440
 meetup_id: 221127032
