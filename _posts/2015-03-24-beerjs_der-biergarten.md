@@ -13,6 +13,8 @@ meetup_group_name: The-Sacramento-Javascript-Meetup
 github_issue_url: https://github.com/beerjs/sac/issues/13
 ---
 
+**UPDATE:** Fixed incorrect date. BeerJS is on Tuesday, March 24th at 6pm!
+
 Join us for people && Javascript && beer at 
 [{{ page.location }}]({{ page.location_url }})
 
