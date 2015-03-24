@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  BeerJS - Der Biergarten
-date:   2015-03-28 18:00:00
+date:   2015-03-24 18:00:00
 tags:
   - BeerJS
 category: events
