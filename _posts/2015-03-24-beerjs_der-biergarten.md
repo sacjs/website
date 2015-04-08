@@ -5,7 +5,7 @@ date:   2015-03-24 18:00:00
 tags:
   - BeerJS
 category: events
-featured: true
+featured: false
 location: Der Biergarten
 location_url: https://www.facebook.com/bier.garten.sacramento
 meetup_id: 221251253
