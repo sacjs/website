@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Tradeoffs in Server Side and Client Side Rendering
-date:   2015-03-18 19:00:00
+date:   2015-04-29 19:00:00
 tags:
   - Meetup
 category: events
