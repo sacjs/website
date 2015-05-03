@@ -5,7 +5,7 @@ date:   2015-04-29 19:00:00
 tags:
   - Meetup
 category: events
-featured: true
+featured: false
 location: The Urban Hive
 location_url: http://www.theurbanhive.com/#yui_3_17_2_1_1424386932253_440
 meetup_id: 221914716
