@@ -5,7 +5,7 @@ date:   2015-05-06 18:00:00
 tags:
   - BeerJS
 category: events
-featured: true
+featured: false
 location: University of Beer
 location_url: www.theuob.com/#!uobsac-home/c1i0o
 meetup_id: 222267114
