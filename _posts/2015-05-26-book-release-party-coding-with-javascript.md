@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Book Release Party: Coding with Javascript for Dummies
+title:  Book Release Party - Coding with Javascript for Dummies
 date:   2015-05-26 19:00:00
 tags:
   - Meetup
