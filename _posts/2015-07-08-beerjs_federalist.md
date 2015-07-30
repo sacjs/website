@@ -5,7 +5,7 @@ date:   2015-07-08 18:00:00
 tags:
   - BeerJS
 category: events
-featured: true
+featured: false
 location: Federalist Public House
 location_url: http://federalistpublichouse.com/
 meetup_id: 223560256
