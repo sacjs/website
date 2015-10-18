@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Project Obelisk: From Virtual to Reality
+title:  Project Obelisk - From Virtual to Reality
 date:   2015-10-27 19:00:00
 tags:
   - Meetup
