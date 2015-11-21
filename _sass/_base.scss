@@ -8,7 +8,7 @@ html {
   &,
   &:before,
   &:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 }
 
@@ -99,30 +99,6 @@ h6 {
   font-family: Cutive, Times Roman, serif;
 }
 
-[subhead] {
-  margin: $spacing-unit 0;
-  font-family: Cutive, Times Roman, serif;
-  font-size: .9rem;
-  font-weight: 400;
-  color: $primary-brand-color;
-  text-transform: uppercase;
-}
-
-/**
- * Bifurcated text
- */
-[bifurcate] {
-  > :first-child {
-    display: block;
-    font-size: .7em;
-  }
-  > :last-child {
-    display: block;
-    font-size: 1.1em;
-    text-transform: uppercase;
-  }
-}
-
 /**
  * Links
  */
@@ -140,46 +116,6 @@ a {
     color: $link-visited-color;
   }
 }
-
-%link-button {
-  display: inline-block;
-  padding: .475rem 1rem .375rem;
-  line-height: 1.625rem;
-  text-align: center;
-}
-
-[readmore] {
-  @extend %link-button;
-  outline: solid 1px $link-color;
-  text-decoration: none;
-  &,
-  &:visited {
-    color: $link-color;
-  }
-  &:active,
-  &:hover {
-    text-decoration: none;
-    color: $senary-brand-color;
-    background-color: $link-color;
-  }
-}
-
-[readmore~='inverted'] {
-  &,
-  [event] & {
-    outline: solid 1px $featured-link-color;
-    &,
-    &:visited {
-      color: $featured-link-color;
-    }
-    &:active,
-    &:hover {
-      color: $primary-brand-color;
-      background-color: $featured-link-hover-color;
-    }
-  }
-}
-
 
 /**
  * Address

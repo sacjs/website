@@ -10,7 +10,25 @@ twitter_username: sac_js
 github_username:  sacjs
 meetup_group_name: The-Sacramento-Javascript-Meetup
 meetup_group_text: Join us!
+location: The Urban Hive
+location_url: http://theurbanhive.com
 timezone: GMT
+
+sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
+
+array: []
+organizers:
+  - first_name: Derek
+    last_name: Lindahl
+    twitter_username: oif_vet
+
+  - first_name: Sam
+    last_name: Thompson
+    twitter_username: samdtho
+
+  - first_name: Andy
+    last_name: Axton
+    twitter_username: andyaxton
 
 # Build settings
 markdown: kramdown

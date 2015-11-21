@@ -1,0 +1,15 @@
+.RightPane {
+  margin-left: 40vw;
+  @include media-query($on-palm) {
+    margin-left: 0;
+  }
+}
+
+.RightPane--content {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+}
+
+.RightPane--about {
+}

@@ -2,84 +2,42 @@
 layout: default
 ---
 
-<main>
-  <section site="content hero">
-    <div flex wrapper>
-      <div main bifurcate>
-        <span>People. Javascript.</span>
-        <span>Sacramento</span>
+{% assign meetup = site.data.meetups | reverse | last %}
+
+<div class="Homepage">
+  <div class="flex flex--column flex--alignItems-center LeftPane">
+    <a href="{{ site.baseurl }}/" class="flex--grow-2 LeftPane--logo">
+      <img src="/images/sac_js.svg" width="150" height="150" alt="{{ site.description }}"/>
+    </a>
+    <section class="flex--grow-2 LeftPane--details">
+      <p>
+        Javascript, web technologies, and community building on the fourth
+        Tuesday of every month at
+        <a href="http://www.theurbanhive.com/" class="LeftPane--link">The Urban Hive</a>.
+      </p>
+    </section>
+    <section class="flex--grow-3">
+      {% if meetup.meetup_id %}
+      <div class="RsvpButton" meetup-id="{{ meetup.meetup_id }}">
+        <a href="http://www.meetup.com/{{ meetup.meetup_group_name || site.meetup_group_name }}/events/{{ meetup.meetup_id }}" class="RsvpButton--link">
+          <span class="RsvpButton--promo"></span>
+          RSVP Today
+        </a>
       </div>
-      <aside></aside>
-    </div>
-  </section>
-  {% assign events = site.categories.events | where:'featured', true %}
-  <aside site="content secondary">{% if events.size > 0 %}
-    <div wrapper>
-      <header subhead>
-        {% if events.size == 1 %}
-          Next Event
-        {% else %}
-          Upcoming Events
-        {% endif %}
-      </header>
-      {% for event in events %}
-        <div event flex>
-          <section event="content">
-            <h2>
-              <a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
-            </h2>
-            {% if event.tags %}
-              <ul unstyled horizontal tags="subheading">
-                {% for tag in event.tags %}
-                  <li>{{tag}}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-            {% if event.content contains "<!-- more -->" %}
-              {{ event.content | split:"<!-- more -->" | first % }}
-            {% else %}
-              {{ event.content | strip_html | truncatewords:100 }}
-            {% endif %}
-            <p>
-              <a readmore="inverted" href="{{ event.url | prepend: site.baseurl }}">Read more</a>
-            </p>
-          </section>
-          {% include event_program.html %}
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}</aside>
-  <section site="content primary">
-    <div wrapper>
-      <header subhead>Latest News</header>
-      <ul unstyled>
-        {% for post in site.categories.posts limit:1 %}
-          <li>
-            <span post="meta">{{ post.date | date: "%A, %B %-d, %Y" }}</span>
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            {% if post.tags %}
-              <ul unstyled horizontal tags="subheading">
-                {% for tag in post.tags %}
-                  <li>{{tag}}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-            {% if post.content contains "<!-- more -->" %}
-              {{ post.content | split:"<!-- more -->" | first % }}
-            {% else %}
-              {{ post.content }}
-            {% endif %}
-            <p>
-              <a readmore href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-            </p>
-          </li>
-        {% endfor %}
-      </ul>
-      <footer>
-        subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
-      </footer>
-    </div>
-  </section>
-</main>
+      {% endif %}
+    </section>
+    <footer class="LeftPane--footer">
+      <div class="LeftPane--cocAlert">
+        {% include coc_alert.html %}
+      </div>
+    </footer>
+  </div>
+  <div class="flex flex--column flex--alignItems-center RightPane">
+    <article class="RightPane--content">
+      {% include meetup.html %}
+      {% include sponsors.html %}
+      {% include what_else.html %}
+    </article>
+  </div>
+</div>
+        

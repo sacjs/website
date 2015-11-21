@@ -4,7 +4,11 @@ title: Code of Conduct
 permalink: /code-of-conduct/
 ---
 
-All attendees, speakers, sponsors and volunteers at our meetup group are required
+{% include organizers.md %}
+
+# Code of Conduct
+
+All attendees, speakers, sponsors, and volunteers at our meetup group are required
 to agree with the following code of conduct. Organisers will enforce this code
 throughout the event. We are expecting cooperation from all participants to
 help ensuring a safe environment for everybody.
@@ -13,7 +17,8 @@ help ensuring a safe environment for everybody.
 
 ## Need Help?
 
-You have our contact details in the emails we've sent.
+Our meetup is co-organized by {{ organizer_links | array_to_sentence_string }}.
+You also have our contact details in the emails we've sent prior to the event.
 
 ## The Quick Version
 
@@ -58,7 +63,7 @@ value your attendance.
 We expect participants to follow these rules at our event and workshop venues
 and community-related social events.
 
-~~~
+---
 
 Original source and credit: http://2012.jsconf.us/#/about & The Ada Initiative
 Please help by translating or improving: http://github.com/leftlogic/confcodeofconduct.com

@@ -9,3 +9,8 @@ Developer: Sam Thompson
 Github: https://github.com/samt
 Twitter: @samdtho
 From: Sacramento, CA
+
+Developer: Andy Axton
+Github: https://github.com/a-axton
+Twitter: @andyaxton
+From: Sacramento, CA

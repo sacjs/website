@@ -1,0 +1,59 @@
+{% assign meetup = site.data.meetups | reverse | last %}
+{% assign clock = meetup.date | date: "%s" %}
+{{ clock | date: "%A, %B %-d" }}
+
+<section class="Homepage--section Meetup">
+  <header class="Homepage--header">
+    <h2>Schedule</h2>
+  </header>
+
+  <ul class="Meetup--schedule">
+    {% for segment in meetup.schedule %}
+      {% if segment.offset %}
+        {% assign offset = segment.offset | times: 60 %}
+        {% assign clock = clock | plus: offset %}
+      {% endif %}
+      {% unless segment.offset %}
+        {% assign offset = 0 %}
+      {% endunless %}
+      <li class="Meetup--segment">
+        <header class="Meetup--segmentHeader">
+          <time class="Meetup--segmentTime" datetime="{{ meetup.date | date: "%F" }}">
+            {{ clock | date: "%-I:%M %p" }}
+          </time>
+          <span class="Meetup--segmentType">
+            {{ segment.type }}
+          </span>
+        </header>
+        <section class="Meetup--segmentInfo">
+          {% if segment.speaker %}
+            <div class="Meetup--segmentSpeaker">
+              {% if segment.speaker_url %}
+              <a href="{{ segment.speaker_url }}">
+              {% endif %}
+                {{ segment.speaker }}
+              {% if segment.speaker_url %}
+              </a>
+              {% endif %}
+            </div>
+          {% endif %}
+          <em class="Meetup--segmentTitle {% unless segment.speaker %}Meetup--segmentTitle-isAnonymous{% endunless %}">
+            {{ segment.title }}
+          </em>
+          {% if segment.description %}
+            <div class="Meetup--segmentDescription">
+              {{ segment.description | markdownify }}
+            </div>
+          {% endif %}
+          {% if segment.sponsor %}
+            <div class="Meetup--segmentSponsor">
+              Sponsored by <a href="{{ segment.sponsor_url }}">{{ segment.sponsor }}</a>
+            </div>
+          {% endif %}
+        </section>
+      </li>
+      {% assign duration = segment.duration | times: 60 %}
+      {% assign clock = clock | plus: duration %}
+    {% endfor %}
+  </ul>
+</section>

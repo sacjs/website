@@ -1,29 +1,47 @@
-[page~='header'] {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+.Page {
+  margin: 0 auto;
+  max-width: $on-palm;
+  @include media-query($on-palm) {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    margin-top: $spacing-unit * 3;
+  }
+  h4 {
+    margin-top: $spacing-unit;
+  }
 }
 
-[page~='content'] {
+.Page--header {
+  margin: $spacing-unit * 2;
+  text-align: center;
+}
+
+.Page--footer {
+  margin-top: $spacing-unit * 3;
   margin-bottom: $spacing-unit;
+  font-size: $small-font-size;
+}
 
-  h2 {
-    font-size: 2rem;
-    @include media-query($on-laptop) {
-      font-size: 1.75rem;
-    }
+.Page--footerNav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  list-style-type: none;
+  > li {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
   }
+}
 
-  h3 {
-    font-size: 1.625rem;
-    @include media-query($on-laptop) {
-      font-size: 1.375rem;
-    }
-  }
-
-  h4 {
-    font-size: 1.25rem;
-    @include media-query($on-laptop) {
-      font-size: 1.125rem;
-    }
-  }
+.Page--cocAlert {
+  text-align: center;
 }

@@ -10,26 +10,3 @@
     @content;
   }
 }
-
-[flex] {
-  display: -webkit-flex;
-  display: flex;
-}
-
-[wrapper] {
-  max-width: -webkit-calc(#{$on-laptop} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$on-laptop} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  overflow: auto;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$on-laptop} - (#{$spacing-unit}));
-    max-width:         calc(#{$on-laptop} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}

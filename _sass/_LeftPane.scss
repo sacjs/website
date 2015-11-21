@@ -1,0 +1,77 @@
+$left-pane-text-color: $senary-brand-color;
+
+.LeftPane {
+  width: 40vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  color: $left-pane-text-color;
+  background: $primary-brand-color;
+  @include media-query($on-palm) {
+    width: initial;
+    position: static;
+  }
+}
+
+.LeftPane--link {
+  &,
+  &:hover,
+  &:visited {
+    color: $left-pane-text-color;
+    text-decoration: underline;
+    -ms-wtf: 1;
+  }
+}
+
+.LeftPane--logo {
+  display: block;
+  min-height: 190px;
+  margin-top: 40px;
+  text-align: center;
+  img {
+    box-shadow: 0 0 0 4px white,
+                0 0 5px 3px rgba(darken($primary-brand-color, 90%),0.75),
+                0 3px 5px 4px rgba(darken($primary-brand-color, 90%),0.3),
+  }
+}
+
+.LeftPane--details {
+  max-width: 250px;
+  min-height: 200px;
+}
+
+.LeftPane--rsvpBtn {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem;
+  border: solid 3px white;
+  background: none;
+  color: white;
+  text-align: center;
+  em {
+    display: block;
+    font-size: 1.1rem;
+    font-style: normal;
+  }
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.LeftPane--footer {
+  max-width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: $senary-brand-color;
+  font-size: .8rem;
+}
+
+.LeftPane--cocAlert {
+  text-align: center;
+  a {
+    @extend .LeftPane--link;
+  }
+}
+
+@import './RsvpButton';
