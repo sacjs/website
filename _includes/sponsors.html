@@ -1,7 +1,8 @@
-{% assign meetup = site.data.meetups | reverse | last %}
 {% assign sponsors = meetup.schedule | map: 'sponsor' %}
 {% assign sponsor_urls = meetup.schedule | map: 'sponsor_url' %}
+{% assign all_sponsors = sponsors | join | remove: ' ' %}
 
+{% unless all_sponsors == '' %}
 <section class="Homepage--section Sponsors">
   <header class="Homepage--header">
     <h2>Sponsors</h2>
@@ -21,3 +22,4 @@
     <a href="/sponsorship">Become a sponsor today</a>!
   </p>
 </section>
+{% endunless %}

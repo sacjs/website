@@ -19,9 +19,10 @@
 
     - duration: 45
       type: speaker
-      speaker: Ben Ilegbodu
-      speaker_url: https://twitter.com/benmvp
-      company: Eventbrite
+      speakers:
+        - name: Ben Ilegbodu
+          url: https://twitter.com/benmvp
+          company: Eventbrite
       title: You Don’t Need Javascript for That!
       description: >
         We have been using JavaScript toolkits like jQuery for nearly a decade to make manipulating the DOM easier as we create our highly-interactive web apps. New features in HTML5 & CSS3 should’ve made old development strategies obsolete, and yet we’re still using jQuery to do things better suited for HTML5 & CSS3. Why? Well, old habits die hard.
@@ -46,3 +47,621 @@
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
         keep it going until we get kicked out!
+
+
+
+- date: 2015-10-27 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 226118281
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 45
+      type: speaker
+      speakers:
+        - name: Andy Axton
+          url: https://twitter.com/andyaxton
+          company: Rocket Department
+      title: Project Obelisk - From Virtual to Reality
+      description: >
+        Stumped as to how to develop LED animation logic for hardware that did not yet exist, Andy Axton will show us how he used Javascript to prototype, and subsequently build, Rocket Department's art installation that was showcased at this summer's TBDFest. His talk will include examples of the Web Audio API as well as the WebGL framework three.js.
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-09-26 09:00
+  location: Temple Coffee (S St.)
+  location_url: http://templecoffee.com/about/locations/
+  meetup_id: 225562244
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: CoffeeJS
+      description: >
+        Talk about Coffee, Javascript, Sacramento, yanno, no big whoop. Just CoffeeJS. It is informal! So come hang out, talk shop, pair program, meet new people, whatever you'd like!
+
+
+
+- date: 2015-09-22 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 225424247
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 45
+      type: speaker
+      speakers:
+        - name: Brad Compton
+          url: https://twitter.com/Bradcomp
+      title: what(is(functional(programming)))
+      description: >
+        What is Functional Programming (FP) and why we should care?
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-08-25 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 224709308
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 30
+      type: speaker
+      speakers:
+        - name: Hardy Jones
+          url: https://twitter.com/st58
+      title: Testing code with Property Based Testing
+
+    - duration: 30
+      type: speaker
+      speakers:
+        - name: Jeff Bennett
+          url: https://twitter.com/DigitalSplash
+          company: Digital Splash Media
+      title: Intro to the visualization framework D3
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-07-08 18:00
+  location: Federalist Public House
+  location_url: http://federalistpublichouse.com/
+  meetup_id: 223560256
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        BeerJS is an informal way for like-minded Sacramentans to gather around and chat about Javascript over a nice, tasty, beverage.
+
+
+        As promised at our last meetup, we will have a limited number of BeerJS pint glasses to give out on a first come, first serve basis! And thanks to our sponsor TEKSystems, they'll come with a free beer in them!
+
+
+
+- date: 2015-06-23 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 223024074
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 45
+      type: speaker
+      speakers:
+        - name: Liv Erickson
+          url: https://twitter.com/misslivirose
+          company: Microsoft
+      title: Javascript for Virtual Reality
+      description: >
+        Liv will discuss the emerging support from the VR and web communities for WebVR, a new API emerging to support writing VR-enabled websites using HTML, CSS, and JavaScript. We'll be taking a look at existing applications for virtual reality on the web, the benefits of WebVR, and how to get started with the available tools and libraries for browser-based virtual reality written in JavaScript.
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-05-26 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 222516756
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 45
+      type: speaker
+      speakers:
+        - name: Chris Minnick
+          url: https://twitter.com/chrisminnick
+          company: WatzThis?
+        - name: Eva Holland
+      title: Coding with Javascript for Dummies
+      description: >
+        Chris Minnick and Eva Holland are the co-founders of [WatzThis?](https://twitter.com/WatzThisCo) and the co-authors of [Coding with JavaScript For Dummies](http://www.amazon.com/Coding-JavaScript-Dummies-Chris-Minnick/dp/1119056071/ref=sr_1_1?ie=UTF8&qid=1431562002&sr=8-1&keywords=chris+minnick), which has an official world-wide release date of June 1, 2015. The book, and it's accompanying Codecademy course, teaches beginners how to program web applications using JavaScript. This is the first new JavaScript book in the For Dummies series since 2004 -- so, needless to say, this book has been a long time coming and it brings the state of JavaScript For Dummies up to modern standards.
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-05-06 18:00
+  location: University of Beer
+  location_url: "www.theuob.com/#!uobsac-home/c1i0o"
+  meetup_id: 222267114
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        BeerJS is an informal way for like-minded Sacramentans to gather around and chat about Javascript over a nice, tasty, beverage.
+
+
+
+- date: 2015-04-29 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 221914716
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 45
+      type: speaker
+      speakers:
+        - name: Malte Ubl
+          url: https://twitter.com/cramforce
+          company: Google
+      title: Tradeoffs in Server Side and Client Side Rendering
+      description: >
+        Malte will be sharing lessons he learned while working on YouTube.com and Google+ in his talk "Tradeoffs in server side and client side rendering"
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-03-24 18:00
+  location: Der Biergarten
+  location_url: https://www.facebook.com/bier.garten.sacramento
+  meetup_id: 221251253
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        BeerJS is an informal way for like-minded Sacramentans to gather around and chat about Javascript over a nice, tasty, beverage.
+
+
+
+- date: 2015-03-18 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 221127032
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 30
+      type: speaker
+      speakers:
+        - name: Carson Gross
+          url: https://twitter.com/carson_gross
+          company: LeadDyno
+      title: Intercooler.js
+      description: >
+        Carson Gross, CEO and Co-Founder of LeadDyno, who will show off his Javascript library that allows you to add AJAX functionality with simple HTML5 Attributes
+
+    - duration: 30
+      type: speaker
+      speakers:
+        - name: Mike Piccolo
+          url: https://twitter.com/mfpiccolo
+          company: NewLeaders.com
+      title: Intro to ES6
+      description: >
+        What is it and why you should care
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-02-18 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  meetup_id: 220619734
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 20
+      type: speaker
+      speakers:
+        - name: Bryan Hughes
+          url: https://twitter.com/nebrius
+          company: Rdio
+      title: Let's Talk About Talks
+      description: >
+        Learn what it takes to put yourself out there and present your ideas to your community!
+
+    - duration: 20
+      type: speaker
+      speakers:
+        - name: Emily Rose
+          url: https://twitter.com/nexxylove
+          company: Spark
+      title: "Oakland DanceJS: A story of community"
+      description: >
+        The story of how [Oakland DanceJS](https://twitter.com/oaklanddancejs) got started and will offer you a healthy dose of encouragement to helping our own community grow, or maybe even get you to start your own!
+
+    - duration: 20
+      type: speaker
+      speakers:
+        - name: Benjamin Coe
+          url: https://twitter.com/benjamincoe
+          company: npm
+      title: NPM The Package Manager
+      description: >
+        How and why you should be using a package manager for your next Javascript project.
+
+    - duration: 10
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
+
+- date: 2015-02-12 18:00
+  location: Pour House
+  location_url: http://pourhousesacramento.com/
+  meetup_id: 220378062
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        BeerJS is an informal way for like-minded Sacramentans to gather around and chat about Javascript over a nice, tasty, beverage.
+
+
+
+- date: 2015-01-29 18:30
+  location: The Hacker Lab
+  location_url: http://hackerlab.org/contact-us/
+  meetup_id: 219997765
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 145
+      type: speaker
+      speakers:
+        - name: Tim Ryan
+          url: https://twitter.com/timcameronryan
+          company: Tessel
+      title: Hands-on with Javascript Powered Hardware with Tessel
+      description: >
+        nterested in the "Internet of Things" but don't have time to learn yet another language? Intimidated by terminology like "GPIO", "ARM", and "3.4v headers"? Wish you could leverage your knowledge of web technologies in the real world?
+
+
+        Well now there is no excuse! Come join us for a fun, newcomer-friendly, and FREE [Tessel](https://tessel.io) hackathon!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+
+
+- date: 2015-01-03 09:00
+  location: Downtown Temple Coffee
+  location_url: http://templecoffee.com/about/locations/
+  meetup_id: 219448890
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: CoffeeJS
+      description: >
+        We had such a good time at CoffeeJS in November that we've decided to do it again! So join us at the **downtown** Temple Coffee for people and coffee and Javascript!
+
+
+
+- date: 2014-11-22 09:00
+  location: Downtown Temple Coffee
+  location_url: http://templecoffee.com/about/locations/
+  meetup_id: 218793049
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: CoffeeJS
+      description: >
+        We're changing things up a bit for this installation of BeerJS! Instead of an evening of cold and tasty brews, we'll be meeting up for a _morning_ of _hot_ and tasty brews!
+
+
+
+- date: 2014-11-05 18:00
+  location: Streets of London
+  location_url: "https://www.google.com/maps/place/Streets+of+London/@38.5589138,-121.5036519,14z/data=!3m1!5s0x809ad3e0104545f5:0x7edf0a3ae4cce385!4m5!1m2!2m1!1sstreets+of+london!3m1!1s0x0000000000000000:0x27a2577cf21a1e99"
+  meetup_id: 216877082
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        Join us for people && Javascript && beer at the **West Sacramento** Streets of London.
+
+
+
+- date: 2014-10-05 18:00
+  location: New Helvetia
+  location_url: http://newhelvetiabrew.com/
+  meetup_id:
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        Join us for people and beer and Javascript!

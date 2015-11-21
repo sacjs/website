@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign meetup = site.data.meetups | reverse | last %}
+{% assign meetup = site.data.meetups | first %}
 
 <div class="Homepage">
   <div class="flex flex--column flex--alignItems-center LeftPane">
@@ -40,4 +40,4 @@ layout: default
     </article>
   </div>
 </div>
-        
+

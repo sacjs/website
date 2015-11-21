@@ -1,4 +1,3 @@
-{% assign meetup = site.data.meetups | reverse | last %}
 {% assign clock = meetup.date | date: "%s" %}
 {{ clock | date: "%A, %B %-d" }}
 
@@ -26,18 +25,18 @@
           </span>
         </header>
         <section class="Meetup--segmentInfo">
-          {% if segment.speaker %}
+          {% assign speaker_links = site.array %}
+          {% for speaker in segment.speakers %}
+            {% capture speaker_link %}{% if speaker.url %}<a href="{{ speaker.url }}">{% endif %}{{ speaker.name }}{% if speaker.url %}</a>{% endif %}{% endcapture %}
+            {% assign speaker_links = speaker_links | push: speaker_link %}
+          {% endfor %}
+
+          {% if speaker_links.size > 0 %}
             <div class="Meetup--segmentSpeaker">
-              {% if segment.speaker_url %}
-              <a href="{{ segment.speaker_url }}">
-              {% endif %}
-                {{ segment.speaker }}
-              {% if segment.speaker_url %}
-              </a>
-              {% endif %}
+              {{ speaker_links | array_to_sentence_string }}
             </div>
           {% endif %}
-          <em class="Meetup--segmentTitle {% unless segment.speaker %}Meetup--segmentTitle-isAnonymous{% endunless %}">
+          <em class="Meetup--segmentTitle {% if speaker_links.size == 0 %}Meetup--segmentTitle-isAnonymous{% endif %}">
             {{ segment.title }}
           </em>
           {% if segment.description %}
