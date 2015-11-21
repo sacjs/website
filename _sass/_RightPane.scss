@@ -3,6 +3,14 @@
   @include media-query($on-palm) {
     margin-left: 0;
   }
+  a {
+    &,
+    &:hover,
+    &:visited {
+      color: $link-color;
+      text-decoration: none;
+    }
+  }
 }
 
 .RightPane--content {

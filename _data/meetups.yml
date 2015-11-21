@@ -1,6 +1,7 @@
 - date: 2015-11-24 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 226841739
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -53,6 +54,7 @@
 - date: 2015-10-27 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 226118281
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -120,6 +122,7 @@
 - date: 2015-09-22 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 225424247
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -171,6 +174,7 @@
 - date: 2015-08-25 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 224709308
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -246,6 +250,7 @@
 - date: 2015-06-23 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 223024074
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -298,6 +303,7 @@
 - date: 2015-05-26 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 222516756
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -350,7 +356,7 @@
 
 - date: 2015-05-06 18:00
   location: University of Beer
-  location_url: "www.theuob.com/#!uobsac-home/c1i0o"
+  location_url: "http://www.theuob.com/#!uobsac-home/c1i0o"
   meetup_id: 222267114
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -366,6 +372,7 @@
 - date: 2015-04-29 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 221914716
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -433,6 +440,7 @@
 - date: 2015-03-18 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 221127032
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:
@@ -495,6 +503,7 @@
 - date: 2015-02-18 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
   meetup_id: 220619734
   meetup_group_name: The-Sacramento-Javascript-Meetup
   schedule:

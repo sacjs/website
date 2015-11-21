@@ -4,6 +4,12 @@
 <section class="Homepage--section Meetup">
   <header class="Homepage--header">
     <h2>Schedule</h2>
+    <p>
+      <a href="{{ meetup.location_url }}">
+        {{ meetup.location }}
+      </a><br/>
+      {{ meetup.location_address }}
+    </p>
   </header>
 
   <ul class="Meetup--schedule">
