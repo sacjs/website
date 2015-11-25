@@ -1,3 +1,125 @@
+- date: 2015-12-15 19:00
+  location: The Urban Hive
+  location_url: http://www.theurbanhive.com/
+  location_address: 1931 H Street, Sacramento, CA, 95811
+  meetup_id:
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 15
+      offset: -15
+      type: social
+      title: Doors Open
+      sponsor: TekSystems
+      sponsor_url: http://www.teksystems.com/
+      description: >
+        Come early to grab a seat, a refreshment, and some food
+
+    - duration: 5
+      type: mc
+      title: Welcome and Introductions
+
+    - duration: 20
+      type: speaker
+      speakers:
+        - name: Sam Thompson
+          url: https://twitter.com/samdtho
+          company: Eventbrite
+      title: Memory Leaks
+      description: >
+        * What is a memory leak?
+
+        * Identify Leaks
+
+        * Fixing memory leaks
+
+    - duration: 5
+      type: mc
+      title: Lightning Talks!
+      description: >
+        Let's have some fun heading in to the holiday season!
+
+
+        A lightning talk is a short presentation lasting only a few minutes. Being of such short length, it is a great way for new speakers to try their hand at presenting to our group. For more experienced speakers, it is a way to work on making a more concise presentation.
+
+
+        We are accepting talk topics on _anything_! If you can talk about it for five minutes, that likely means that you are passionate about it. We want to hear about your passions! You can talk about Javascript, web technology, Java 6, bicycle repair, or flower arranging!
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our First Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Second Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Third Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Fourth Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Fifth Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Sixth Speaker!
+          url: /speaking/
+          company:
+      title:
+      description: >
+
+    - duration: 5
+      type: mc
+      title: 15-seconds of Fame
+      description: >
+        New to the area? Hiring? Stumped on a problem? Here's your chance to
+        take the floor and address the group for your 15-second of fame!
+
+    - duration: 5
+      type: mc
+      title: Closing Remarks
+
+    - duration: 0
+      type: social
+      title: Bevera.js
+      sponsor: Rocket Department
+      sponsor_url: http://rocketdepartment.com/
+      description: >
+        Grab a drink and get to know your fellow #SacTech community members by
+        hanging out afterwards and socializing with our other attendees. We'll
+        keep it going until we get kicked out!
+
+
 - date: 2015-11-24 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
