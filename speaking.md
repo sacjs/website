@@ -45,6 +45,10 @@ All manner of Javascript topics are obviously welcome, but we'd love to hear abo
 
 The more creative, the better!
 
+##### Submitting a Lightning Talk?
+
+Anything is fair game for lightning talks! If you can talk about it for five minutes, that likely means that you are passionate about it. We want to hear about your passions! You can talk about Javascript, web technology, Java 6, bicycle repair, or flower arranging!
+
 
 #### How long should my talk be?
 
