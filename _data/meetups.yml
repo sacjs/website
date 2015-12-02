@@ -23,7 +23,7 @@
       speakers:
         - name: Sam Thompson
           url: https://twitter.com/samdtho
-          company: Eventbrite
+          company:
       title: Memory Leaks
       description: >
         * What is a memory leak?
