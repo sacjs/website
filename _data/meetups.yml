@@ -17,6 +17,8 @@
     - duration: 5
       type: mc
       title: Welcome and Introductions
+      sponsor: The Urban Hive
+      sponsor_url: http://www.theurbanhive.com/
 
     - duration: 20
       type: speaker
