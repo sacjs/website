@@ -47,29 +47,32 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our First Speaker!
-          url: /speaking/
+        - name: Mike Piccolo
+          url: https://twitter.com/mfpiccolo
           company:
-      title:
+      title: Rusty Node
       description: >
+        The Rust programming language is built in a way that the code will not compile unless it safe. So with that worry out of the way now high level programmers, like javascript developers, can dip their feet into the systems programming world and see how the water feels.
 
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Second Speaker!
-          url: /speaking/
+        - name: Igor Lubinets
+          url: https://github.com/IgorLubinets
           company:
-      title:
+      title: What is `this`?
       description: >
+        A quick talk about what Igor has learned about `this`
 
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Third Speaker!
-          url: /speaking/
+        - name: Ivan Villa
+          url: https://twitter.com/Ivan_Villa
           company:
-      title:
+      title: Different Channels in learning
       description: >
+        Casual MeetUps (BeerJS), Meet Ups, personal projects, Slack, online schools, etc.
 
     - duration: 5
       type: lightning talk
