@@ -89,11 +89,13 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Fifth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Ash Roughani
+          url: https://twitter.com/Roughani
+          company: Delivery Unit
+          company_url: https://github.com/deliveryunit
+      title: Civic Tech is the New Black
       description: >
+        Ash Roughani, founder of Code for Sacramento, will discuss the role of civic tech in shaping Sacramento's future and why we should all take some time to do stuff that matters.
 
     - duration: 5
       type: lightning talk
