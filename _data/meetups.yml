@@ -79,11 +79,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Fourth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Evin Revello
+          url: https://github.com/evinr
+          company: Stone Cobra
+      title: Documentation Hacks
       description: >
+        Exploits to Better Transfer Knowledge
 
     - duration: 5
       type: lightning talk
