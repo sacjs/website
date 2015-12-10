@@ -100,7 +100,38 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Sixth Speaker!
+        - name: Dagan Henderson
+          url: https://twitter.com/TechDagan
+          company: Fidelity Investments
+      title: Writing a jQuery Plugin
+      description: >
+        jQuery is a powerful javascript library with built-in support for DOM traversal, AJAX, animations, event handling, and DOM manipulation. It also has a very simple plugin API that makes it highly extensible. It's so simple, you can learn how to write a jQuery plugin in less than five minutes!
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Emma Fletcher
+          url: https://twitter.com/@emmafletcher
+          company: Rocket Department
+          company_url: http://rocketdept.com/
+      title: Play with Tech
+      description: >
+        Introducing technology/programming/engineering/making to students. Why does it matter? What resources already exist? How do I get started?
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Dalton Mitchell
+          url: https://twitter.com/daltonamitchell
+          company: Consolidated Fabricators
+      title: Design For Developers
+      description: >
+        Designers & Devs share a lot in common but we often end up working on separate teams and tossing work over the fence. If designers can learn to code, can developers learn design? Why would we want to? Where do we start? Learn some simple design & UX techniques to build cool things!
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Ninth Speaker!
           url: /speaking/
           company:
       title:
