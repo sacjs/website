@@ -121,7 +121,17 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Eigth Speaker!
+        - name: Owen Scott
+          url: https://twitter.com/ownsctt
+          company: Open Town
+      title: A First Foray Into React Native
+      description: >
+        A quick look at what React Native is, how it works, and how it's different from other javascript-to-native frameworks (e.g. Phonegap), told through the lens of someone stumbling through it for the first time :)
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Be Our Ninth Speaker!
           url: /speaking/
           company:
       title:
