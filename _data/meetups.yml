@@ -20,20 +20,6 @@
       sponsor: The Urban Hive
       sponsor_url: http://www.theurbanhive.com/
 
-    - duration: 20
-      type: speaker
-      speakers:
-        - name: Sam Thompson
-          url: https://twitter.com/samdtho
-          company:
-      title: Memory Leaks
-      description: >
-        * What is a memory leak?
-
-        * Identify Leaks
-
-        * Fixing memory leaks
-
     - duration: 5
       type: mc
       title: Lightning Talks!
@@ -45,6 +31,20 @@
 
 
         We are accepting talk topics on _anything_! If you can talk about it for five minutes, that likely means that you are passionate about it. We want to hear about your passions! You can talk about Javascript, web technology, Java 6, bicycle repair, or flower arranging!
+
+    - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Sam Thompson
+          url: https://twitter.com/samdtho
+          company:
+      title: Memory Leaks
+      description: >
+        * What is a memory leak?
+
+        * Identify Leaks
+
+        * Fixing memory leaks
 
     - duration: 5
       type: lightning talk
