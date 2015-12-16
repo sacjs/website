@@ -38,13 +38,9 @@
         - name: Sam Thompson
           url: https://twitter.com/samdtho
           company:
-      title: Memory Leaks
+      title: UTF-8 and you!
       description: >
-        * What is a memory leak?
-
-        * Identify Leaks
-
-        * Fixing memory leaks
+        We all know that we should add <meta charset="utf-8"> to our html documents and always specify utf-8 as the encoding scheme, but why? What is this mystical UTF-8? Find out more than you've ever wanted to know about the most brilliant hack in text encoding history.
 
     - duration: 5
       type: lightning talk
