@@ -24,7 +24,15 @@ layout: default
           RSVP Today
         </a>
       </div>
+      <div class="LeftPane--thanks" meetup-id="{{ meetup.meetup_id }}">
+        Thanks for coming!
+      </div>
       {% endif %}
+      {% unless meetup.meetup_id %}
+        <div class="LeftPane--tba">
+          Stay Tuned for more Info!
+        </div>
+      {% endunless %}
     </section>
     <footer class="LeftPane--footer">
       <div class="LeftPane--cocAlert">

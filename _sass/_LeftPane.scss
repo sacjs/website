@@ -40,22 +40,24 @@ $left-pane-text-color: $senary-brand-color;
   min-height: 200px;
 }
 
-.LeftPane--rsvpBtn {
+.LeftPane--tba {
   display: inline-block;
   margin: 0 auto;
   padding: 1rem;
-  border: solid 3px white;
-  background: none;
+  background: rgba(255,255,255,0.1);
   color: white;
   text-align: center;
-  em {
-    display: block;
-    font-size: 1.1rem;
-    font-style: normal;
-  }
-  &,
-  &:hover {
-    text-decoration: none;
+}
+
+.LeftPane--thanks {
+  display: none;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  text-align: center;
+  &.is-visible {
+    display: inline-block;
   }
 }
 

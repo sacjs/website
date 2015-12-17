@@ -1,5 +1,9 @@
 .RsvpButton {
+  display: none;
   text-align: center;
+  &.is-visible {
+    display: block;
+  }
 }
 
 .RsvpButton--link {
