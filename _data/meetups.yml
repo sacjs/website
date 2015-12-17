@@ -127,11 +127,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Ninth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Dagan Henderson
+          url: https://twitter.com/techdagan
+          company: Fidelity Investments
+      title: Writing a jQuery Plugin
       description: >
+        jQuery is a powerful javascript library with built-in support for DOM traversal, AJAX, animations, event handling, and DOM manipulation. It also has a very simple plugin API that makes it highly extensible. It's so simple, you can learn how to write a jQuery plugin in less than five minutes!
 
     - duration: 5
       type: mc
