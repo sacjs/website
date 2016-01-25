@@ -22,7 +22,7 @@
       type: speaker
       speakers:
         - name: Brad Compton
-          url: https://twitter.com/Bradcomp
+          url: https://twitter.com/notpmoc84
       title: Promises? Promises!
       description: >
         Promises can drastically improve the way we are writing our async code. They give us back the ability to centralize our error handling and return values from functions like we can in synchronous code.
