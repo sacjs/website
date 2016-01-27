@@ -1,3 +1,24 @@
+- date: 2016-02-03 18:00
+  location: Coin-Op Game Room
+  location_url: http://coinopsac.com/
+  meetup_id: 228409771
+  meetup_group_name: The-Sacramento-Javascript-Meetup
+  schedule:
+    - duration: 120
+      offset: 0
+      type: social
+      title: BeerJS
+      description: >
+        Everyone is welcome! Please RSVP so we know how many tables to reserve. Plans change? Please update your RSVP! Thanks!
+
+
+        BeerJS is an informal way for like-minded Sacramentans to gather around and chat about Javascript over a nice, tasty, beverage.
+
+
+        Coin-Op is a relatively new bar that is filled with retro arcade games! Check them out at [http://coinopsac.com/](http://coinopsac.com/)
+
+
+
 - date: 2016-01-26 19:00
   location: The Urban Hive
   location_url: http://www.theurbanhive.com/
