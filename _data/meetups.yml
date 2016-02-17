@@ -23,12 +23,12 @@
       speakers:
         - name: Alex Russell
           url: https://twitter.com/slightlylate
-      title: Something Awesome TBA!
+      title: Take Your Apps Offline with Service Workers
       description: >
-        [Alex Russell](https://infrequently.org/about-me/) from the Google Chrome/Blink Team, [TC39 Committee Member](http://www.ecma-international.org/memento/TC39.htm), and Web platform advocate.
+        [Alex Russell](https://infrequently.org/about-me/) is a member of the Google Chrome/Blink Team, [TC39 Committee Member](http://www.ecma-international.org/memento/TC39.htm), and Web platform advocate.
 
 
-        We will announce more details of his talk soon!
+        Alex will be giving us an overview of the new Service Worker API. This new API lets you enable offline mode in your web applications, increase their performance through network caching, and provides a basis for push messaging and background syncronization.
 
     - duration: 5
       type: mc
