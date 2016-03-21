@@ -27,16 +27,14 @@
       description: >
         Sketching is a critical skill that spans all job titles. Whether working individually or in a group, our ability to sketch helps make our abstract ideas real. By sketching we can ideate, iterate and communicate our ideas more effectively. With the addition of a few simple approaches, you can incorporate sketching into your daily activities to harness the power of sketching so you too can be a sketching machine.
 
-    - duration: 30
+    - duration: 15
       type: speaker
       speakers:
-        - name: Be Our Second Speaker!
-          url: /speaking/
+        - name: Dr. Tara Lindahl, PsyD
+          url: https://twitter.com/regular_doc
+      title: This Is Your Brain On JS
       description: >
-        We are looking for at least one more speaker! 10-, 20-, or 30-minute talks are acceptable!
-
-
-        [Submit your talk today](http://sacjs.com/speaking/)!
+        Different parts of our brain are accessed by different activities. This talk will show you images of brain scans demonstrating where our brains are being activated when we code and problem solve. Explanations will be given as to what these areas are and how they relate to our daily activities.
 
     - duration: 5
       type: mc
