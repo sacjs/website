@@ -1,8 +1,13 @@
-{% assign sponsors = meetup.schedule | map: 'sponsor' %}
-{% assign sponsor_urls = meetup.schedule | map: 'sponsor_url' %}
-{% assign all_sponsors = sponsors | join | remove: ' ' %}
+{% assign sponsors = meetup.schedule | map: 'sponsors' %}
+{% assign sponsor_links = site.array %}
+{% for item_sponsors in sponsors %}
+  {% for sponsor in item_sponsors %}
+    {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
+    {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+  {% endfor %}
+{% endfor %}
 
-{% unless all_sponsors == '' %}
+{% if sponsor_links.size > 0 %}
 <section class="Homepage--section Sponsors">
   <header class="Homepage--header">
     <h2>Sponsors</h2>
@@ -11,10 +16,8 @@
     This event made possible by:
   </p>
   <ul>
-    {% for sponsor in sponsors %}
-      {% if sponsor %}
-      <li><a href="{{ sponsor_urls[forloop.index0] }}">{{ sponsor }}</a></li>
-      {% endif %}
+    {% for sponsor_link in sponsor_links %}
+      <li>{{ sponsor_link }}</li>
     {% endfor %}
   </ul>
   <p>
@@ -22,4 +25,4 @@
     <a href="/sponsorship">Become a sponsor today</a>!
   </p>
 </section>
-{% endunless %}
+{% endif %}

@@ -9,14 +9,18 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
     - duration: 5
       type: mc
       title: Welcome and Introductions
+      sponsors:
+        - name: The Urban Hive
+          url: http://www.theurbanhive.com/
 
     - duration: 30
       type: speaker
@@ -43,8 +47,11 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
+        - name: Full Stack Labs
+          url: http://www.fullstacklabs.co/
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -64,14 +71,18 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
     - duration: 5
       type: mc
       title: Welcome and Introductions
+      sponsors:
+        - name: The Urban Hive
+          url: http://www.theurbanhive.com/
 
     - duration: 45
       type: speaker
@@ -92,8 +103,11 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
+        - name: Full Stack Labs
+          url: http://www.fullstacklabs.co/
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -134,14 +148,18 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
     - duration: 5
       type: mc
       title: Welcome and Introductions
+      sponsors:
+        - name: The Urban Hive
+          url: http://www.theurbanhive.com/
 
     - duration: 30
       type: speaker
@@ -181,8 +199,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -201,16 +220,18 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
     - duration: 5
       type: mc
       title: Welcome and Introductions
-      sponsor: The Urban Hive
-      sponsor_url: http://www.theurbanhive.com/
+      sponsors:
+        - name: The Urban Hive
+          url: http://www.theurbanhive.com/
 
     - duration: 5
       type: mc
@@ -340,8 +361,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -359,8 +381,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -392,8 +415,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -412,8 +436,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -445,8 +470,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -480,8 +506,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -512,8 +539,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -532,8 +560,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -570,8 +599,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -608,8 +638,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -641,8 +672,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -661,8 +693,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -695,8 +728,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -730,8 +764,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -763,8 +798,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -798,8 +834,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -841,8 +878,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll
@@ -861,8 +899,9 @@
       offset: -15
       type: social
       title: Doors Open
-      sponsor: TekSystems
-      sponsor_url: http://www.teksystems.com/
+      sponsors:
+        - name: TekSystems
+          url: http://www.teksystems.com/
       description: >
         Come early to grab a seat, a refreshment, and some food
 
@@ -914,8 +953,9 @@
     - duration: 0
       type: social
       title: Bevera.js
-      sponsor: Rocket Department
-      sponsor_url: http://rocketdepartment.com/
+      sponsors:
+        - name: Rocket Department
+          url: http://rocketdepartment.com
       description: >
         Grab a drink and get to know your fellow #SacTech community members by
         hanging out afterwards and socializing with our other attendees. We'll

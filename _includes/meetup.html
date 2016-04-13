@@ -36,6 +36,11 @@
             {% capture speaker_link %}{% if speaker.url %}<a href="{{ speaker.url }}">{% endif %}{{ speaker.name }}{% if speaker.url %}</a>{% endif %}{% endcapture %}
             {% assign speaker_links = speaker_links | push: speaker_link %}
           {% endfor %}
+          {% assign sponsor_links = site.array %}
+          {% for sponsor in segment.sponsors %}
+            {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
+            {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+          {% endfor %}
 
           {% if speaker_links.size > 0 %}
             <div class="Meetup--segmentSpeaker">
@@ -50,9 +55,9 @@
               {{ segment.description | markdownify }}
             </div>
           {% endif %}
-          {% if segment.sponsor %}
+          {% if sponsor_links.size > 0 %}
             <div class="Meetup--segmentSponsor">
-              Sponsored by <a href="{{ segment.sponsor_url }}">{{ segment.sponsor }}</a>
+              Sponsored by {{ sponsor_links | array_to_sentence_string }}
             </div>
           {% endif %}
         </section>
