@@ -1,0 +1,28 @@
+{
+  "name": "sacjs",
+  "description": "SacJS - Sacramento's Javascript Meetup Group",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test/*/*.js"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/sacjs/sacjs.github.io/issues"
+  },
+  "license": "BSD-2-Clause",
+  "author": "Derek Lindahl",
+  "contributors": [
+    "Derek Lindahl",
+    "Sam Thompson",
+    "Andy Axton"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sacjs/sacjs.github.io.git"
+  },
+  "homepage": "http://sacjs.com/",
+  "dependencies": {},
+  "engines": {
+    "node": "5.1.0"
+  }
+}
