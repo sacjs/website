@@ -37,11 +37,26 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our First Speaker!
-          url: /speaking/
-          company:
+        - name: Craig Merry
+          url: https://twitter.com/CraigMerry
+          company: Beacon Safety
+          company_url: http://beaconsafety.co/
       title:
       description: >
+          We use Angular/Ionic to drive all of our products. We're a team of two founder over at [www.beaconsafety.co](www.beaconsafety.co)
+
+
+          I'll go over Cavalcade, an attempt to incorporate network effects on [MapMe.io](http://MapMe.io).
+
+
+          Some of the issues with js that we've been looking at:
+
+
+          * Mapping API's
+
+          * A.I. landscape
+
+          * Internet of Things landscape
 
     - duration: 5
       type: lightning talk
