@@ -20,7 +20,6 @@ If you are choosing the easier GitHub Issue option, please use the following as 
     Twitter Handle:
     GitHub Username:
     Employer:
-    Hometown:
     Talk Length:
 
     ---
