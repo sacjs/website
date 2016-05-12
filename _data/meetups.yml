@@ -82,11 +82,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Fourth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Terry J. Owen
+          url: https://twitter.com/iknowmac
+          company: Fullstack Labs
+      title: AngularJS $http vs. $resource
       description: >
+        Discussion of the benefits vs. drawbacks on use either $http or $resource when consuming RESTful web services with AngularJS.
 
     - duration: 5
       type: lightning talk
