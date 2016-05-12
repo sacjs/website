@@ -72,11 +72,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Third Speaker!
-          url: /speaking/
+        - name: Rizwan Javaid
+          url: https://twitter.com/rizwanjavaid
           company:
-      title:
+      title: The F Word (Fear)
       description: >
+        The F word can cripple us to the point where we can’t move forward and hold us back from our true potential. After this talk, you will be able to get out of it's vicious clutches.
 
     - duration: 5
       type: lightning talk
