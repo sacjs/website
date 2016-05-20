@@ -92,11 +92,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Fifth Speaker!
-          url: /speaking/
+        - name: Joe Eagar
+          url: https://twitter.com/joeedh
           company:
-      title:
+      title: The Joy of Clothoid Curves
       description: >
+        Clothoids are an exciting alternative to traditional Bezier curves. Clothoids are great for logos, cartoon characters, 2D animation, and even steering self-driving cars. This talk will demonstrate the sheer awesomeness of clothoids with a small app of mine, followed by a brief introduction to the math if time allows.
 
     - duration: 5
       type: lightning talk
