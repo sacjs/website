@@ -112,11 +112,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Seventh Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Ivan Villa
+          url: https://twitter.com/ivan_villa
+          company: Transmute - Creative Agency
+      title: But I just Learned Gulp 😕
       description: >
+        This talk would be about my views on the fast pace Web Dev world. New things are showing up each day, and it's easy to get overwhelmed. Hopefully, this will help put some minds at ease, because it's OK if your side project isn't built with React.
 
     - duration: 5
       type: lightning talk
