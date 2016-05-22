@@ -102,11 +102,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Sixth Speaker!
-          url: /speaking/
+        - name: Karen Bennett
+          url: http://codepen.io/KarenBennett/
           company:
-      title:
+      title: From Monet to JavaScript in 5 minutes
       description: >
+        Impressionist painters like Claude Monet were masters of color interaction. Artists able to create that kind of magic are rare today. Yet it is possible to understand why those paintings appear so luminous, and learn how to make color work in art and design. New technology can assist with learning color relationships.
 
     - duration: 5
       type: lightning talk
