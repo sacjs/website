@@ -122,11 +122,14 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Eighth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Rob Anderson
+          url: https://github.com/roboprog
+          company: UCD Medical Center
+      title: Node "vs" Nashorn on the Server
       description: >
+        Discussion of performance characteristics of JS code running on Node.js and Nashorn (Java 8's "jjs" scripting tool).
+
+        Which is faster depends on the duration / repetitiveness of the run.
 
     - duration: 5
       type: lightning talk
