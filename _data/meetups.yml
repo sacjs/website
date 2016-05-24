@@ -61,17 +61,6 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Carson Gross
-          url: https://twitter.com/carson_gross
-          company: LeadDyno
-          company_url: http://www.leaddyno.com/
-      title: HATEOAS in 4 minutes and 47 seconds
-      description: >
-        HATEOAS: understand what it is in about a minute. Understand how it maps to OO concepts in another minute. Realize that HTML is the best response format for REST-ful HATEOAS in about two minutes. Suffer Intercooler propaganda for 47 seconds.
-
-    - duration: 5
-      type: lightning talk
-      speakers:
         - name: Rizwan Javaid
           url: https://twitter.com/rizwanjavaid
           company:
