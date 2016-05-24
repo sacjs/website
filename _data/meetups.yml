@@ -131,6 +131,25 @@
         I'll be showing how to create our own CSS units using PostCSS, basic math and media queries. Will you want to use it in production? Probably not but it's still cool.
 
     - duration: 5
+      type: lightning talk
+      speakers:
+        - name: Rich Beckermeyer
+          url: https://twitter.com/leland_beck
+          company: RB Visuals
+      title: How to Market your project
+      description: >
+        So, you’ve developed your project. Now what? You mom and your pet can’t be your only users. You’ve defined who your target user is. Right?
+
+
+        It can’t be everyone, everywhere.
+
+
+        Will your product look the same for a Kenyan national who is training for the Olympics this summer? Will your project better suit the needs of an accountant who works remotely with small businesses who have less than 10 employees? Or will your project most benefit urban farmers in LA or Detroit?
+
+
+        Marketing is based on stories and emotions. Connecting your potential customer to why they need your product over a competitor’s. What is the problem your project solving?
+
+    - duration: 5
       type: mc
       title: 15-seconds of Fame
       description: >
