@@ -142,15 +142,6 @@
         I'll be showing how to create our own CSS units using PostCSS, basic math and media queries. Will you want to use it in production? Probably not but it's still cool.
 
     - duration: 5
-      type: lightning talk
-      speakers:
-        - name: Be Our Tenth Speaker!
-          url: /speaking/
-          company:
-      title:
-      description: >
-
-    - duration: 5
       type: mc
       title: 15-seconds of Fame
       description: >
