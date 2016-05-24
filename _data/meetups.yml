@@ -134,11 +134,12 @@
     - duration: 5
       type: lightning talk
       speakers:
-        - name: Be Our Ninth Speaker!
-          url: /speaking/
-          company:
-      title:
+        - name: Andy Axton
+          url: https://twitter.com/andyaxton
+          company: Rocket Department
+      title: Hacking CSS units with PostCSS
       description: >
+        I'll be showing how to create our own CSS units using PostCSS, basic math and media queries. Will you want to use it in production? Probably not but it's still cool.
 
     - duration: 5
       type: lightning talk
