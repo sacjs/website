@@ -12,6 +12,12 @@
     </p>
   </header>
 
+  {% if meetup.description %}
+  <section class="Meetup--description">
+    {{ meetup.description | markdownify }}
+  </section>
+  {% endif %}
+
   <ul class="Meetup--schedule">
     {% for segment in meetup.schedule %}
       {% if segment.offset %}
