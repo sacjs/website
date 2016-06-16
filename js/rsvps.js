@@ -11,14 +11,32 @@ void function(){
   function parseEvents(response) {
     if(response.results.length) {
       response.results.forEach(injectRSVPs);
-      document.querySelector('.RsvpButton').classList.add('is-visible');
+      showRsvpButton();
     } else {
-      document.querySelector('.LeftPane--thanks').classList.add('is-visible');
+      showRsvpButton();
     }
   }
 
   function handleXhrError() {
     // No-op
+  }
+
+  function showRsvpButton() {
+    var el = document.querySelector('.RsvpButton');
+    if(el) {
+      el.classList.add('is-visible');
+    }
+  }
+
+  function showThanksForComing() {
+    var el = document.querySelector('.RsvpButton');
+    if(el) {
+      el.classList.add('is-visible');
+    }
+  }
+
+  if(document.querySelector('[tito-event-id]')) {
+    showRsvpButton();
   }
 
   $.ajax({ dataType: 'jsonp', url: upcomingUrl })

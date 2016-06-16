@@ -26,11 +26,19 @@
         Thanks for coming!
       </div>
       {% endif %}
-      {% unless meetup.meetup_id %}
+      {% if meetup.tito_event %}
+      <div class="RsvpButton" tito-event-id="{{ meetup.tito_event }}">
+        <a href="https://ti.to/{{ meetup.tito_event }}" class="RsvpButton--link">
+          <span class="RsvpButton--promo"></span>
+          Purchase Tickets
+        </a>
+      </div>
+      {% endif %}
+      {% if !meetup.meetup_id and !meetup.tito_event %}
         <div class="LeftPane--tba">
           Stay Tuned for more Info!
         </div>
-      {% endunless %}
+      {% endif %}
     </section>
     <footer class="LeftPane--footer">
       <div class="LeftPane--cocAlert">
