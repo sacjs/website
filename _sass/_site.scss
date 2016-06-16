@@ -3,10 +3,6 @@ body {
   height: 100%;
 }
 
-@import 'page';
-@import 'meetup';
-@import 'post';
-@import 'event';
-@import 'tags';
-@import 'syntax-highlighting';
 @import 'Homepage';
+@import 'Page';
+@import 'syntax-highlighting';

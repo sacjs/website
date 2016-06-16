@@ -16,6 +16,18 @@ timezone: GMT
 
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "meetup"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "meetup"
+
 array: []
 organizers:
   - first_name: Derek

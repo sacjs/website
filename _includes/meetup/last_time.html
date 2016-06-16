@@ -1,0 +1,24 @@
+{% if meetup.previous %}
+<section class="Homepage--section LastTime">
+  <header class="Homepage--header">
+    <h2 style="text-align:center">What was the last event?</h2>
+  </header>
+  <p>
+    <a href="{{ meetup.previous.url }}">
+      {{ meetup.previous.title }},
+      {{ meetup.previous.date | date: "%A, %B %-d" }}
+    </a>
+    {% if meetup.previous.location %}
+    at
+      {% if meetup.previous.location_url %}
+      <a href="{{ meetup.previous.location_url }}">
+        {{ meetup.previous.location }}
+      </a>
+      {% endif %}
+      {% unless meetup.previous.location_url %}
+        {{ meetup.previous.location }}
+      {% endunless %}
+    {% endif %}
+  </p>
+</section>
+{% endif %}

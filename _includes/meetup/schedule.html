@@ -1,0 +1,54 @@
+<ul class="Meetup--schedule">
+  {% for segment in schedule %}
+    {% if segment.offset %}
+      {% assign offset = segment.offset | times: 60 %}
+      {% assign clock = clock | plus: offset %}
+    {% endif %}
+    {% unless segment.offset %}
+      {% assign offset = 0 %}
+    {% endunless %}
+    <li class="Meetup--segment">
+      <header class="Meetup--segmentHeader">
+        <time class="Meetup--segmentTime" datetime="{{ subject_date | date: "%F" }}">
+          {{ clock | date: "%-I:%M %p" }}
+        </time>
+        <span class="Meetup--segmentType">
+          {{ segment.type }}
+        </span>
+      </header>
+      <section class="Meetup--segmentInfo">
+        {% assign speaker_links = site.array %}
+        {% for speaker in segment.speakers %}
+          {% capture speaker_link %}{% if speaker.url %}<a href="{{ speaker.url }}">{% endif %}{{ speaker.name }}{% if speaker.url %}</a>{% endif %}{% endcapture %}
+          {% assign speaker_links = speaker_links | push: speaker_link %}
+        {% endfor %}
+        {% assign sponsor_links = site.array %}
+        {% for sponsor in segment.sponsors %}
+          {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
+          {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+        {% endfor %}
+
+        {% if speaker_links.size > 0 %}
+          <div class="Meetup--segmentSpeaker">
+            {{ speaker_links | array_to_sentence_string }}
+          </div>
+        {% endif %}
+        <em class="Meetup--segmentTitle {% if speaker_links.size == 0 %}Meetup--segmentTitle-isAnonymous{% endif %}">
+          {{ segment.title }}
+        </em>
+        {% if segment.description %}
+          <div class="Meetup--segmentDescription">
+            {{ segment.description | markdownify }}
+          </div>
+        {% endif %}
+        {% if sponsor_links.size > 0 %}
+          <div class="Meetup--segmentSponsor">
+            Sponsored by {{ sponsor_links | array_to_sentence_string }}
+          </div>
+        {% endif %}
+      </section>
+    </li>
+    {% assign duration = segment.duration | times: 60 %}
+    {% assign clock = clock | plus: duration %}
+  {% endfor %}
+</ul>
