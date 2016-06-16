@@ -1,9 +1,9 @@
 {% assign clock = meetup.date | date: "%s" %}
 {{ clock | date: "%A, %B %-d" }}
 
-<section class="Homepage--section Meetup">
+<section class="Homepage--section">
   <header class="Homepage--header">
-    <h2>Schedule</h2>
+    <h1>{{ meetup.title }}</h1>
     <p>
       {% if meetup.location %}
         {% if meetup.location_url %}
@@ -19,14 +19,17 @@
       {{ meetup.location_address }}
     </p>
   </header>
-
   {% if content %}
-  <section class="Meetup--description">
+  <div class="Meetup--description">
     {{ content }}
-  </section>
+  </div>
   {% endif %}
+</section>
 
+<section class="Homepage--section">
   <ul class="Meetup--schedule">
+    <h2>Schedule</h2>
+
     {% for segment in meetup.schedule %}
       {% if segment.offset %}
         {% assign offset = segment.offset | times: 60 %}

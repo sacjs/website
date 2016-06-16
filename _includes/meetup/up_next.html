@@ -1,0 +1,26 @@
+{% if meetup.next %}
+<section class="Homepage--section">
+  <header class="Homepage--header">
+    <h2>What's Next?</h2>
+  </header>
+  <p>
+    <a href="{{ meetup.next.url }}">
+      {% if meetup.next.title %}
+        {{ meetup.next.title }},
+      {% endif %}
+      {{ meetup.next.date | date: "%A, %B %-d" }}
+    </a>
+    {% if meetup.next.location %}
+    at
+      {% if meetup.next.location_url %}
+      <a href="{{ meetup.next.location_url }}">
+        {{ meetup.next.location }}
+      </a>
+      {% endif %}
+      {% unless meetup.next.location_url %}
+        {{ meetup.next.location }}
+      {% endunless %}
+    {% endif %}
+  </p>
+</section>
+{% endif %}
