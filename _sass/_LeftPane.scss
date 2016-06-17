@@ -38,6 +38,13 @@ $left-pane-text-color: $senary-brand-color;
 .LeftPane--details {
   max-width: 250px;
   min-height: 200px;
+  @include media-query($on-palm) {
+    width: 100%;
+    max-width: 500px;
+    min-height: initial;
+    padding: 40px 40px 10px;
+    text-align: center;
+  }
 }
 
 .LeftPane--tba {
@@ -67,6 +74,10 @@ $left-pane-text-color: $senary-brand-color;
   margin-bottom: 1rem;
   color: $senary-brand-color;
   font-size: .8rem;
+  @include media-query($on-palm) {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 .LeftPane--cocAlert {
