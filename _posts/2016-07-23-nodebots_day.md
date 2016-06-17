@@ -8,8 +8,8 @@ meetup_group_name:
 tito_event: techramento/nodebots-day-by-sacjs
 title: NodeBots Day
 schedule:
-  - duration: 30
-    offset: -30
+  - duration: 15
+    offset: -15
     type: checkin
     title: Checkin/Registration
     sponsors:
@@ -64,7 +64,7 @@ schedule:
       Plus, even if your robot spins around in circles and blows up, that's
       also totally cool!
 
-  - duration: 60
+  - duration: 30
     type: mc
     title: Battle!
     description: >
