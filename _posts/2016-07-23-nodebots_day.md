@@ -84,7 +84,7 @@ NodeBots Day is not a hackathon. There will be no prizes other than the satisfac
 The goal at the end of the day is for everyone to have a working, Javascript-powered robot that will go to battle against two other robots in a sumo ring. The last bot standing moves on to the next round until one remains!
 And after the battle is over, **you get to take your robot home with you!**
 
-Creativity is actively encouraged! Control your bot from your cellphone! Great a hammer-like weapon out of popsicle sticks! If you can think it up, try to do it!
+Creativity is actively encouraged! Control your bot from your cellphone! Create a hammer-like weapon out of popsicle sticks! If you can think it up, try to do it!
 
 *   **What is included in my ticket?**
 
