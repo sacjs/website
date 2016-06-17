@@ -16,6 +16,7 @@ timezone: GMT
 
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
 
+future: true
 defaults:
   - scope:
       path: ""

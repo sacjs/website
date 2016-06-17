@@ -19,9 +19,9 @@
       {{ meetup.location_address }}
     </p>
   </header>
-  {% if content %}
+  {% if meetup.content %}
   <div class="Meetup--description">
-    {{ content }}
+    {{ meetup.content }}
   </div>
   {% endif %}
 </section>
