@@ -1,6 +1,5 @@
 ---
 date: 2016-06-26 13:00
-feature: true
 location: The Urban Hive
 location_url: http://www.theurbanhive.com/
 location_address: 1931 H Street, Sacramento, CA, 95811

@@ -1,5 +1,6 @@
 ---
 date: 2016-07-23 10:00
+feature: true
 location: Location TBA
 location_url:
 location_address:
