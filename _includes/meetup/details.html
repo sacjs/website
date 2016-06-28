@@ -16,7 +16,11 @@
         {% endunless %}
       {% endif %}
       <br/>
-      {{ meetup.location_address }}
+      {% if meetup.location_address %}
+        <a class="Homepage--address" href="http://maps.google.com/maps?q={{ meetup.location_address | cgi_escape }}">
+          {{ meetup.location_address }}
+        </a>
+      {% endif %}
     </p>
   </header>
   {% if meetup.content %}
