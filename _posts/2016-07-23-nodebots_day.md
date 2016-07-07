@@ -116,3 +116,7 @@ Creativity is actively encouraged! Control your bot from your cellphone! Create 
 *   **What do I need to bring with me?**
 
     A functional laptop with NodeJS pre-installed. Please refer to the [NodeJS installation instructions](https://nodejs.org/en/) if you need further information.
+
+*   **How do I get there and where should I park?**
+
+    Directions and parking information are available on the [U.C. Davis Extension's website](https://extension.ucdavis.edu/student-services/directions/galleria/map-directions).
