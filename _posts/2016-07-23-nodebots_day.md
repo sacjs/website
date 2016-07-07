@@ -13,9 +13,6 @@ schedule:
     offset: -15
     type: checkin
     title: Checkin/Registration
-    sponsors:
-      - name: StrongLoop
-        url: https://strongloop.com/
     description: >
       Check-in to the event, get your SumoBot kit, grab a seat, and start
       preparing to build a robot!
@@ -30,9 +27,12 @@ schedule:
       SumoBot pieces, and do a quick intro on how to setup
       [Johnny Five](http://johnny-five.io/) to program your Arduino.
 
-  - duration: 135
+  - duration: 0
     type: build
     title: Design & Build
+    sponsors:
+      - name: StrongLoop
+        url: https://strongloop.com/
     description: >
       Build your SumoBot!
 
@@ -45,6 +45,15 @@ schedule:
       take over! Control your robot from your cell phone! Create weapons (or
       defenses) using craft materials!
 
+  - duration: 135
+    type: build
+    title: Optional Learn to Solder Workshop
+    sponsors:
+      - name: Rocket Department
+        url: http://rocketdept.com/
+    description: >
+      Interested in learning how to solder? While not a requirement of the basic SumoBot Kit, Rocket Department will be on site all day with their [Learn to Solder Kits](http://learntosolderkit.com/)!
+
   - duration: 60
     type: social
     title: Lunch
@@ -56,6 +65,9 @@ schedule:
   - duration: 180
     type: build
     title: Design & Build
+    sponsors:
+      - name: Sparkfun
+        url: https://www.sparkfun.com/
     description: >
       Hopefully by this point, you are well on your way to a fully working
       robot. But if not, don't fret! We have staff on hand that can try and
