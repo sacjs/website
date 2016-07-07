@@ -87,6 +87,8 @@ And after the battle is over, **you get to take your robot home with you!**
 
 Creativity is actively encouraged! Control your bot from your cellphone! Create a hammer-like weapon out of popsicle sticks! If you can think it up, try to do it!
 
+<!--lint disable no-emphasis-as-heading-->
+
 *   **What is included in my ticket?**
 
     A brand new Arduino Uno, a SumoBot chassis, batteries, and all other parts needed to build your fully functional robot, plus lunch!
