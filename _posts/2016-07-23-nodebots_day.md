@@ -1,6 +1,6 @@
 ---
 date: 2016-07-23 10:00
-feature: true
+feature: false
 location: U.C. Davis Extension
 location_url: https://extension.ucdavis.edu/
 location_address: Sutter Square Galleria Center, 2901 K St., Room 200, Sacramento, CA 95816
