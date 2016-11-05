@@ -69,7 +69,7 @@ Thank you for your support! Yes! We do offer a sponsorship discount if you would
 
 #### Will we get to talk to attendees?
 
-All sponsors above the "[River Cat](#river-cat-sponsorship---50)" level are given a 1-minute segment after our main presentations to address our attendees. If you would like customized slides during your alloted time, please provide them before the day of the event. Regardless, we'll have your logo included in our slides and will recognize you for sponsoring our event.
+All sponsors above the "[River Cat](#river-cat-sponsorship---50)" level are given a 1-minute segment after our main presentations to address our attendees. If you would like customized slides during your allotted time, please provide them before the day of the event. Regardless, we'll have your logo included in our slides and will recognize you for sponsoring our event.
 
 We also encourage all sponsors to hang around after the event for Bevera.js to talk to our attendees in an informal setting.
 
@@ -88,7 +88,7 @@ We prefer to not select speakers the same month that their company sponsors us. 
 
 #### Do you offer non-monetary sponsorships?
 
-Yes! If you would rather sponsor through a non-monetary means equivalent in value to one of our sponsorship tiers, we can likely accomodate that. Please [contact us]({{ site.email }}) directly so we can discuss further.
+Yes! If you would rather sponsor through a non-monetary means equivalent in value to one of our sponsorship tiers, we can likely accommodate that. Please [contact us]({{ site.email }}) directly so we can discuss further.
 
 
 #### How many other sponsors will there be?
