@@ -9,7 +9,7 @@ permalink: /code-of-conduct/
 # Code of Conduct
 
 All attendees, speakers, sponsors, and volunteers at our meetup group are required
-to agree with the following code of conduct. Organisers will enforce this code
+to agree with the following code of conduct. Organizers will enforce this code
 throughout the event. We are expecting cooperation from all participants to
 help ensuring a safe environment for everybody.
 
@@ -29,7 +29,7 @@ We do not tolerate harassment of our community members in any form. Sexual
 language and imagery is not appropriate for any venue, including
 talks, workshops, parties, Twitter and other online media. Community members
 violating these rules may be sanctioned or expelled from the community at the
-discretion of the community organisers.
+discretion of the community organizers.
 
 ## The Less Quick Version
 
@@ -43,11 +43,11 @@ Participants asked to stop any harassing behavior are expected to comply
 immediately.
 
 Sponsors are also subject to the anti-harassment policy. In particular,
-sponsors should not use sexualised images, activities, or other material.
-Support staff (including volunteers) should not use sexualised
-clothing/uniforms/costumes, or otherwise create a sexualised environment.
+sponsors should not use sexualized images, activities, or other material.
+Support staff (including volunteers) should not use sexualized
+clothing/uniforms/costumes, or otherwise create a sexualized environment.
 
-If a participant engages in harassing behavior, the community organisers may
+If a participant engages in harassing behavior, the community organizers may
 take any action they deem appropriate, including warning the offender or
 expulsion from the community with no refund.
 
