@@ -4,9 +4,9 @@ feature: false
 location: The Urban Hive
 location_url: http://www.theurbanhive.com/
 location_address: 1931 H Street, Sacramento, CA, 95811
-meetup_id:
+meetup_id: 235784600
 meetup_group_name: The-Sacramento-Javascript-Meetup
-title: Holiday Lightning Talks!
+title: Chestnuts Roasting Over Lightning Talks
 schedule:
   - duration: 15
     offset: -15
