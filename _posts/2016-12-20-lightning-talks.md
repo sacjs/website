@@ -25,10 +25,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our First Speaker!
-        url: /speaking/
-    title:
+      - name: Cliff Saporta Cheng
+        url: https://twitter.com/ccfcheng
+    title: Code Reuse in React and React Native Apps
     description: >
+      Quick demonstration of the types of code/components that can be shared between React web apps and React Native apps
 
   - duration: 5
     type: speaker
