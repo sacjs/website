@@ -34,10 +34,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Second Speaker!
-        url: /speaking/
-    title:
+      - name: Mike Barreiro
+        url: https://twitter.com/Wbmstrmjb
+    title: Serverless JS - Leveraging AWS Lambdas
     description: >
+      Quick overview of AWS lambdas and how using them to run JS code is both   cost effective and allows for massive scale.
 
   - duration: 5
     type: speaker
