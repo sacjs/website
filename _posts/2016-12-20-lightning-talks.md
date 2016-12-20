@@ -43,10 +43,13 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Third Speaker!
-        url: /speaking/
-    title:
+      - name: Derek Lindahl
+        url: https://twitter.com/oif_vet
+    title: Alexa, how do I create an Alexa Skill with Node?
     description: >
+      Amazon's Echo devices come preloaded with a ton of great, useful integrations with various IoT devices. But even cooler is that you can create your own integrations as well!
+
+      Not only is creating a custom skill fun, but its a great introduction into using Amazon's various AWS services to create a serverless infrastructure, one of the hottest current trends in application development.
 
   - duration: 5
     type: speaker
