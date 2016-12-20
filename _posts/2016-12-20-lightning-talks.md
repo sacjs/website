@@ -34,10 +34,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Second Speaker!
-        url: /speaking/
-    title:
+      - name: Craig Merry
+        url: https://github.com/craigm26
+    title: Business Idea Validation
     description: >
+      "I've got the greatest idea ever for a business!" - how to validate your idea for a better chance of surviving and perhaps thriving as a new business.
 
   - duration: 5
     type: speaker
