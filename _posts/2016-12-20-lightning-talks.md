@@ -43,13 +43,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Derek Lindahl
-        url: https://twitter.com/oif_vet
-    title: Alexa, how do I create an Alexa Skill with Node?
+      - name: Joshua Morris
+        url: https://twitter.com/TheWoollyBully
+    title: Intro to building a basic Alexa Skill
     description: >
-      Amazon's Echo devices come preloaded with a ton of great, useful integrations with various IoT devices. But even cooler is that you can create your own integrations as well!
-
-      Not only is creating a custom skill fun, but its a great introduction into using Amazon's various AWS services to create a serverless infrastructure, one of the hottest current trends in application development.
+      Basic introduction to building an Alexa skill. I will show code from the Dad Jokes skill I submitted to the Alexa Skills Store and talk about how to a build a simple skill. If I have time today I will try and throw together a new skill I might be able to build in 5 minutes.
 
   - duration: 5
     type: speaker
