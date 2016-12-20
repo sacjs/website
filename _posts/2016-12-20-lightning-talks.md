@@ -52,10 +52,14 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Fourth Speaker!
-        url: /speaking/
-    title:
+      - name: Derek Lindahl
+        url: https://twitter.com/oif_vet
+    title: Lint your Code
     description: >
+      Do you work on a codebase with multiple people? Tired of having the same code style arguments over and over? Are your tests failing due to simple mistakes? Is your legacy codebase hard to maintain?
+
+
+      Code linting can fix all of these problems automatically, while you type!
 
   - duration: 5
     type: speaker
