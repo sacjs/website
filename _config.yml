@@ -17,6 +17,8 @@ defaults:
       type: "drafts"
     values:
       layout: "event"
+gems:
+  - jekyll-sitemap
 markdown: kramdown
 
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
