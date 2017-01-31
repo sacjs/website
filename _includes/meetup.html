@@ -1,6 +1,6 @@
-{% assign subject_date = meetup.date %}
+{% assign subject_date = include.meetup.date %}
 {% assign clock = subject_date | date: "%s" %}
-{% assign schedule = meetup.schedule %}
+{% assign schedule = include.meetup.schedule %}
 
 <div class="Homepage">
   <div class="flex flex--column flex--alignItems-center LeftPane">
@@ -15,26 +15,26 @@
       </p>
     </section>
     <section class="flex--grow-3">
-      {% if meetup.meetup_id %}
-      <div class="RsvpButton" meetup-id="{{ meetup.meetup_id }}">
-        <a href="http://www.meetup.com/{{ meetup.meetup_group_name || site.meetup_group_name }}/events/{{ meetup.meetup_id }}" class="RsvpButton--link">
+      {% if include.meetup.meetup_id %}
+      <div class="RsvpButton" meetup-id="{{ include.meetup.meetup_id }}">
+        <a href="http://www.meetup.com/{{ include.meetup.meetup_group_name || site.meetup_group_name }}/events/{{ include.meetup.meetup_id }}" class="RsvpButton--link">
           <span class="RsvpButton--promo"></span>
           RSVP Today
         </a>
       </div>
-      <div class="LeftPane--thanks" meetup-id="{{ meetup.meetup_id }}">
+      <div class="LeftPane--thanks" meetup-id="{{ include.meetup.meetup_id }}">
         Thanks for coming!
       </div>
       {% endif %}
-      {% if meetup.tito_event %}
-      <div class="RsvpButton" tito-event-id="{{ meetup.tito_event }}">
-        <a href="https://ti.to/{{ meetup.tito_event }}" class="RsvpButton--link">
+      {% if include.meetup.tito_event %}
+      <div class="RsvpButton" tito-event-id="{{ include.meetup.tito_event }}">
+        <a href="https://ti.to/{{ include.meetup.tito_event }}" class="RsvpButton--link">
           <span class="RsvpButton--promo"></span>
           Purchase Tickets
         </a>
       </div>
       {% endif %}
-      {% if !meetup.meetup_id and !meetup.tito_event %}
+      {% if !include.meetup.meetup_id and !include.meetup.tito_event %}
         <div class="LeftPane--tba">
           Stay Tuned for more Info!
         </div>
@@ -48,11 +48,11 @@
   </div>
   <div class="flex flex--column flex--alignItems-center RightPane">
     <article class="RightPane--content">
-      {% include meetup/details.html %}
-      {% include meetup/sponsors.html %}
-      {% include meetup/up_next.html %}
-      {% include meetup/what_else.html %}
-      {% include meetup/last_time.html %}
+      {% include meetup/details.html meetup=include.meetup %}
+      {% include meetup/sponsors.html meetup=include.meetup %}
+      {% include meetup/up_next.html meetup=include.meetup %}
+      {% include meetup/what_else.html meetup=include.meetup %}
+      {% include meetup/last_time.html meetup=include.meetup %}
     </article>
   </div>
 </div>

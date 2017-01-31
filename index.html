@@ -2,5 +2,5 @@
 layout: default
 ---
 
-{% assign meetup = site.posts | where:"feature",true | last %}
-{% include meetup.html %}
+{% assign featured_meetup = site.posts | where:"feature",true | last %}
+{% include meetup.html meetup=featured_meetup %}

@@ -1,23 +1,23 @@
-{% if meetup.previous %}
+{% if include.meetup.previous %}
 <section class="Homepage--section">
   <div class="Meetup--lastTime">
     <p>
-      <a href="{{ meetup.previous.url }}">
+      <a href="{{ include.meetup.previous.url }}">
         &larr;
-        {% if meetup.previous.title %}
-          {{ meetup.previous.title }},
+        {% if include.meetup.previous.title %}
+          {{ include.meetup.previous.title }},
         {% endif %}
-        {{ meetup.previous.date | date: "%A, %B %-d" }}
+        {{ include.meetup.previous.date | date: "%A, %B %-d" }}
       </a>
-      {% if meetup.previous.location %}
+      {% if include.meetup.previous.location %}
       at
-        {% if meetup.previous.location_url %}
-        <a href="{{ meetup.previous.location_url }}">
-          {{ meetup.previous.location }}
+        {% if include.meetup.previous.location_url %}
+        <a href="{{ include.meetup.previous.location_url }}">
+          {{ include.meetup.previous.location }}
         </a>
         {% endif %}
-        {% unless meetup.previous.location_url %}
-          {{ meetup.previous.location }}
+        {% unless include.meetup.previous.location_url %}
+          {{ include.meetup.previous.location }}
         {% endunless %}
       {% endif %}
     </p>

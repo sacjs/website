@@ -1,31 +1,31 @@
-{% assign clock = meetup.date | date: "%s" %}
+{% assign clock = include.meetup.date | date: "%s" %}
 {{ clock | date: "%A, %B %-d" }}
 
 <section class="Homepage--section">
   <header class="Homepage--header">
-    <h1>{{ meetup.title }}</h1>
+    <h1>{{ include.meetup.title }}</h1>
     <p>
-      {% if meetup.location %}
-        {% if meetup.location_url %}
-        <a href="{{ meetup.location_url }}">
-          {{ meetup.location }}
+      {% if include.meetup.location %}
+        {% if include.meetup.location_url %}
+        <a href="{{ include.meetup.location_url }}">
+          {{ include.meetup.location }}
         </a>
         {% endif %}
-        {% unless meetup.location_url %}
-          {{ meetup.location }}
+        {% unless include.meetup.location_url %}
+          {{ include.meetup.location }}
         {% endunless %}
       {% endif %}
       <br/>
-      {% if meetup.location_address %}
-        <a class="Homepage--address" href="http://maps.google.com/maps?q={{ meetup.location_address | cgi_escape }}">
-          {{ meetup.location_address }}
+      {% if include.meetup.location_address %}
+        <a class="Homepage--address" href="http://maps.google.com/maps?q={{ include.meetup.location_address | cgi_escape }}">
+          {{ include.meetup.location_address }}
         </a>
       {% endif %}
     </p>
   </header>
-  {% if meetup.content %}
+  {% if include.meetup.content %}
   <div class="Meetup--description">
-    {{ meetup.content }}
+    {{ include.meetup.content }}
   </div>
   {% endif %}
 </section>
@@ -34,7 +34,7 @@
   <ul class="Meetup--schedule">
     <h2>Schedule</h2>
 
-    {% for segment in meetup.schedule %}
+    {% for segment in include.meetup.schedule %}
       {% if segment.offset %}
         {% assign offset = segment.offset | times: 60 %}
         {% assign clock = clock | plus: offset %}
@@ -44,7 +44,7 @@
       {% endunless %}
       <li class="Meetup--segment">
         <header class="Meetup--segmentHeader">
-          <time class="Meetup--segmentTime" datetime="{{ meetup.date | date: "%F" }}">
+          <time class="Meetup--segmentTime" datetime="{{ include.meetup.date | date: "%F" }}">
             {{ clock | date: "%-I:%M %p" }}
           </time>
           <span class="Meetup--segmentType">

@@ -1,24 +1,24 @@
-{% if meetup.next %}
+{% if include.meetup.next %}
 <section class="Homepage--section">
   <header class="Homepage--header">
     <h2>What's Next?</h2>
   </header>
   <p>
-    <a href="{{ meetup.next.url }}">
-      {% if meetup.next.title %}
-        {{ meetup.next.title }},
+    <a href="{{ include.meetup.next.url }}">
+      {% if include.meetup.next.title %}
+        {{ include.meetup.next.title }},
       {% endif %}
-      {{ meetup.next.date | date: "%A, %B %-d" }}
+      {{ include.meetup.next.date | date: "%A, %B %-d" }}
     </a>
-    {% if meetup.next.location %}
+    {% if include.meetup.next.location %}
     at
-      {% if meetup.next.location_url %}
-      <a href="{{ meetup.next.location_url }}">
-        {{ meetup.next.location }}
+      {% if include.meetup.next.location_url %}
+      <a href="{{ include.meetup.next.location_url }}">
+        {{ include.meetup.next.location }}
       </a>
       {% endif %}
-      {% unless meetup.next.location_url %}
-        {{ meetup.next.location }}
+      {% unless include.meetup.next.location_url %}
+        {{ include.meetup.next.location }}
       {% endunless %}
     {% endif %}
   </p>

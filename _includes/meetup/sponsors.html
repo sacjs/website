@@ -1,4 +1,4 @@
-{% assign sponsors = meetup.schedule | map: 'sponsors' %}
+{% assign sponsors = include.meetup.schedule | map: 'sponsors' %}
 {% assign sponsor_links = site.array %}
 {% for item_sponsors in sponsors %}
   {% for sponsor in item_sponsors %}
