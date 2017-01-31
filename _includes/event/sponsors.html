@@ -1,0 +1,28 @@
+{% assign sponsors = include.event.schedule | map: 'sponsors' %}
+{% assign sponsor_links = site.array %}
+{% for item_sponsors in sponsors %}
+  {% for sponsor in item_sponsors %}
+    {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
+    {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+  {% endfor %}
+{% endfor %}
+
+{% if sponsor_links.size > 0 %}
+<section class="Homepage--section">
+  <header class="Homepage--header">
+    <h2>Sponsors</h2>
+  </header>
+  <p>
+    This event made possible by:
+  </p>
+  <ul>
+    {% for sponsor_link in sponsor_links %}
+      <li>{{ sponsor_link }}</li>
+    {% endfor %}
+  </ul>
+  <p>
+    Support the #SacTech community.
+    <a href="/sponsorship">Become a sponsor today</a>!
+  </p>
+</section>
+{% endif %}

@@ -3,4 +3,4 @@ layout: default
 ---
 
 {% assign featured_meetup = site.posts | where:"feature",true | last %}
-{% include meetup.html meetup=featured_meetup %}
+{% include event.html event=featured_meetup %}

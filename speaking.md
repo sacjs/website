@@ -8,11 +8,11 @@ permalink: /speaking/
 
 #### What is {{ site.title }}?
 
-{{ site.title }} is a monthly tech meetup that takes place every fourth Tuesday at  [{{ site.location }}]({{ site.location_url }}). We host guest speakers, meet & greets, and hands-on workshops.
+{{ site.title }} is a monthly tech meetup that takes place every fourth Tuesday at  [{{ site.location.name }}]({{ site.location.url }}). We host guest speakers, meet & greets, and hands-on workshops.
 
 #### How do I submit a talk?
 
-You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ site.github_username }}/sacjs.github.io/issues) or [email us]({{ site.email }}) with your talk proposal.
+You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ site.networks.github.username }}/sacjs.github.io/issues) or [email us]({{ site.networks.email.address }}) with your talk proposal.
 
 If you are choosing the easier GitHub Issue option, please use the following as a template:
 

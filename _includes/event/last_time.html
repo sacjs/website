@@ -1,0 +1,26 @@
+{% if include.event.previous %}
+<section class="Homepage--section">
+  <div class="Meetup--lastTime">
+    <p>
+      <a href="{{ include.event.previous.url }}">
+        &larr;
+        {% if include.event.previous.title %}
+          {{ include.event.previous.title }},
+        {% endif %}
+        {{ include.event.previous.date | date: "%A, %B %-d" }}
+      </a>
+      {% if include.event.previous.location %}
+      at
+        {% if include.event.previous.location.url %}
+        <a href="{{ include.event.previous.location.url }}">
+          {{ include.event.previous.location.name }}
+        </a>
+        {% endif %}
+        {% unless include.event.previous.location.url %}
+          {{ include.event.previous.location.name }}
+        {% endunless %}
+      {% endif %}
+    </p>
+  </div>
+</section>
+{% endif %}

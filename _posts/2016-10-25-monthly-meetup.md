@@ -1,0 +1,58 @@
+---
+date: 2016-10-25 19:00
+feature: false
+meetup:
+  id: 234930688
+title:
+schedule:
+  - duration: 15
+    offset: -15
+    type: social
+    title: Doors Open
+    description: >
+      Come early to grab a seat, a refreshment, and some food
+
+  - duration: 5
+    type: mc
+    title: Welcome and Introductions
+    sponsors:
+      - name: The Urban Hive
+        url: http://www.theurbanhive.com/
+
+  - duration: 30
+    type: speaker
+    speakers:
+      - name: Brad Compton
+        url: https://twitter.com/notpmoc84
+    title: You Should Write Tests
+    description: >
+      *  Why should we test our code?
+
+      *  Should we always write tests for our code?
+
+      *  What benefits do we gain from tests?
+
+      *  How can we write good tests?
+
+      *  Is TDD worth it?
+
+
+      We'll go over the benefits of testing, as well as how to get started writing a test suite for our JavaScript code, and some cool tools we can use to make our lives easier.
+
+  - duration: 5
+    type: mc
+    title: Closing Remarks
+
+  - duration: 0
+    type: social
+    title: Bevera.js
+    sponsors:
+      - name: Rocket Department
+        url: http://rocketdepartment.com
+      - name: Full Stack Labs
+        url: http://www.fullstacklabs.co/
+    description: >
+      Grab a drink and get to know your fellow #SacTech community members by
+      hanging out afterwards and socializing with our other attendees. We'll
+      keep it going until we get kicked out!
+---

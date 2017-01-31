@@ -1,11 +1,8 @@
 ---
 date: 2016-12-20 19:00
 feature: false
-location: The Urban Hive
-location_url: http://www.theurbanhive.com/
-location_address: 1931 H Street, Sacramento, CA, 95811
-meetup_id: 235784600
-meetup_group_name: The-Sacramento-Javascript-Meetup
+meetup:
+  id: 235784600
 title: Chestnuts Roasting Over Lightning Talks
 schedule:
   - duration: 15
@@ -60,46 +57,6 @@ schedule:
 
 
       Code linting can fix all of these problems automatically, while you type!
-
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Be Our Fifth Speaker!
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Be Our Sixth Speaker!
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Be Our Seventh Speaker!
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Be Our Eighth Speaker!
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Be Our Ninth Speaker!
-        url: /speaking/
-    title:
-    description: >
 
   - duration: 5
     type: mc

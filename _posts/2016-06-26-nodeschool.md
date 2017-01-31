@@ -1,10 +1,7 @@
 ---
 date: 2016-06-26 13:00
-location: The Urban Hive
-location_url: http://www.theurbanhive.com/
-location_address: 1931 H Street, Sacramento, CA, 95811
-meetup_id: 231823871
-meetup_group_name: The-Sacramento-Javascript-Meetup
+meetup:
+  id: 231823871
 title: NodeSchool
 schedule:
   - duration: 15

@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.location.city }}",
+    "addressRegion": "{{ site.location.state }}",
+    "addressCountry": "{{ site.location.country }}"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "{{ site.networks.email.address }}",
+    "url": "{{ site.url }}"
+  },
+  "email": "{{ site.networks.email.address }}",
+  "logo": {
+    "@context": "http://www.schema.org",
+    "@type": "ImageObject",
+    "height": {{ site.logo.height }},
+    "url": "{{ site.logo.url | absolute_url }}",
+    "width": {{ site.logo.width }}
+  },
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "sameAs": [
+    "https://github.com/{{ site.networks.facebook.username }}",
+    "https://twitter.com/{{ site.networks.twitter.username }}",
+    "https://meetup.com/{{ site.networks.meetup.group_name }}"
+    "{{ site.networks.slack.url }}"
+  ]
+}
+</script>

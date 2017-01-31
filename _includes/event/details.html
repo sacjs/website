@@ -1,0 +1,149 @@
+{% assign clock = include.event.date | date: "%s" %}
+{{ clock | date: "%A, %B %-d" }}
+
+<section class="Homepage--section">
+  <header class="Homepage--header">
+    <meta itemprop="name" content="SacJS: {{ include.event.title }}"/>
+    <h1>
+      {{ include.event.title }}
+    </h1>
+    <p itemscope itemprop="location" itemType="https://schema.org/Place">
+      {% assign location = include.event.location %}
+      {% unless location %}
+        {% assign location = site.location %}
+      {% endunless %}
+      {% capture location_name %}
+        <span itemprop="name">
+          {{ location.name }}
+        </span>
+      {% endcapture %}
+      {% if location.url %}
+        <a href="{{ location.url }}" itemprop="sameAs" itemType="https://schema.org/URL">
+          {{ location_name }}
+        </a>
+      {% else %}
+        {{ location_name }}
+      {% endif %}
+      <br/>
+      <span itemscope itemprop="address" itemType="https://schema.org/PostalAddress">
+        {% if location_address.name %}
+          <meta itemprop="sameAs" content="{{ location.address.name }}"/>
+        {% endif %}
+        <meta itemprop="streetAddress" content="{{ location.address.address1 }}"/>
+        <meta itemprop="addressLocality" content="{{ location.address.city }}"/>
+        <meta itemprop="addressRegion" content="{{ location.address.state }}"/>
+        <meta itemprop="postalCode" content="{{ location.address.postal_code }}"/>
+        <meta itemprop="addressCountry" content="{{ location.address.country }}"/>
+      </span>
+      {% capture full_address %}
+        {{ location.address.address1 }}, {{ location.address.address2 }}, {{ location.address.city }}, {{ location.address.state }}, {{ location.address.postal_code }}
+      {% endcapture %}
+      {% assign full_address = full_address | strip | replace: ', , ', ', '  %}
+      <a class="Homepage--address" href="http://maps.google.com/maps?q={{ full_address | cgi_escape }}">
+        {{ full_address }}
+      </a>
+    </p>
+  </header>
+  {% assign content = include.event.content | strip %}
+  {% if content == '' %}
+    <meta itemprop="description" content="{{ site.description | strip }}"/>
+  {% else %}
+    <div class="Meetup--description" itemprop="description">
+      {{ include.event.content }}
+    </div>
+  {% endif %}
+  <div itemscope itemprop="offers" itemType="https://schema.org/Offer">
+    <meta itemprop="priceCurrency" content="USD"/>
+    <meta itemprop="category" content="primary"/>
+    {% if include.event.tito_event %}
+      <meta itemprop="name" content="General Admission"/>
+      <meta itemprop="url" content="https://ti.to/{{ include.event.tito_event }}"/>
+    {% else %}
+      <meta itemprop="availability" content="InStock"/>
+      <meta itemprop="inventoryLevel" content="100"/>
+      <meta itemprop="name" content="General Admission"/>
+      <meta itemprop="price" content="0.00"/>
+      <meta itemprop="url" content="http://www.meetup.com/{{ include.event.meetup.group_name || site.networks.meetup.group_name }}/events/{{ include.event.meetup.id }}"/>
+    {% endif %}
+  </div>
+</section>
+
+<section class="Homepage--section">
+  <ul class="Meetup--schedule">
+    <h2>Schedule</h2>
+    <meta itemprop="startDate" content="{{ clock | date_to_xmlschema }}"/>
+    <meta itemprop="eventStatus" content="EventScheduled"/>
+    <meta itemprop="image" content="{{ site.logo.url | absolute_url }}"/>
+
+    {% for segment in include.event.schedule %}
+      {% if segment.offset %}
+        {% assign offset = segment.offset | times: 60 %}
+        {% assign clock = clock | plus: offset %}
+      {% endif %}
+      {% unless segment.offset %}
+        {% assign offset = 0 %}
+      {% endunless %}
+      {% if forloop.index0 == 0 and segment.offset < 0 %}
+        <meta itemprop="doorTime" content="{{ clock | date_to_xmlschema }}"/>
+      {% endif %}
+      <li class="Meetup--segment">
+        <header class="Meetup--segmentHeader">
+          <time class="Meetup--segmentTime" datetime="{{ include.event.date | date_to_xmlschema }}">
+            {{ clock | date: "%-I:%M %p" }}
+          </time>
+          <span class="Meetup--segmentType">
+            {{ segment.type }}
+          </span>
+        </header>
+        <section class="Meetup--segmentInfo">
+          {% assign speaker_links = site.array %}
+          {% for speaker in segment.speakers %}
+            {% capture speaker_link %}{% if speaker.url %}<a href="{{ speaker.url }}">{% endif %}{{ speaker.name }}{% if speaker.url %}</a>{% endif %}{% endcapture %}
+            {% assign speaker_links = speaker_links | push: speaker_link %}
+            <div itemscope itemprop="performer" itemType="https://schema.org/Person">
+              <meta itemprop="name" content="{{ speaker.name }}"/>
+              {% if speaker.url %}
+                {% assign url = speaker.url %}
+                {% unless speaker.url contains 'http' %}
+                  {% assign url = speaker.url | absolute_url %}
+                {% endunless %}
+                <meta itemprop="sameAs" content="{{ url }}"/>
+              {% endif %}
+            </div>
+          {% endfor %}
+          {% assign sponsor_links = site.array %}
+          {% for sponsor in segment.sponsors %}
+            {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
+            {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+          {% endfor %}
+
+          {% if speaker_links.size > 0 %}
+            <div class="Meetup--segmentSpeaker">
+              {{ speaker_links | array_to_sentence_string }}
+            </div>
+          {% endif %}
+          {% if segment.title %}
+            <div itemscope itemprop="workPerformed" itemType="https://schema.org/CreativeWork">
+              <em itemprop="name" class="Meetup--segmentTitle {% if speaker_links.size == 0 %}Meetup--segmentTitle-isAnonymous{% endif %}">
+                {{ segment.title }}
+              </em>
+              {% if segment.description %}
+                <div itemprop="description" class="Meetup--segmentDescription">
+                  {{ segment.description | markdownify }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if sponsor_links.size > 0 %}
+            <div class="Meetup--segmentSponsor">
+              Sponsored by {{ sponsor_links | array_to_sentence_string }}
+            </div>
+          {% endif %}
+        </section>
+      </li>
+      {% assign duration = segment.duration | times: 60 %}
+      {% assign clock = clock | plus: duration %}
+    {% endfor %}
+    <meta itemprop="endDate" content="{{ clock | date_to_xmlschema }}"/>
+  </ul>
+</section>

@@ -5,16 +5,19 @@ void function(){
   function injectRSVPs(event) {
     var count = event.yes_rsvp_count;
     var el = document.querySelector('[meetup-id="' + event.id + '"] .RsvpButton--promo');
-    el.innerHTML = 'Join ' + count + ' other' + (count === 1 ? '' : 's');
+    if(el) {
+      return el.innerHTML = 'Join ' + count + ' other' + (count === 1 ? '' : 's');
+    }
   }
 
   function parseEvents(response) {
     if(response.results.length) {
-      response.results.forEach(injectRSVPs);
-      showRsvpButton();
-    } else {
-      showRsvpButton();
+      if(response.results.some(injectRSVPs)) {
+        return showRsvpButton();
+      }
+      return showThanksForComing();
     }
+    showRsvpButton();
   }
 
   function handleXhrError() {
@@ -29,7 +32,7 @@ void function(){
   }
 
   function showThanksForComing() {
-    var el = document.querySelector('.RsvpButton');
+    var el = document.querySelector('.LeftPane--thanks');
     if(el) {
       el.classList.add('is-visible');
     }

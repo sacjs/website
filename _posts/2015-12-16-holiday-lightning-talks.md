@@ -1,10 +1,7 @@
 ---
 date: 2015-12-16 19:00
-location: The Urban Hive
-location_url: http://www.theurbanhive.com/
-location_address: 1931 H Street, Sacramento, CA, 95811
-meetup_id: 227155594
-meetup_group_name: The-Sacramento-Javascript-Meetup
+meetup:
+  id: 227155594
 title: Holiday Lightning Talks
 schedule:
   - duration: 15

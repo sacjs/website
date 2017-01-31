@@ -1,0 +1,63 @@
+{% assign subject_date = include.event.date %}
+{% assign clock = subject_date | date: "%s" %}
+{% assign schedule = include.event.schedule %}
+
+<div class="Homepage">
+  <div class="flex flex--column flex--alignItems-center LeftPane">
+    <a href="{{ site.baseurl }}/" class="flex--grow-2 LeftPane--logo">
+      <img src="/images/sac_js.svg" width="150" height="150" alt="{{ site.description }}"/>
+    </a>
+    <section class="flex--grow-2 LeftPane--details">
+      <p>
+        Javascript, web technologies, and community building on the fourth
+        Tuesday of every month at
+        <a href="http://www.theurbanhive.com/" class="LeftPane--link">The Urban Hive</a>.
+      </p>
+    </section>
+    <section class="flex--grow-3">
+      {% if include.event.meetup.id %}
+        {% assign group_name = include.event.meetup.group_name %}
+        {% unless group_name %}
+          {% assign group_name = site.networks.meetup.group_name %}
+        {% endunless %}
+        <div class="RsvpButton" meetup-id="{{ include.event.meetup.id }}">
+          <a href="http://www.meetup.com/{{ group_name }}/events/{{ include.event.meetup.id }}" class="RsvpButton--link">
+            <span class="RsvpButton--promo"></span>
+            RSVP Today
+          </a>
+        </div>
+        <div class="LeftPane--thanks" meetup-id="{{ include.event.meetup_id }}">
+          Thanks for coming!
+        </div>
+      {% endif %}
+      {% if include.event.tito_event %}
+      <div class="RsvpButton" tito-event-id="{{ include.event.tito_event }}">
+        <a href="https://ti.to/{{ include.event.tito_event }}" class="RsvpButton--link">
+          <span class="RsvpButton--promo"></span>
+          Purchase Tickets
+        </a>
+      </div>
+      {% endif %}
+      {% if !include.event.meetup.id and !include.event.tito_event %}
+        <div class="LeftPane--tba">
+          Stay Tuned for more Info!
+        </div>
+      {% endif %}
+    </section>
+    <footer class="LeftPane--footer">
+      <div class="LeftPane--cocAlert">
+        {% include coc_alert.html %}
+      </div>
+    </footer>
+  </div>
+  <div class="flex flex--column flex--alignItems-center RightPane">
+    <article class="RightPane--content" itemscope itemType="https://schema.org/EducationEvent">
+      <meta itemprop="url" content="{{ include.event.url | absolute_url }}"/>
+      {% include event/details.html event=include.event %}
+      {% include event/sponsors.html event=include.event %}
+      {% include event/up_next.html event=include.event %}
+      {% include event/what_else.html event=include.event %}
+      {% include event/last_time.html event=include.event %}
+    </article>
+  </div>
+</div>
