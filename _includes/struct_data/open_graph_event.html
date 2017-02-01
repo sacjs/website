@@ -28,14 +28,14 @@
 <meta property="og:title" content="{{ title | xml_escape  }}"/>
 <meta property="og:description" content="{{ descr | xml_escape }}"/>
 
-<meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="{{ title | xml_escape  }}"/>
-<meta property="twitter:description" content="{{ descr | xml_escape  }}"/>
-<meta property="twitter:label1" value="Time"/>
-<meta property="twitter:data1" value="{{ include.event.date | date: '%a, %b %-d, %Y at %-I:%M%P' }}"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{ title | xml_escape  }}"/>
+<meta name="twitter:description" content="{{ descr | xml_escape  }}"/>
+<meta name="twitter:label1" value="Time"/>
+<meta name="twitter:data1" value="{{ include.event.date | date: '%a, %b %-d, %Y at %-I:%M%P' }}"/>
 {% assign location = include.event.location %}
 {% unless location %}
   {% assign location = site.location %}
 {% endunless %}
-<meta property="twitter:label2" value="Location"/>
-<meta property="twitter:data2" value="{{ location.name }}, {{ location.address.address1 }}"/>
+<meta name="twitter:label2" value="Location"/>
+<meta name="twitter:data2" value="{{ location.name }}, {{ location.address.address1 }}"/>
