@@ -12,4 +12,10 @@
   <meta name="description" content="{{ site.title }} {{ site.description | strip }}">
   {% include struct_data/organization.html %}
   {% include struct_data/open_graph.html %}
+  {% case page.layout %}
+    {% when 'page' % }
+      {% include struct_data/open_graph_page.html %}
+    {% else %}
+      {% include struct_data/open_graph_event.html event=page %}
+  {% endcase %}
 </head>
