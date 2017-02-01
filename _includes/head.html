@@ -16,6 +16,11 @@
     {% when 'page' % }
       {% include struct_data/open_graph_page.html %}
     {% else %}
-      {% include struct_data/open_graph_event.html event=page %}
+      {% if page.url == '/' %}
+        {% assign event = site.posts | where:'feature',true | last %}
+      {% else %}
+        {% assign event = page %}
+      {% endif %}
+      {% include struct_data/open_graph_event.html event=event %}
   {% endcase %}
 </head>
