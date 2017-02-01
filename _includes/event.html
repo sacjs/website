@@ -2,6 +2,7 @@
 {% assign clock = subject_date | date: "%s" %}
 {% assign schedule = include.event.schedule %}
 
+{% include struct_data/open_graph_event.html event=include.event %}
 <div class="Homepage">
   <div class="flex flex--column flex--alignItems-center LeftPane">
     <a href="{{ site.baseurl }}/" class="flex--grow-2 LeftPane--logo">

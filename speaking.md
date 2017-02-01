@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Speaking at SacJS
+description: >
+  We cannot have a meetup with speakers. Got something in tech that you are passionate about? We want to hear your story!
 permalink: /speaking/
 ---
 

@@ -1,0 +1,37 @@
+{% capture title %}{{ site.title }}: {{ include.event.title }}{% endcapture %}
+{% assign excerpt = include.event.excerpt | strip %}
+{% if excerpt != empty %}
+  {% assign descr = excerpt | strip_html %}
+{% elsif include.event.schedule.size == 1 %}
+  {% assign descr = include.event.schedule[0].description | newline_to_br | strip_newlines | replace:'<br /><br />',' ' | markdownify | strip_html | strip %}
+{% else %}
+  {% assign speakers = site.array %}
+  {% for segment in include.event.schedule %}
+    {% for speaker in segment.speakers %}
+      {% if speaker.url contains 'http' %}
+        {% assign speakers = speakers | push: speaker.name %}
+      {% else %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {% if speakers.size > 0 %}
+    {% assign descr = speakers | array_to_sentence_string | prepend: 'RSVP to our free monthly meetup featuring talks from ' %}
+  {% else %}
+    {% capture descr %}We are actively seeking speakers for this event. Want to speak at this event? Let us know!{% endcapture %}
+  {% endif %}
+{% endif %}
+
+<meta property="og:title" content="{{ title | xml_escape  }}"/>
+<meta property="og:description" content="{{ descr | xml_escape }}"/>
+
+<meta property="twitter:card" content="product"/>
+<meta property="twitter:title" content="{{ title | xml_escape  }}"/>
+<meta property="twitter:description" content="{{ descr | xml_escape  }}"/>
+<meta property="twitter:label1" content="Time"/>
+<meta property="twitter:data1" content="{{ include.event.date | date: '%a, %b %-d, %Y at %-I:%M%P' }}"/>
+{% assign location = include.event.location %}
+{% unless location %}
+  {% assign location = site.location %}
+{% endunless %}
+<meta property="twitter:label2" content="Location"/>
+<meta property="twitter:data2" content="{{ location.name }}, {{ location.address.address1 }}"/>

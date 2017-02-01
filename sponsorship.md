@@ -2,6 +2,8 @@
 layout: page
 title: Sponsoring SacJS
 permalink: /sponsorship/
+description: >
+  Support Sacramento's tech community by sponsoring a future meetup.
 ---
 
 {% include organizers.md %}
