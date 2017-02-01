@@ -1,7 +1,7 @@
 title: SacJS
 description: The Sacramento Javascript Meetup Group
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://sacjs.github.io
+url: http://sacjs.com
 timezone: America/Los_Angeles
 future: true
 array: []
