@@ -1,4 +1,8 @@
-{% capture title %}{{ site.title }}: {{ include.event.title }}{% endcapture %}
+{% assign event_title = include.event.title %}
+{% unless event_title %}
+  {% assign event_title = site.default_event_title %}
+{% endunless %}
+{% capture title %}{{ site.title }}: {{ event_title }}{% endcapture %}
 {% assign excerpt = include.event.excerpt | strip %}
 {% if excerpt != empty %}
   {% assign descr = excerpt | strip_html %}

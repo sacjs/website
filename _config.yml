@@ -5,7 +5,6 @@ url: http://sacjs.com
 timezone: America/Los_Angeles
 future: true
 array: []
-default_author: The SacJS Team
 defaults:
   - scope:
       path: ""
@@ -23,6 +22,8 @@ markdown: kramdown
 
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
 
+default_author: The SacJS Team
+default_event_title: Monthly Meetup
 location:
   name: The Urban Hive
   url: http://theurbanhive.com
