@@ -1,3 +1,4 @@
+{% assign title = page.title | default:site.description %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -8,7 +9,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic|Open+Sans+Condensed:300|Cutive:300" rel="stylesheet" type="text/css">
 
-  <title>{% if page.title %}SacJS: {{ page.title | strip_html }}{% else %}{{ site.title }} - {{site.description }}{% endif %}</title>
+  <title>{{ site.title }}: {{ title | strip_html }}</title>
   <meta name="description" content="{{ site.title }} {{ site.description | strip }}">
   {% include struct_data/organization.html %}
   {% include struct_data/open_graph.html %}
