@@ -19,6 +19,8 @@ defaults:
 gems:
   - jekyll-sitemap
 markdown: kramdown
+sass:
+  style: compressed
 
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
 
