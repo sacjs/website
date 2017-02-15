@@ -18,26 +18,19 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Chris Minnick
+        url: https://twitter.com/chrisminnick
+    title: Creating Offline First Mobile Web Apps
     description: >
+      I'm just finishing writing and shooting a video course for [Pluralsight](https://www.pluralsight.com/) about offline first mobile web apps and I'd like to come and talk about the idea of offline first and some of the things I learned and used while shooting this course, including IndexedDb, Service Workers, and lots of JavaScript trickery.
 
   - duration: 20
     type: speaker
     speakers:
       - name: Be Our Second Speaker
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
         url: /speaking/
     title:
     description: >
