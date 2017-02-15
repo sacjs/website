@@ -1,4 +1,5 @@
 ---
+title: 'Watch out for the router! 💥🏃💨👀'
 date: 2017-02-28 19:00
 feature: true
 meetup:
@@ -56,3 +57,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Let's close out February by observing what happens when our Internet goes out with talks from fine folks!
