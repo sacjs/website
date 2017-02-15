@@ -2,6 +2,7 @@ title: SacJS
 description: The Sacramento Javascript Meetup Group
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://sacjs.com
+port: 4001
 timezone: America/Los_Angeles
 future: true
 array: []
