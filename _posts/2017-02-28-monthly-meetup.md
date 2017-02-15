@@ -27,13 +27,17 @@ schedule:
     description: >
       I'm just finishing writing and shooting a video course for [Pluralsight](https://www.pluralsight.com/) about offline first mobile web apps and I'd like to come and talk about the idea of offline first and some of the things I learned and used while shooting this course, including IndexedDb, Service Workers, and lots of JavaScript trickery.
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Aravind Karnam
+        url: https://github.com/aravindkarnam
+    title: A Look at RxJS and Observables
     description: >
+      RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+
+
+      Think of RxJS as Lodash for events.
 
   - duration: 5
     type: mc
