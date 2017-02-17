@@ -63,7 +63,8 @@
       <meta itemprop="inventoryLevel" content="100"/>
       <meta itemprop="name" content="General Admission"/>
       <meta itemprop="price" content="0.00"/>
-      <meta itemprop="url" content="http://www.meetup.com/{{ include.event.meetup.group_name || site.networks.meetup.group_name }}/events/{{ include.event.meetup.id }}"/>
+      {% assign group_name = include.event.meetup.group_name | default:site.networks.meetup.group_name %}
+      <meta itemprop="url" content="http://www.meetup.com/{{ group_name }}/events/{{ include.event.meetup.id }}"/>
     {% endif %}
   </div>
 </section>
