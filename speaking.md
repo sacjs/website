@@ -14,7 +14,7 @@ permalink: /speaking/
 
 #### How do I submit a talk?
 
-You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ site.networks.github.username }}/sacjs.github.io/issues) or [email us]({{ site.networks.email.address }}) with your talk proposal.
+You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ site.networks.github.username }}/sacjs.github.io/issues) or [email us](mailto:{{ site.networks.email.address }}) with your talk proposal.
 
 If you are choosing the easier GitHub Issue option, please use the following as a template:
 

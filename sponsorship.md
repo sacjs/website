@@ -46,7 +46,7 @@ During the event, sponsors have a chance to talk to attendees in a casual settin
 
 ## History
 
-Our first meetup was in January 2015 and it has been held monthly ever since. We use funds provided by our sponsors to cover the cost of food, refreshments, and speaker travel. We would _love_ to donate all profits to a local STEM non-profit but, unfortunately, our region seems to be sorely lacking in this area. If you want to change this, [let us know!]({{ site.networks.email.address }}).
+Our first meetup was in January 2015 and it has been held monthly ever since. We use funds provided by our sponsors to cover the cost of food, refreshments, and speaker travel. We would _love_ to donate all profits to a local STEM non-profit but, unfortunately, our region seems to be sorely lacking in this area. If you want to change this, [let us know!](mailto:{{ site.networks.email.address }}).
 
 
 
@@ -55,7 +55,7 @@ Our first meetup was in January 2015 and it has been held monthly ever since. We
 
 #### How do I purchase a sponsorship
 
-You can purchase sponsorship tickets through our [ticketing page]({{ site.sponsorship_ticket_url }}). We encourage all potential sponsors to [reach out]({{ site.networks.email.address }}) before buying their tickets so we can ensure that the sponsorship is a good fit for all parties involved. Due to payment processing fees, we **DO NOT** refund sponsorship tickets that are purchased without prior approval.
+You can purchase sponsorship tickets through our [ticketing page]({{ site.sponsorship_ticket_url }}). We encourage all potential sponsors to [reach out](mailto:{{ site.networks.email.address }}) before buying their tickets so we can ensure that the sponsorship is a good fit for all parties involved. Due to payment processing fees, we **DO NOT** refund sponsorship tickets that are purchased without prior approval.
 
 
 #### Do you offer discounts for repeat sponsorships?
@@ -90,7 +90,7 @@ We prefer to not select speakers the same month that their company sponsors us. 
 
 #### Do you offer non-monetary sponsorships?
 
-Yes! If you would rather sponsor through a non-monetary means equivalent in value to one of our sponsorship tiers, we can likely accommodate that. Please [contact us]({{ site.networks.email.address }}) directly so we can discuss further.
+Yes! If you would rather sponsor through a non-monetary means equivalent in value to one of our sponsorship tiers, we can likely accommodate that. Please [contact us](mailto:{{ site.networks.email.address }}) directly so we can discuss further.
 
 
 #### How many other sponsors will there be?
@@ -100,10 +100,10 @@ Each month we have three sponsors, one at each sponsorship tier.
 
 #### There are no sponsorships left this month. Can we sponsor next month?
 
-Yes! Send an email to [{{ site.networks.email.address }}]({{ site.networks.email.address }}) and we'll be happy to get you setup for the next available month.
+Yes! Send an email to [{{ site.networks.email.address }}](mailto:{{ site.networks.email.address }}) and we'll be happy to get you setup for the next available month.
 
 
 
 ## Contact Us
 
-If you're interested in sponsoring {{ site.title }} reach out to [{{ site.networks.email.address }}]({{ site.networks.email.address }}) and we'll be happy to help you out.
+If you're interested in sponsoring {{ site.title }} reach out to [{{ site.networks.email.address }}](mailto:{{ site.networks.email.address }}) and we'll be happy to help you out.
