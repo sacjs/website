@@ -116,6 +116,12 @@
           {% for sponsor in segment.sponsors %}
             {% capture sponsor_link %}{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}{{ sponsor.name }}{% if sponsor.url %}</a>{% endif %}{% endcapture %}
             {% assign sponsor_links = sponsor_links | push: sponsor_link %}
+            <div itemscope itemprop="sponsor" itemType="https://schema.org/Organization">
+              <meta itemprop="name" content="{{ sponsor.name }}"/>
+              {% if sponsor.url %}
+                <meta itemprop="sameAs" content="{{ sponsor.url  }}"/>
+              {% endif %}
+            </div>
           {% endfor %}
 
           {% if speaker_links.size > 0 %}
