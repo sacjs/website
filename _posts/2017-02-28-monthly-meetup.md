@@ -1,7 +1,7 @@
 ---
 title: 'Watch out for the router! 💥🏃💨👀'
 date: 2017-02-28 19:00
-feature: true
+feature: false
 meetup:
   id: 237210870
 schedule:
