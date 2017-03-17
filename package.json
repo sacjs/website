@@ -25,5 +25,8 @@
   "dependencies": {},
   "engines": {
     "node": "6.2.1"
+  },
+  "devDependencies": {
+    "remark-lint": "^5.4.0"
   }
 }
