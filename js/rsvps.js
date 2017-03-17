@@ -1,6 +1,6 @@
 void function(){
   'use strict';
-  var upcomingUrl = 'http://api.meetup.com/2/events?status=upcoming&order=time&limited_events=False&group_urlname=The-Sacramento-Javascript-Meetup&desc=false&offset=0&format=json&page=200&fields=&sig_id=13188390&sig=9041dbac9b59eb70fdc420fb721373c947af147f';
+  var upcomingUrl = 'https://api.meetup.com/2/events?member_id=13188390&offset=0&format=json&limited_events=False&photo-host=public&page=200&fields=&order=time&desc=false&status=upcoming&sig_id=13188390&sig=b95cc8677b14087f7797814774cb19dccabc6f5b'
 
   function injectRSVPs(event) {
     var count = event.yes_rsvp_count;
@@ -11,7 +11,7 @@ void function(){
   }
 
   function parseEvents(response) {
-    if(response.results.length) {
+    if(response.results && response.results.length) {
       if(response.results.some(injectRSVPs)) {
         return showRsvpButton();
       }
