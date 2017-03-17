@@ -19,10 +19,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Dalton Mitchell
+        url: https://twitter.com/daltonamitchell
+    title: Vue.js - JavaScript framework or gateway drug?
     description: >
+      Vue.js is a flexible JavaScript framework for quickly & easily building interactive UI components or SPAs. This talk will cover what I've learned while using Vue at work over the past few months. I'll explain how it's flexible nature allowed me to test the waters before fully diving in, and how it continues to be an easy tool of choice as our application size and complexity increases. By the end, I hope it will encourage some to give Vue.js a try on a small project and maybe get "hooked" like I did.
 
   - duration: 20
     type: speaker
