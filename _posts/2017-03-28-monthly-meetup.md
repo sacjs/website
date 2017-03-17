@@ -1,6 +1,9 @@
 ---
+title: Et tu, Vue-te
 date: 2017-03-28 19:00
 feature: true
+meetup:
+  id: 237210884
 schedule:
   - duration: 15
     offset: -15
@@ -58,3 +61,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Its the IDEs of March, so let's break out those stabby arrow functions and hear our amazing speaker(s)
