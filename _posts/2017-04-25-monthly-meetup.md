@@ -1,6 +1,6 @@
 ---
 date: 2017-04-25 19:00
-feature: false
+feature: true
 schedule:
   - duration: 15
     offset: -15

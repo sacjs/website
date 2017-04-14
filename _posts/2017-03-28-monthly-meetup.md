@@ -1,7 +1,7 @@
 ---
 title: Et tu, Vue-te
 date: 2017-03-28 19:00
-feature: true
+feature: false
 meetup:
   id: 237210884
 schedule:
