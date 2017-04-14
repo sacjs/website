@@ -1,6 +1,8 @@
 ---
 date: 2017-04-25 19:00
 feature: true
+meetup:
+  id: 237210898
 schedule:
   - duration: 15
     offset: -15
