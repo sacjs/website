@@ -19,10 +19,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Tyler Alves
+        url: https://twitter/tylerbalves
+    title: The JS Tooling Renaissance
     description: >
+      The Renaissance is considered by historians to be the period of time that served as a bridge between the middle ages and modern times. Well my fellow JS devs, after years of incremental gains we have reached the Renaissance of JS tooling. Even being spoiled by the cushy tooling setups available for the last few years, you will be blown away by the giant leap forward in developer experience that is now production ready!
 
   - duration: 20
     type: speaker
