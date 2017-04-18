@@ -1,4 +1,5 @@
 ---
+title: April Finally Gives Birth to a Meetup
 date: 2017-04-25 19:00
 feature: true
 meetup:
@@ -53,3 +54,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Better than a live stream of a giraffe, our April meetup will feature some equally fantastic topics.
