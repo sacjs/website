@@ -33,7 +33,7 @@ schedule:
     speakers:
       - name: Robert Paul
         url: https://twitter/HelloThisIsRob
-    title: Marking my journey with 🗺 + 📍 + <li>
+    title: Marking my journey with 🗺 + 📍 + <code>&lt;li&gt;</code>
     description: >
       You know that UI thing on Yelp, Zillow, and Airbnb, where you see markers on a map that correspond to a list of items on the side? Well, I needed to learn how to do that. I'm going to share my journey of figuring it out using the Google Maps API, iterating over a Ruby hash, AJAX, and some JavaScript. It was one of my big "a ha!" moments of 2016 and learning web development.
 
