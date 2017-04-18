@@ -30,18 +30,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Robert Paul
+        url: https://twitter/HelloThisIsRob
+    title: Marking my journey with 🗺 + 📍 + <li>
     description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
+      You know that UI thing on Yelp, Zillow, and Airbnb, where you see markers on a map that correspond to a list of items on the side? Well, I needed to learn how to do that. I'm going to share my journey of figuring it out using the Google Maps API, iterating over a Ruby hash, AJAX, and some JavaScript. It was one of my big "a ha!" moments of 2016 and learning web development.
 
   - duration: 5
     type: mc
