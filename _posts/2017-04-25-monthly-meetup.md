@@ -23,7 +23,7 @@ schedule:
     type: speaker
     speakers:
       - name: Tyler Alves
-        url: https://twitter/tylerbalves
+        url: https://twitter.com/tylerbalves
     title: The JS Tooling Renaissance
     description: >
       The Renaissance is considered by historians to be the period of time that served as a bridge between the middle ages and modern times. Well my fellow JS devs, after years of incremental gains we have reached the Renaissance of JS tooling. Even being spoiled by the cushy tooling setups available for the last few years, you will be blown away by the giant leap forward in developer experience that is now production ready!
@@ -32,7 +32,7 @@ schedule:
     type: speaker
     speakers:
       - name: Robert Paul
-        url: https://twitter/HelloThisIsRob
+        url: https://twitter.com/HelloThisIsRob
     title: Marking my journey with 🗺 + 📍 + <code>&lt;li&gt;</code>
     description: >
       You know that UI thing on Yelp, Zillow, and Airbnb, where you see markers on a map that correspond to a list of items on the side? Well, I needed to learn how to do that. I'm going to share my journey of figuring it out using the Google Maps API, iterating over a Ruby hash, AJAX, and some JavaScript. It was one of my big "a ha!" moments of 2016 and learning web development.
