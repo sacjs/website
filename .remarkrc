@@ -1,9 +1,11 @@
 {
-  "plugins": {
-    "lint": {
-      "heading-increment": false,
-      "maximum-line-length": false,
-      "no-heading-punctuation": false
-    }
-  }
+  "plugins": [
+    ["remark-lint-heading-increment", false],
+    ["remark-lint-maximum-line-length", false],
+    ["remark-lint-no-heading-punctuation", false]
+  ],
+  "presets": [
+    "lint-recommended",
+    "lint-consistent"
+  ]
 }
