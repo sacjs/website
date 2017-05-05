@@ -8,6 +8,9 @@ schedule:
     offset: -15
     type: social
     title: Doors Open
+    sponsors:
+      - name: TekSystems
+        url: http://www.teksystems.com/
     description: >
       Come early to grab a seat, a refreshment, and some food
 
