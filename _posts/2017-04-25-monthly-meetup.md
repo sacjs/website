@@ -1,7 +1,7 @@
 ---
 title: April Finally Gives Birth to a Meetup
 date: 2017-04-25 19:00
-feature: true
+feature: false
 meetup:
   id: 237210898
 schedule:

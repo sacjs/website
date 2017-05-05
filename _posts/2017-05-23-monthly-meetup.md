@@ -1,6 +1,8 @@
 ---
 date: 2017-05-23 19:00
-feature: false
+feature: true
+meetup:
+  id: 237210904
 schedule:
   - duration: 15
     offset: -15
