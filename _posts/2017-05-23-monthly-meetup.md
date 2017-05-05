@@ -1,4 +1,5 @@
 ---
+title: It's Gonna be a May Meetup
 date: 2017-05-23 19:00
 feature: true
 meetup:
@@ -21,29 +22,17 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
+  - duration: 45
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Erik Bryn
+        url: https://twitter.com/ebryn
+    title: 'Glimmer.js: the past, present, and future of Ember.js'
     description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
+      The newly released Glimmer.js library shows off Ember's rendering engine
+      and makes it accessible to the broader web ecosystem. Erik will provide a
+      little bit of history and discuss how Glimmer.js will shape the future of
+      Ember.
 
   - duration: 5
     type: mc
