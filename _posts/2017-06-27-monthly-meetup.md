@@ -6,6 +6,9 @@ schedule:
     offset: -15
     type: social
     title: Doors Open
+    sponsors:
+      - name: TekSystems
+        url: http://www.teksystems.com.
     description: >
       Come early to grab a seat, a refreshment, and some food
 
@@ -19,10 +22,15 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
+      - name: Erin McKean
+        url: https://twitter.com/emckean
     title:
     description: >
+      Got data? Get a full CRUD API in 20 minutes with LoopBack! You'll learn:
+      - how to connect LoopBack to your datasource
+      - how to create a model
+      - how to add a custom method
+      and more!
 
   - duration: 20
     type: speaker
