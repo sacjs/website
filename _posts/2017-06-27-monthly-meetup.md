@@ -26,11 +26,7 @@ schedule:
         url: https://twitter.com/emckean
     title:
     description: >
-      Got data? Get a full CRUD API in 20 minutes with LoopBack! You'll learn:
-      - how to connect LoopBack to your datasource
-      - how to create a model
-      - how to add a custom method
-      and more!
+      Got data? Get a full CRUD API in 20 minutes with LoopBack! You'll learn: how to connect LoopBack to your datasource, how to create a model, how to add a custom method, and more!
 
   - duration: 20
     type: speaker
