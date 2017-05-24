@@ -24,7 +24,7 @@ schedule:
     speakers:
       - name: Erin McKean
         url: https://twitter.com/emckean
-    title:
+    title: Build an API in 20 minutes with Loopback
     description: >
       Got data? Get a full CRUD API in 20 minutes with LoopBack! You'll learn: how to connect LoopBack to your datasource, how to create a model, how to add a custom method, and more!
 
