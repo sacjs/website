@@ -1,7 +1,7 @@
 ---
 title: It's Gonna be a May Meetup
 date: 2017-05-23 19:00
-feature: true
+feature: false
 meetup:
   id: 237210904
 schedule:
