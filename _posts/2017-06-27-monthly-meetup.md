@@ -1,6 +1,9 @@
 ---
+title: There are no good June puns so this is your meetup title.
 date: 2017-06-27 19:00
-feature: false
+feature: true
+meetup:
+  id: 237210907
 schedule:
   - duration: 15
     offset: -15
