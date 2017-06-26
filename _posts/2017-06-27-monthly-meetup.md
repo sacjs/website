@@ -31,21 +31,14 @@ schedule:
     description: >
       Got data? Get a full CRUD API in 20 minutes with LoopBack! You'll learn: how to connect LoopBack to your datasource, how to create a model, how to add a custom method, and more!
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Aravind Karnam
+        url: https://github.com/aravindkarnam
+    title: Building Chat Bots with API.AI
     description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
+      Learn to build your own personal assistant like Jarvis in Iron Man using Google's api.ai and express framework, and google home.
 
   - duration: 5
     type: mc
