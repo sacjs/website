@@ -3,7 +3,12 @@
   "description": "SacJS - Sacramento's Javascript Meetup Group",
   "private": true,
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js":
+      "prettier-eslint --write \"./*.js\" \"./src/**/*.js\" && eslint --ignore-path .gitignore --fix .",
+    "pretest": "npm run lint"
+  },
   "keywords": [],
   "bugs": {
     "url": "https://github.com/sacjs/sacjs.github.io/issues"
@@ -17,5 +22,21 @@
   },
   "homepage": "http://sacjs.com/",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.5.2",
+    "empty": "^0.10.1",
+    "eslint": "^4.1.1",
+    "eslint-config-react-app": "^1.0.5",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-flowtype": "^2.37.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.0.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "npm-run-all": "^4.0.2",
+    "prettier-eslint-cli": "^4.1.1"
+  }
 }
