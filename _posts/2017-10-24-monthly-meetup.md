@@ -1,6 +1,8 @@
 ---
 date: 2017-10-24 19:00
 feature: false
+meetup:
+  id: 237210918
 schedule:
   - duration: 15
     offset: -15

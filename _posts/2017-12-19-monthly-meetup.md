@@ -1,6 +1,8 @@
 ---
 date: 2017-12-19 19:00
 feature: false
+meetup:
+  id: 237210926
 schedule:
   - duration: 15
     offset: -15

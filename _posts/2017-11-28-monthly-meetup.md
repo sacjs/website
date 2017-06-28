@@ -1,6 +1,8 @@
 ---
 date: 2017-11-28 19:00
 feature: false
+meetup:
+  id: 237210922
 schedule:
   - duration: 15
     offset: -15
