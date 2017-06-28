@@ -1,3 +1,4 @@
+# Site Settings
 title: SacJS
 description: The Sacramento Javascript Meetup Group
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -6,6 +7,15 @@ port: 4001
 timezone: America/Los_Angeles
 future: true
 array: []
+gems:
+  - jekyll-sitemap
+markdown: kramdown
+sass:
+  style: compressed
+
+# Content
+default_author: The SacJS Team
+default_event_title: Monthly Meetup
 defaults:
   - scope:
       path: ""
@@ -17,16 +27,17 @@ defaults:
       type: "drafts"
     values:
       layout: "event"
-gems:
-  - jekyll-sitemap
-markdown: kramdown
-sass:
-  style: compressed
 
+# Assets
+logo:
+  height: 640
+  width: 640
+  url: /images/sac_js.png
+
+# External Links
 sponsorship_ticket_url: https://ti.to/sacjs/sacjs-monthly-meetup-sponsorships
 
-default_author: The SacJS Team
-default_event_title: Monthly Meetup
+# Meta Data
 location:
   name: The Urban Hive
   url: http://theurbanhive.com
@@ -36,25 +47,6 @@ location:
     state: CA
     postal_code: 95811
     country: USA
-
-logo:
-  height: 640
-  width: 640
-  url: /images/sac_js.png
-
-networks:
-  email:
-    address: derek@jsconf.us
-  twitter:
-    username: sac_js
-  github:
-    username:  sacjs
-  meetup:
-    group_name: The-Sacramento-Javascript-Meetup
-    group_text: Join us!
-  slack:
-    url: https://sac-tech.herokuapp.com
-
 organizers:
   - first_name: Derek
     last_name: Lindahl
@@ -67,3 +59,17 @@ organizers:
   - first_name: Andy
     last_name: Axton
     twitter_username: andyaxton
+
+# Social Media
+networks:
+  email:
+    address: derek@jsconf.us
+  twitter:
+    username: sac_js
+  github:
+    username:  sacjs
+  meetup:
+    group_name: The-Sacramento-Javascript-Meetup
+    group_text: Join us!
+  slack:
+    url: https://sac-tech.herokuapp.com
