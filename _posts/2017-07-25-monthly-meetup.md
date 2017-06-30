@@ -1,5 +1,5 @@
 ---
-title:
+title: e pluribus unum with npm
 date: 2017-07-25 19:00
 feature: true
 meetup:
@@ -70,3 +70,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Out of many speakers, our one meetup will feature talks from the following amazing humans.
