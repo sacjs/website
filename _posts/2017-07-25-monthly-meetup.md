@@ -48,7 +48,7 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our Third Speaker
+      - name: Be Our Fourth Speaker
         url: /speaking/
     title:
     description: >
