@@ -1,5 +1,5 @@
 ---
-title:
+title: A Hot Dog is a Sandwich
 date: 2017-08-15 19:00
 feature: true
 meetup:
