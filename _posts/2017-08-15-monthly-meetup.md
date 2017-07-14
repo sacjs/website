@@ -24,7 +24,7 @@ schedule:
     speakers:
       - name: Tim Anglade
         url: https://twitter.com/timanglade
-    title: AI + JS: Building “Not Hotdog” with React Native
+    title: "AI + JS: Building “Not Hotdog” with React Native"
     description: >
       The HBO show Silicon Valley released a real AI app that identifies hotdogs — and not hotdogs — like the one [shown on season 4’s 4th episode](https://www.youtube.com/watch?v=ACmydtFDTGs). To achieve this, we designed a bespoke neural architecture that runs directly on your phone, and trained it with Tensorflow, Keras & Nvidia GPUs. We wrapped it all up in a React Native app, [available for both iOS & Android](https://www.seefoodtechnologies.com/nothotdog/). In this talk, we’ll [talk about how it all happened](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3), quickly discuss other ways to build AI applications with JavaScript, and answer all your hotdog questions.
 
