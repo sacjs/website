@@ -1,5 +1,5 @@
 ---
-title: e pluribus unum with npm
+title: e pluribus unum with npm (now with more 🐕)
 date: 2017-07-25 19:00
 feature: true
 meetup:
