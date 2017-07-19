@@ -28,6 +28,15 @@ schedule:
     description: >
       npm@5 was recently released along with node 8. Learn about what's changed, what new features we have and why you should be updating now. Plus super secret hints about what's to come.
 
+  - duration: 25
+    type: speaker
+    speakers:
+      - name: Jessica Parsons
+        url: https://twitter.com/verythorough
+    title: The Smart Shiba's Guide to Images for the Web
+    description: >
+      Images take up roughly 60% of average page weight, making them a huge target for performance improvements. I'll go over several aspects of improving image loading, from choosing the right file type (including some new type on the horizon), to writing markup for responsive image loading, to making sure your images are cached properly. All concepts will be demonstrated with images of my pet Shibas, Monty and Petunia. 😃
+
   - duration: 10
     type: speaker
     speakers:
@@ -36,14 +45,6 @@ schedule:
     title: The Superpower of the 21st Century
     description: >
       Popularized by author and computer scientist Cal Newport, Deep work is the skill that allows you to quickly master complicated information. Most people have lost the ability to do deep work as they spend their time in a frantic blur of checking and responding to notifications if you can master deep work you gain a superpower in today's workforce. In this talk, I will outline Newport's steps to how to do deep work. I'll talk about how I applied Deep work to my work as an engineer
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
 
   - duration: 20
     type: speaker
