@@ -1,7 +1,7 @@
 ---
 title: e pluribus unum with npm (now with more 🐕)
 date: 2017-07-25 19:00
-feature: true
+feature: false
 meetup:
   id: 241149920
 schedule:
