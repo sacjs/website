@@ -18,13 +18,14 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: David Novicki
+        url: https://twitter.com/novicki_david
+    title: Serverless Framework - Cheap and Easily Maintainable Micro-services on AWS
     description: >
+      Server-less applications can be a nightmare to maintain and organize. Serverless framework does all the heavy lifting so that you can have a server-less micro-service up and running in less than 5 minutes. David Novicki will show you the ins and outs of this awesome tool and make the tricky parts of server-less architecture obsolete!
 
   - duration: 20
     type: speaker
