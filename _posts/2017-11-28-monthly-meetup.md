@@ -21,10 +21,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Joseph Burchett
+        url: https://www.google.com/+josephburchett
+    title: Building chatbots with NodeJS
     description: >
+      A look at how easy and fast it is to create a chatbot for all the popular messaging platforms, like Facebook Messenger, easily using nodeJS
 
   - duration: 20
     type: speaker
