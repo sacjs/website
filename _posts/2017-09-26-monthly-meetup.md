@@ -1,6 +1,6 @@
 ---
 date: 2017-09-26 19:00
-feature: false
+feature: true
 meetup:
   id: 237210914
 schedule:

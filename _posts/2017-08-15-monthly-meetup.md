@@ -1,7 +1,7 @@
 ---
 title: A Hotdog is a Sandwich
 date: 2017-08-15 19:00
-feature: true
+feature: false
 meetup:
   id: 241149935
 schedule:
