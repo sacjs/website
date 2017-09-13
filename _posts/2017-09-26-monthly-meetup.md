@@ -27,13 +27,24 @@ schedule:
     description: >
       Server-less applications can be a nightmare to maintain and organize. Serverless framework does all the heavy lifting so that you can have a server-less micro-service up and running in less than 5 minutes. David Novicki will show you the ins and outs of this awesome tool and make the tricky parts of server-less architecture obsolete!
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Sam Thompson
+        url: https://twitter.com/samt
+    title: JavaScript on the ESP32
     description: >
+      What if I told you that you can run JavaScript on a device that costs less than $15. We will explore the fantastic world of JavaScript on hardware using Espruino, an embedded javascript interpreter for microcontrollers.
+
+      *  Why is JavaScript suited for hardware?
+
+      *  How does this compare with platforms like Tessel and Raspberry Pi?
+
+      *  blink - the "hello world" of hardware.
+
+      *  Making a twitter bot
+
+      *  Going further
 
   - duration: 20
     type: speaker
