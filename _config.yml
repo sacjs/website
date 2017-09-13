@@ -7,7 +7,7 @@ port: 4001
 timezone: America/Los_Angeles
 future: true
 array: []
-gems:
+plugins:
   - jekyll-sitemap
 markdown: kramdown
 sass:
