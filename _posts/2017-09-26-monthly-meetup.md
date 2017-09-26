@@ -47,14 +47,6 @@ schedule:
 
       *  Going further
 
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
-
   - duration: 5
     type: mc
     title: Closing Remarks
