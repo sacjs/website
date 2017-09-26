@@ -32,7 +32,7 @@ schedule:
     type: speaker
     speakers:
       - name: Sam Thompson
-        url: https://twitter.com/samt
+        url: https://twitter.com/samdtho
     title: JavaScript on the ESP32
     description: >
       What if I told you that you can run JavaScript on a device that costs less than $15. We will explore the fantastic world of JavaScript on hardware using Espruino, an embedded javascript interpreter for microcontrollers.
