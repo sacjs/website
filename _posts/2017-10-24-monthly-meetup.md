@@ -1,6 +1,6 @@
 ---
 date: 2017-10-24 19:00
-feature: false
+feature: true
 meetup:
   id: 237210918
 schedule:
@@ -18,15 +18,15 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Brian Holt
+        url: https://twitter.com/holtbt
+    title: React Alternatives with Preact and Inferno
     description: >
 
-  - duration: 20
+  - duration: 15
     type: speaker
     speakers:
       - name: Be Our Second Speaker
@@ -34,7 +34,7 @@ schedule:
     title:
     description: >
 
-  - duration: 20
+  - duration: 15
     type: speaker
     speakers:
       - name: Be Our Third Speaker
