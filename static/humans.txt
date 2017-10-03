@@ -1,0 +1,16 @@
+/* TEAM */
+
+Developer: Derek Lindahl
+Github: https://github.com/dlindahl
+Twitter: @oif_vet
+From: Elk Grove, CA
+
+Developer: Sam Thompson
+Github: https://github.com/samt
+Twitter: @samdtho
+From: Sacramento, CA
+
+Developer: Andy Axton
+Github: https://github.com/a-axton
+Twitter: @andyaxton
+From: Sacramento, CA

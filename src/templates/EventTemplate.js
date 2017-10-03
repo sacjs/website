@@ -1,3 +1,4 @@
+import DefaultLayout from '../layouts/DefaultLayout'
 import { object, shape, string } from 'prop-types'
 import React from 'react'
 
@@ -29,11 +30,11 @@ export default class EventTemplate extends React.Component {
   }
   render () {
     const { data: { markdownRemark: post } } = this.props
-    const { frontmatter } = post
+    const { fields, frontmatter } = post
     return (
-      <div>
+      <DefaultLayout pathname={fields.relativePath}>
         {frontmatter.title} ({frontmatter.meetup.id})
-      </div>
+      </DefaultLayout>
     )
   }
 }
