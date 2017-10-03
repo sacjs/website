@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/sacjs/sacjs.github.io.git"
   },
-  "homepage": "http://sacjs.com/",
+  "homepage": "http://sacjs.com",
   "dependencies": {
     "gatsby": "^1.9.51",
     "gatsby-link": "^1.6.19",

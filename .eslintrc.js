@@ -13,6 +13,9 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:react/recommended'
   ],
+  globals: {
+    graphql: true
+  },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
@@ -81,6 +84,7 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'promise/avoid-new': 'off',
     'quote-props': ['warn', 'as-needed'],
     'react/forbid-component-props': 'off',
     'react/jsx-handler-names': 'error',
