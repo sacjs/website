@@ -1,16 +1,38 @@
 import { getDuration } from '../utils/date'
 import { toSentence } from '../utils/array'
 
-function generateDescription (performers) {
+const BEERJS = /beer_js/
+const BEERJS_PREAMBLE =
+  'Enjoy some tasty beverages and have a friendly chat about Javascript, the web, and technology!'
+const COFFEEJS = /coffee_js/
+const COFFEEJS_PREAMBLE =
+  'Enjoy a warm, roasty beverage and have a friendly chat about Javascript, the web, and technology!'
+const LEARNING_PREAMBLE = 'Learn more about the amazing world of Javascript'
+const MEETUP = /monthly-meetup/
+const MEETUP_PREAMBLE = 'Featuring amazing Javascript-related talks'
+
+function generateDescription (performers, relativePath) {
   if (!performers.length) {
-    return 'TODO'
+    if (relativePath.match(BEERJS)) {
+      return BEERJS_PREAMBLE
+    }
+    if (relativePath.match(COFFEEJS)) {
+      return COFFEEJS_PREAMBLE
+    }
+    if (relativePath.match(MEETUP)) {
+      return MEETUP_PREAMBLE
+    }
+    return LEARNING_PREAMBLE
   }
   const names = performers.map((p) => p.name)
-  return `Featuring amazing Javascript-related talks from ${toSentence(names)}`
+  return `${MEETUP_PREAMBLE} from ${toSentence(names)}`
 }
 
 export function eventLDFromContent (event, organization, site) {
-  const { frontmatter: { date, location, meetup, schedule } } = event
+  const {
+    fields: { relativePath },
+    frontmatter: { date, location, meetup, schedule }
+  } = event
   const { doorTime, endDate } = getDuration(date, schedule)
   const works = schedule.filter(
     (segment) => segment.type === 'speaker' && segment.title
@@ -19,7 +41,7 @@ export function eventLDFromContent (event, organization, site) {
     .reduce((speakerSet, work) => speakerSet.concat(work.speakers), [])
     .filter((speaker, index, set) => set.indexOf(speaker.url || speaker.name))
   return {
-    description: generateDescription(performers),
+    description: generateDescription(performers, relativePath),
     doorTime,
     endDate,
     eventStatus: 'http://schema.org/EventScheduled',
@@ -29,7 +51,7 @@ export function eventLDFromContent (event, organization, site) {
     name: `SacJS: ${event.title}`,
     performers,
     startDate: date,
-    url: event.fields.relativePath
+    url: relativePath
   }
 }
 
