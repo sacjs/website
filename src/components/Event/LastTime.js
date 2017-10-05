@@ -1,3 +1,4 @@
+import dateFormat from 'dateformat'
 import Link from 'gatsby-link'
 import LocationLink from '../LocationLink'
 import { shape, string, object } from 'prop-types'
@@ -7,10 +8,16 @@ const LastTime = ({ event }) => {
   if (!event) {
     return null
   }
-  const { fields: { relativePath }, frontmatter: { location, title } } = event
+  const {
+    fields: { relativePath },
+    frontmatter: { date, location, title }
+  } = event
   return (
     <div>
-      <Link to={relativePath}>&larr; {title}</Link>{' '}
+      <Link to={relativePath}>
+        &larr; {title}
+        {', '} {dateFormat(date, 'dddd, mmmm dS')}
+      </Link>{' '}
       <LocationLink {...location} linkPrefix="at"/>
     </div>
   )

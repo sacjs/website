@@ -19,7 +19,9 @@ const UpNext = ({ event }) => {
       </header>
       <p>
         <Link to={relativePath}>
-          {title} {dateFormat(date, 'dddd, mmmm dS')}
+          {title}
+          {', '}
+          {dateFormat(date, 'dddd, mmmm dS')}
         </Link>{' '}
         <LocationLink {...location} linkPrefix="at"/>
       </p>

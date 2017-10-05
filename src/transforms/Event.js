@@ -7,6 +7,7 @@ const BEERJS_PREAMBLE =
 const COFFEEJS = /coffee_js/
 const COFFEEJS_PREAMBLE =
   'Enjoy a warm, roasty beverage and have a friendly chat about Javascript, the web, and technology!'
+const DEFAULT_TITLE = 'Monthly Meetup'
 const LEARNING_PREAMBLE = 'Learn more about the amazing world of Javascript'
 const MEETUP = /monthly-meetup/
 const MEETUP_PREAMBLE = 'Featuring amazing Javascript-related talks'
@@ -59,10 +60,12 @@ export function eventFromContent (event, organization) {
   if (!event) {
     return null
   }
+  const { frontmatter: { date, location, title } } = event
   return Object.assign({}, event, {
     frontmatter: Object.assign({}, event.frontmatter, {
-      date: new Date(event.frontmatter.date),
-      location: event.frontmatter.location || organization.location
+      date: new Date(date),
+      location: location || organization.location,
+      title: title || DEFAULT_TITLE
     })
   })
 }
