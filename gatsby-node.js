@@ -1,6 +1,7 @@
 const addSlugToNode = require('./src/generators/slugGenerator')
 const generateActiveEventPage = require('./src/generators/activeEventGenerator')
 const generateEventPages = require('./src/generators/eventPageGenerator')
+const getEventPages = require('./src/utils/getEventPages')
 
 exports.onCreateNode = ({ boundActionCreators, node, getNode }) => {
   const { createNodeField } = boundActionCreators
@@ -10,7 +11,9 @@ exports.onCreateNode = ({ boundActionCreators, node, getNode }) => {
 }
 
 exports.createPages = ({ graphql, boundActionCreators }) =>
-  Promise.all([
-    generateActiveEventPage(graphql, boundActionCreators),
-    generateEventPages(graphql, boundActionCreators)
-  ])
+  getEventPages(graphql).then((eventPages) =>
+    Promise.all([
+      generateActiveEventPage(eventPages, boundActionCreators),
+      generateEventPages(eventPages, boundActionCreators)
+    ])
+  )

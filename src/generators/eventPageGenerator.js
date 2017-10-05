@@ -1,28 +1,17 @@
-const path = require('path')
+const createEventPage = require('../utils/createEventPage')
 
-module.exports = function eventPageGenerator (graphql, boundActionCreators) {
-  const { createPage } = boundActionCreators
-  return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              relativePath
-              slug
-            }
-          }
-        }
-      }
-    }
-  `).then((result) => result.data.allMarkdownRemark.edges.map(({ node }) =>
-    createPage({
-      component: path.resolve(`./src/templates/EventTemplate.js`),
-      context: {
-        // Data passed to context is available in page queries as GraphQL variables.
-        slug: node.fields.slug
-      },
-      path: node.fields.relativePath
-    })
-  ))
+module.exports = function eventPageGenerator (
+  eventPagesResult,
+  boundActionCreators
+) {
+  return Promise.all(
+    eventPagesResult.data.allMarkdownRemark.edges.map(({ node }, idx) =>
+      createEventPage(idx, {
+        boundActionCreators,
+        eventPagesResult,
+        node,
+        path: node.fields.relativePath
+      })
+    )
+  )
 }

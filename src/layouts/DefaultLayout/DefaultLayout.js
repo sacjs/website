@@ -1,42 +1,45 @@
 import { absoluteUrl } from '../../utils/urlFilters'
 import Head from 'react-helmet'
-import * as metadata from '../../metadata'
-import { node, object, shape, string } from 'prop-types'
+import { externalUrls, organization, site, socialMedia } from '../../metadata'
+import Metadata from '../../components/Metadata'
+import { organizationFromSite } from '../../transforms/Organization'
+import { node, object, string } from 'prop-types'
 import React from 'react'
 
 export default class DefaultLayout extends React.Component {
   static childContextTypes = {
-    metadata: shape({
-      externalUrls: object,
-      organization: object,
-      site: object,
-      socialMedia: object
-    })
+    externalUrls: object,
+    organization: object,
+    site: object,
+    socialMedia: object
   }
   static contextTypes = {
     hostname: string.isRequired,
     port: string.isRequired
   }
   static defaultProps = {
-    metadata
+    externalUrls,
+    organization,
+    site,
+    socialMedia
   }
   static propTypes = {
     children: node,
-    metadata: shape({
-      externalUrls: object.isRequired,
-      organization: object.isRequired,
-      site: object.isRequired,
-      socialMedia: object.isRequired
-    }),
-    pathname: string
+    externalUrls: object.isRequired,
+    organization: object.isRequired,
+    pathname: string,
+    site: object.isRequired,
+    socialMedia: object.isRequired
   }
   getChildContext () {
     return {
-      metadata: this.props.metadata
+      externalUrls: this.props.externalUrls,
+      organization: this.props.organization,
+      site: this.props.site,
+      socialMedia: this.props.socialMedia
     }
   }
   render () {
-    const { site } = this.props.metadata
     return (
       <div>
         <Head>
@@ -56,6 +59,14 @@ export default class DefaultLayout extends React.Component {
             rel="canonical"
           />
         </Head>
+        <Metadata.Site
+          logo={organization.logo}
+          path={this.props.pathname}
+          title={site.title}
+        />
+        <Metadata.Organization
+          organization={organizationFromSite(organization, site, socialMedia)}
+        />
         {this.props.children}
       </div>
     )

@@ -25,12 +25,14 @@
   },
   "homepage": "http://sacjs.com",
   "dependencies": {
+    "dateformat": "^3.0.2",
     "gatsby": "^1.9.51",
     "gatsby-link": "^1.6.19",
     "gatsby-plugin-react-a11y": "^1.0.0",
     "gatsby-plugin-react-helmet": "^1.0.6",
     "gatsby-source-filesystem": "^1.5.2",
-    "gatsby-transformer-remark": "^1.7.15"
+    "gatsby-transformer-remark": "^1.7.15",
+    "lodash.padstart": "^4.6.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
