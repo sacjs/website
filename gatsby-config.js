@@ -9,11 +9,11 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       options: {
-        name: `_posts`,
+        name: '_posts',
         path: `${__dirname}/_posts/`
       },
-      resolve: `gatsby-source-filesystem`
+      resolve: 'gatsby-source-filesystem'
     },
-    `gatsby-transformer-remark`
+    'gatsby-transformer-remark'
   ]
 }
