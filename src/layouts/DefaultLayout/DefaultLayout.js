@@ -44,21 +44,21 @@ export default class DefaultLayout extends React.Component {
         <Head>
           <html lang="en"/>
           <meta content="text/html;charSet=UTF-8" httpEquiv="Content-type"/>
-          <link href="/img/favicons/favicon.ico" rel="shortcut icon"/>
-          <meta content={site.title} name="apple-mobile-web-app-title"/>
-          <meta content={site.title} name="application-name"/>
-          <title>{site.title}</title>
+          <title>
+            {site.title}: {site.description}
+          </title>
           <meta
             content={`${site.title}: ${site.description}`}
             name="description"
           />
           <link href={absoluteUrl(this.props.path)} rel="canonical"/>
-          <link href={absoluteUrl('humans.txt')} rel="author"/>
+          <link href="/humans.txt" rel="author"/>
         </Head>
         <Metadata.Site
           breadcrumbs={this.props.breadcrumbs}
           logo={organization.logo}
           path={this.props.path}
+          themeColor={this.props.site.themeColor}
           title={site.title}
         />
         <Metadata.Organization

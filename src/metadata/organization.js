@@ -12,7 +12,7 @@ const organization = {
   },
   logo: {
     height: 640,
-    url: '/images/sac_js.png',
+    url: '/img/sac_js.png',
     width: 640
   },
   organizers: [
