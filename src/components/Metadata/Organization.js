@@ -5,16 +5,11 @@ import React from 'react'
 
 const OrganizationMetadata = ({ organization }, context) => (
   <Head>
-    <script type="application/ld+json">
-      {JSON.stringify(OrganizationBuilder(organization, context))}
+    <script id="org" type="application/ld+json">
+      {JSON.stringify(OrganizationBuilder(organization))}
     </script>
   </Head>
 )
-
-OrganizationMetadata.contextTypes = {
-  hostname: string.isRequired,
-  port: string.isRequired
-}
 
 OrganizationMetadata.propTypes = {
   organization: shape({

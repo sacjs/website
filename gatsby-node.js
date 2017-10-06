@@ -10,7 +10,7 @@ exports.onCreateNode = ({ boundActionCreators, node, getNode }) => {
   }
 }
 
-exports.createPages = ({ graphql, boundActionCreators }) =>
+exports.createPages = ({ boundActionCreators, graphql }) =>
   getEventPages(graphql).then((eventPages) =>
     Promise.all([
       generateActiveEventPage(eventPages, boundActionCreators),

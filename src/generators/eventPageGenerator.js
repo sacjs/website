@@ -10,7 +10,7 @@ module.exports = function eventPageGenerator (
         boundActionCreators,
         eventPagesResult,
         node,
-        path: node.fields.relativePath
+        path: node.fields.path
       })
     )
   )

@@ -6,7 +6,7 @@ module.exports = function getEventPages (graphql) {
           node {
             id
             fields {
-              relativePath
+              path
               slug
             }
             frontmatter {

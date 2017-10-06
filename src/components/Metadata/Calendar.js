@@ -3,18 +3,15 @@ import EventBuilder from '../../builders/JSON-LD/Event'
 import Head from 'react-helmet'
 import React from 'react'
 
-const CalendarMetadata = ({ eventsLD }, context) => {
-  const eventData = eventsLD.map((event) => EventBuilder(event, context))
+const CalendarMetadata = ({ eventsLD }) => {
+  const eventData = eventsLD.map((event) => EventBuilder(event))
   return (
     <Head>
-      <script type="application/ld+json">{JSON.stringify(eventData)}</script>
+      <script id="cal" type="application/ld+json">
+        {JSON.stringify(eventData)}
+      </script>
     </Head>
   )
-}
-
-CalendarMetadata.contextTypes = {
-  hostname: string,
-  port: string
 }
 
 CalendarMetadata.propTypes = {

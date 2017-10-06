@@ -25,27 +25,22 @@ function segmentize (date, segments) {
   ).segments
 }
 
-const Schedule = ({ date, schedule }, { organization, ...context }) => (
+const Schedule = ({ date, schedule }, { organization }) => (
   <section>
     <h2>Schedule</h2>
     <meta content={date.toISOString()} itemProp="startDate"/>
     <meta content="EventScheduled" itemProp="eventStatus"/>
-    <meta
-      content={absoluteUrl(organization.logo.url, context)}
-      itemProp="image"
-    />
+    <meta content={absoluteUrl(organization.logo.url)} itemProp="image"/>
     <ul>{segmentize(date, schedule)}</ul>
   </section>
 )
 
 Schedule.contextTypes = {
-  hostname: string,
   organization: shape({
     logo: shape({
       url: string
     })
-  }).isRequired,
-  port: string
+  }).isRequired
 }
 
 Schedule.propTypes = {

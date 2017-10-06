@@ -4,23 +4,20 @@ import Offer from './Offer'
 import Person from './Person'
 import Place from './Place'
 
-export default function EventBuilder (
-  {
-    creativeWorks,
-    description,
-    doorTime,
-    endDate,
-    eventStatus,
-    image,
-    location,
-    meetup,
-    name,
-    performers,
-    startDate,
-    url
-  },
-  context
-) {
+export default function EventBuilder ({
+  creativeWorks,
+  description,
+  doorTime,
+  endDate,
+  eventStatus,
+  image,
+  location,
+  meetup,
+  name,
+  performers,
+  startDate,
+  url
+}) {
   const event = {
     '@context': 'http://www.schema.org',
     '@type': 'Event',
@@ -28,10 +25,10 @@ export default function EventBuilder (
     doorTime: toLocalISOString(doorTime),
     endDate: toLocalISOString(endDate),
     eventStatus,
-    image: absoluteUrl(image, context),
+    image: absoluteUrl(image),
     name,
     startDate: toLocalISOString(startDate),
-    url: absoluteUrl(url, context)
+    url: absoluteUrl(url)
   }
   if (location) {
     Object.assign(event, {

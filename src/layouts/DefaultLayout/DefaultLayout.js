@@ -2,22 +2,20 @@ import { absoluteUrl } from '../../utils/urlFilters'
 import Head from 'react-helmet'
 import { externalUrls, organization, site, socialMedia } from '../../metadata'
 import Metadata from '../../components/Metadata'
-import { organizationFromSite } from '../../transforms/Organization'
 import { node, object, string } from 'prop-types'
+import { organizationFromSite } from '../../transforms/Organization'
 import React from 'react'
 
 export default class DefaultLayout extends React.Component {
   static childContextTypes = {
     externalUrls: object,
     organization: object,
+    path: string,
     site: object,
     socialMedia: object
   }
-  static contextTypes = {
-    hostname: string.isRequired,
-    port: string.isRequired
-  }
   static defaultProps = {
+    breadcrumbs: false,
     externalUrls,
     organization,
     site,
@@ -27,7 +25,7 @@ export default class DefaultLayout extends React.Component {
     children: node,
     externalUrls: object.isRequired,
     organization: object.isRequired,
-    pathname: string,
+    path: string.isRequired,
     site: object.isRequired,
     socialMedia: object.isRequired
   }
@@ -35,6 +33,7 @@ export default class DefaultLayout extends React.Component {
     return {
       externalUrls: this.props.externalUrls,
       organization: this.props.organization,
+      path: this.props.path,
       site: this.props.site,
       socialMedia: this.props.socialMedia
     }
@@ -53,15 +52,13 @@ export default class DefaultLayout extends React.Component {
             content={`${site.title}: ${site.description}`}
             name="description"
           />
-          <link href={absoluteUrl('humans.txt', this.context)} rel="author"/>
-          <link
-            href={absoluteUrl(this.props.pathname, this.context)}
-            rel="canonical"
-          />
+          <link href={absoluteUrl(this.props.path)} rel="canonical"/>
+          <link href={absoluteUrl('humans.txt')} rel="author"/>
         </Head>
         <Metadata.Site
+          breadcrumbs={this.props.path === '/'}
           logo={organization.logo}
-          path={this.props.pathname}
+          path={this.props.path}
           title={site.title}
         />
         <Metadata.Organization

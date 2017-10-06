@@ -9,7 +9,7 @@ const UpNext = ({ event }) => {
     return null
   }
   const {
-    fields: { relativePath },
+    fields: { path },
     frontmatter: { date, location, title }
   } = event
   return (
@@ -18,7 +18,7 @@ const UpNext = ({ event }) => {
         <h2>What&apos;s Next?</h2>
       </header>
       <p>
-        <Link to={relativePath}>
+        <Link to={path}>
           {title}
           {', '}
           {dateFormat(date, 'dddd, mmmm dS')}
@@ -32,7 +32,7 @@ const UpNext = ({ event }) => {
 UpNext.propTypes = {
   event: shape({
     fields: shape({
-      relativePath: string
+      path: string
     }),
     frontmatter: shape({
       date: object,

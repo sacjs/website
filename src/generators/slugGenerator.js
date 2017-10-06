@@ -8,7 +8,7 @@ module.exports = function addSlugToNode (createNodeField, getNode, node) {
     value: slug
   })
   createNodeField({
-    name: 'relativePath',
+    name: 'path',
     node,
     value: `/events${slug}`
   })

@@ -9,12 +9,12 @@ const LastTime = ({ event }) => {
     return null
   }
   const {
-    fields: { relativePath },
+    fields: { path },
     frontmatter: { date, location, title }
   } = event
   return (
     <div>
-      <Link to={relativePath}>
+      <Link to={path}>
         &larr; {title}
         {', '} {dateFormat(date, 'dddd, mmmm dS')}
       </Link>{' '}
@@ -26,7 +26,7 @@ const LastTime = ({ event }) => {
 LastTime.propTypes = {
   event: shape({
     fields: shape({
-      relativePath: string
+      path: string
     }),
     frontmatter: shape({
       location: object.isRequired,

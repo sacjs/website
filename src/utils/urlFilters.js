@@ -3,17 +3,14 @@ import { site } from '../metadata'
 // Ported from Jekyll
 // See also:
 //   https://github.com/jekyll/jekyll/pull/5399
-export function absoluteUrl (input, { hostname, port }) {
+export function absoluteUrl (input) {
   if (!input) {
     return input
   }
   if (!site.url) {
     return relativeUrl(input)
   }
-  let host = site.url
-  if (process.env.NODE_ENV === 'development') {
-    host = `//${hostname}:${port}`
-  }
+  const host = site.url
   return host + relativeUrl(input)
 }
 

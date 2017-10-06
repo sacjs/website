@@ -1,9 +1,14 @@
 import { absoluteUrl } from '../../utils/urlFilters'
 
-export default function Organization (
-  { address, email, logo, pointOfContact, name, sameAs, url },
-  context
-) {
+export default function Organization ({
+  address,
+  email,
+  logo,
+  pointOfContact,
+  name,
+  sameAs,
+  url
+}) {
   const org = {
     '@context': 'http://schema.org',
     '@type': 'Organization',
@@ -39,7 +44,7 @@ export default function Organization (
         '@context': 'http://www.schema.org',
         '@type': 'ImageObject',
         height: logo.height,
-        url: absoluteUrl(logo.url, context),
+        url: absoluteUrl(logo.url),
         width: logo.width
       }
     })

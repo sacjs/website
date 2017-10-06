@@ -1,21 +1,16 @@
 import { absoluteUrl } from '../../utils/urlFilters'
+import { bool, object, string } from 'prop-types'
 import BreadcrumbListBuilder from '../../builders/JSON-LD/BreadcrumbList'
 import Head from 'react-helmet'
-import { object, string } from 'prop-types'
 import React from 'react'
 
-const SiteMetadata = ({ path, logo, title }, context) => (
-  <Head>
-    <meta content={title} property="og:site_name"/>
-    <meta content="website" property="og:type"/>
-    <meta content={absoluteUrl(path, context)} property="og:url"/>
-    <meta content={absoluteUrl(logo.url, context)} property="og:image"/>
-    <meta content={logo.width} property="og:image:width"/>
-    <meta content={logo.height} property="og:image:height"/>
-    <script type="application/ld+json">
-      {JSON.stringify(
-        BreadcrumbListBuilder(
-          [
+const SiteMetadata = ({ breadcrumbs, path, logo, title }) => {
+  let breadcrumbsLD = ''
+  if (breadcrumbs) {
+    breadcrumbsLD = (
+      <script id="breadcrumbs" type="application/ld+json">
+        {JSON.stringify(
+          BreadcrumbListBuilder([
             // TODO: Add flag to frontmatter of relevant pages
             {
               name: 'Code of Conduct',
@@ -29,20 +24,26 @@ const SiteMetadata = ({ path, logo, title }, context) => (
               name: 'Sponsorship',
               url: '/sponsorship'
             }
-          ],
-          context
-        )
-      )}
-    </script>
-  </Head>
-)
-
-SiteMetadata.contextTypes = {
-  hostname: string.isRequired,
-  port: string.isRequired
+          ])
+        )}
+      </script>
+    )
+  }
+  return (
+    <Head>
+      <meta content={title} property="og:site_name"/>
+      <meta content="website" property="og:type"/>
+      <meta content={absoluteUrl(path)} property="og:url"/>
+      <meta content={absoluteUrl(logo.url)} property="og:image"/>
+      <meta content={logo.width} property="og:image:width"/>
+      <meta content={logo.height} property="og:image:height"/>
+      {breadcrumbsLD}
+    </Head>
+  )
 }
 
 SiteMetadata.propTypes = {
+  breadcrumbs: bool,
   logo: object,
   path: string,
   title: string
