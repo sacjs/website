@@ -35,6 +35,7 @@ module.exports = function createEventPage (
       nextNextSlug,
       nextSlug,
       prevSlug,
+      root: path === '/',
       slug: node.fields.slug
     },
     path

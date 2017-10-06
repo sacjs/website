@@ -1,14 +1,14 @@
-import DefaultLayout from '../layouts/DefaultLayout'
+import { bool, object, shape, string } from 'prop-types'
+import EventLayout from '../layouts/EventLayout'
 import Event from '../components/Event'
 import { eventFromContent, eventLDFromContent } from '../transforms/Event'
-import { object, shape, string } from 'prop-types'
 import { organization } from '../metadata'
 import Metadata from '../components/Metadata'
 import React from 'react'
 
 const EventTemplate = ({
   data: { eventPage, nextNextEventPage, nextEventPage, prevEventPage },
-  pageResources: { page: { path } }
+  pathContext: { root }
 }) => {
   const event = eventFromContent(eventPage, organization)
   const nextEvent = eventFromContent(nextEventPage, organization)
@@ -17,25 +17,28 @@ const EventTemplate = ({
   const events = [event, nextEvent, nextNextEvent]
     .filter((ev) => ev) // compact
     .map((ev) => eventLDFromContent(ev, organization)) // transform
+  const { fields: { path } } = event
   return (
-    <DefaultLayout path={path}>
+    <EventLayout path={path} root={root}>
       <Metadata.Calendar eventsLD={events}/>
       <Event event={event} nextEvent={nextEvent} prevEvent={prevEvent}/>
-    </DefaultLayout>
+    </EventLayout>
   )
 }
 
 EventTemplate.propTypes = {
   data: shape({
-    eventPage: object,
+    eventPage: shape({
+      fields: shape({
+        path: string
+      })
+    }),
     nextEventPage: object,
     nextNextEventPage: object,
     prevEventPage: object
   }),
-  pageResources: shape({
-    page: shape({
-      path: string
-    })
+  pathContext: shape({
+    root: bool
   })
 }
 

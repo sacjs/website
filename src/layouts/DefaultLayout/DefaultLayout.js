@@ -1,8 +1,8 @@
 import { absoluteUrl } from '../../utils/urlFilters'
+import { bool, node, object, string } from 'prop-types'
 import Head from 'react-helmet'
 import { externalUrls, organization, site, socialMedia } from '../../metadata'
 import Metadata from '../../components/Metadata'
-import { node, object, string } from 'prop-types'
 import { organizationFromSite } from '../../transforms/Organization'
 import React from 'react'
 
@@ -15,13 +15,13 @@ export default class DefaultLayout extends React.Component {
     socialMedia: object
   }
   static defaultProps = {
-    breadcrumbs: false,
     externalUrls,
     organization,
     site,
     socialMedia
   }
   static propTypes = {
+    breadcrumbs: bool,
     children: node,
     externalUrls: object.isRequired,
     organization: object.isRequired,
@@ -56,7 +56,7 @@ export default class DefaultLayout extends React.Component {
           <link href={absoluteUrl('humans.txt')} rel="author"/>
         </Head>
         <Metadata.Site
-          breadcrumbs={this.props.path === '/'}
+          breadcrumbs={this.props.breadcrumbs}
           logo={organization.logo}
           path={this.props.path}
           title={site.title}
