@@ -4,9 +4,7 @@ module.exports = function getEventPages (graphql) {
       allMarkdownRemark {
         edges {
           node {
-            id
             fields {
-              path
               slug
             }
             frontmatter {

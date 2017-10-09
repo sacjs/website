@@ -2,16 +2,16 @@ import { bool, node, string } from 'prop-types'
 import DefaultLayout from '../DefaultLayout'
 import React from 'react'
 
-const EventLayout = ({ children, path, root }) => (
-  <DefaultLayout breadcrumbs={root} path={path}>
+const EventLayout = ({ children, root, slug }) => (
+  <DefaultLayout breadcrumbs={root} slug={slug}>
     {children}
   </DefaultLayout>
 )
 
 EventLayout.propTypes = {
   children: node,
-  path: string.isRequired,
-  root: bool
+  root: bool,
+  slug: string.isRequired
 }
 
 export default EventLayout

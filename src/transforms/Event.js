@@ -12,15 +12,15 @@ const LEARNING_PREAMBLE = 'Learn more about the amazing world of Javascript'
 const MEETUP = /monthly-meetup/
 const MEETUP_PREAMBLE = 'Featuring amazing Javascript-related talks'
 
-function generateDescription (performers, path) {
+function generateDescription (performers, slug) {
   if (!performers.length) {
-    if (path.match(BEERJS)) {
+    if (slug.match(BEERJS)) {
       return BEERJS_PREAMBLE
     }
-    if (path.match(COFFEEJS)) {
+    if (slug.match(COFFEEJS)) {
       return COFFEEJS_PREAMBLE
     }
-    if (path.match(MEETUP)) {
+    if (slug.match(MEETUP)) {
       return MEETUP_PREAMBLE
     }
     return LEARNING_PREAMBLE
@@ -31,7 +31,7 @@ function generateDescription (performers, path) {
 
 export function eventLDFromContent (event, organization, site) {
   const {
-    fields: { path },
+    fields: { slug },
     frontmatter: { date, location, meetup, schedule }
   } = event
   const { doorTime, endDate } = getDuration(date, schedule)
@@ -42,7 +42,7 @@ export function eventLDFromContent (event, organization, site) {
     .reduce((speakerSet, work) => speakerSet.concat(work.speakers), [])
     .filter((speaker, index, set) => set.indexOf(speaker.url || speaker.name))
   return {
-    description: generateDescription(performers, path),
+    description: generateDescription(performers, slug),
     doorTime,
     endDate,
     eventStatus: 'http://schema.org/EventScheduled',
@@ -52,7 +52,7 @@ export function eventLDFromContent (event, organization, site) {
     name: `SacJS: ${event.title}`,
     performers,
     startDate: date,
-    url: path
+    url: slug
   }
 }
 

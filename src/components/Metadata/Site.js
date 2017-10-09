@@ -4,7 +4,7 @@ import BreadcrumbListBuilder from '../../builders/JSON-LD/BreadcrumbList'
 import Head from 'react-helmet'
 import React from 'react'
 
-const SiteMetadata = ({ breadcrumbs, path, logo, themeColor, title }) => {
+const SiteMetadata = ({ breadcrumbs, slug, logo, themeColor, title }) => {
   let breadcrumbsLD = ''
   if (breadcrumbs) {
     breadcrumbsLD = (
@@ -46,7 +46,7 @@ const SiteMetadata = ({ breadcrumbs, path, logo, themeColor, title }) => {
       />
       <meta content={title} property="og:site_name"/>
       <meta content="website" property="og:type"/>
-      <meta content={absoluteUrl(path)} property="og:url"/>
+      <meta content={absoluteUrl(slug)} property="og:url"/>
       <meta content={absoluteUrl(logo.url)} property="og:image"/>
       <meta content={logo.width} property="og:image:width"/>
       <meta content={logo.height} property="og:image:height"/>
@@ -58,7 +58,7 @@ const SiteMetadata = ({ breadcrumbs, path, logo, themeColor, title }) => {
 SiteMetadata.propTypes = {
   breadcrumbs: bool,
   logo: object,
-  path: string,
+  slug: string.isRequired,
   themeColor: string,
   title: string
 }

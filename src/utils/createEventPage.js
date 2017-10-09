@@ -8,22 +8,22 @@ const EMPTY_EDGE = Object.freeze({
   }
 })
 
-function getEventPage (result, idx) {
-  const { node } = result.data.allMarkdownRemark.edges[idx] || EMPTY_EDGE
+function getEventPage (eventPages, idx) {
+  const { node } = eventPages.data.allMarkdownRemark.edges[idx] || EMPTY_EDGE
   return node
 }
 
 module.exports = function createEventPage (
   nodeIndex,
-  { boundActionCreators, eventPagesResult, node, path }
+  { boundActionCreators, eventPages, node, path }
 ) {
   const { createPage } = boundActionCreators
-  node = node || getEventPage(eventPagesResult, nodeIndex)
-  const prevNode = getEventPage(eventPagesResult, nodeIndex - 1)
+  node = node || getEventPage(eventPages, nodeIndex)
+  const prevNode = getEventPage(eventPages, nodeIndex - 1)
   const prevSlug = prevNode.fields.slug
-  const nextNode = getEventPage(eventPagesResult, nodeIndex + 1)
+  const nextNode = getEventPage(eventPages, nodeIndex + 1)
   const nextSlug = nextNode.fields.slug
-  const nextNextNode = getEventPage(eventPagesResult, nodeIndex + 2)
+  const nextNextNode = getEventPage(eventPages, nodeIndex + 2)
   const nextNextSlug = nextNextNode.fields.slug
   createPage({
     component: p.resolve(`./src/templates/EventTemplate.js`),
@@ -38,7 +38,7 @@ module.exports = function createEventPage (
       root: path === '/',
       slug: node.fields.slug
     },
-    path
+    path: path || node.fields.slug
   })
   return Promise.resolve()
 }

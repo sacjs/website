@@ -35,7 +35,9 @@
     "gatsby-plugin-react-helmet": "^1.0.6",
     "gatsby-source-filesystem": "^1.5.2",
     "gatsby-transformer-remark": "^1.7.15",
-    "lodash.padstart": "^4.6.1"
+    "lodash.get": "^4.4.2",
+    "lodash.padstart": "^4.6.1",
+    "lodash.partialright": "^4.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

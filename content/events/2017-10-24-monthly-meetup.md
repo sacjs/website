@@ -60,3 +60,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+ZOMG *foo* {{ site.title }}

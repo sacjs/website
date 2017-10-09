@@ -8,17 +8,14 @@ const UpNext = ({ event }) => {
   if (!event) {
     return null
   }
-  const {
-    fields: { path },
-    frontmatter: { date, location, title }
-  } = event
+  const { fields: { slug }, frontmatter: { date, location, title } } = event
   return (
     <section>
       <header>
         <h2>What&apos;s Next?</h2>
       </header>
       <p>
-        <Link to={path}>
+        <Link to={slug}>
           {title}
           {', '}
           {dateFormat(date, 'dddd, mmmm dS')}
@@ -32,12 +29,12 @@ const UpNext = ({ event }) => {
 UpNext.propTypes = {
   event: shape({
     fields: shape({
-      path: string
+      slug: string.isRequired
     }),
     frontmatter: shape({
-      date: object,
+      date: object.isRequired,
       location: object.isRequired,
-      title: string
+      title: string.isRequired
     })
   })
 }

@@ -8,13 +8,10 @@ const LastTime = ({ event }) => {
   if (!event) {
     return null
   }
-  const {
-    fields: { path },
-    frontmatter: { date, location, title }
-  } = event
+  const { fields: { slug }, frontmatter: { date, location, title } } = event
   return (
     <div>
-      <Link to={path}>
+      <Link to={slug}>
         &larr; {title}
         {', '} {dateFormat(date, 'dddd, mmmm dS')}
       </Link>{' '}
@@ -26,11 +23,11 @@ const LastTime = ({ event }) => {
 LastTime.propTypes = {
   event: shape({
     fields: shape({
-      path: string
-    }),
+      slug: string.isRequired
+    }).isRequired,
     frontmatter: shape({
       location: object.isRequired,
-      title: string
+      title: string.isRequired
     })
   })
 }

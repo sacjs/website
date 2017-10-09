@@ -17,9 +17,9 @@ const EventTemplate = ({
   const events = [event, nextEvent, nextNextEvent]
     .filter((ev) => ev) // compact
     .map((ev) => eventLDFromContent(ev, organization)) // transform
-  const { fields: { path } } = event
+  const { fields: { slug } } = event
   return (
-    <EventLayout path={path} root={root}>
+    <EventLayout root={root} slug={slug}>
       <Metadata.Calendar eventsLD={events}/>
       <Event event={event} nextEvent={nextEvent} prevEvent={prevEvent}/>
     </EventLayout>
@@ -30,7 +30,7 @@ EventTemplate.propTypes = {
   data: shape({
     eventPage: shape({
       fields: shape({
-        path: string
+        slug: string
       })
     }),
     nextEventPage: object,
@@ -87,7 +87,7 @@ export const query = graphql`
 
   fragment eventLink on MarkdownRemark {
     fields {
-      path
+      slug
     }
     frontmatter {
       date

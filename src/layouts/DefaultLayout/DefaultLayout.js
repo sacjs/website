@@ -10,8 +10,8 @@ export default class DefaultLayout extends React.Component {
   static childContextTypes = {
     externalUrls: object,
     organization: object,
-    path: string,
     site: object,
+    slug: string,
     socialMedia: object
   }
   static defaultProps = {
@@ -25,39 +25,39 @@ export default class DefaultLayout extends React.Component {
     children: node,
     externalUrls: object.isRequired,
     organization: object.isRequired,
-    path: string.isRequired,
+    pageDescription: string,
+    pageTitle: string,
     site: object.isRequired,
+    slug: string.isRequired,
     socialMedia: object.isRequired
   }
   getChildContext () {
     return {
       externalUrls: this.props.externalUrls,
       organization: this.props.organization,
-      path: this.props.path,
       site: this.props.site,
+      slug: this.props.slug,
       socialMedia: this.props.socialMedia
     }
   }
   render () {
+    const description =
+      this.props.pageDescription || `${site.title}: ${site.description}`
+    const title = `${site.title}: ${this.props.pageTitle || site.description}`
     return (
       <div>
         <Head>
           <html lang="en"/>
           <meta content="text/html;charSet=UTF-8" httpEquiv="Content-type"/>
-          <title>
-            {site.title}: {site.description}
-          </title>
-          <meta
-            content={`${site.title}: ${site.description}`}
-            name="description"
-          />
-          <link href={absoluteUrl(this.props.path)} rel="canonical"/>
+          <title>{title}</title>
+          <meta content={description} name="description"/>
+          <link href={absoluteUrl(this.props.slug)} rel="canonical"/>
           <link href="/humans.txt" rel="author"/>
         </Head>
         <Metadata.Site
           breadcrumbs={this.props.breadcrumbs}
           logo={organization.logo}
-          path={this.props.path}
+          slug={this.props.slug}
           themeColor={this.props.site.themeColor}
           title={site.title}
         />
