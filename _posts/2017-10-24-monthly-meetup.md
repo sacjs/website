@@ -23,8 +23,9 @@ schedule:
     speakers:
       - name: Brian Holt
         url: https://twitter.com/holtbt
-    title: React Alternatives with Preact and Inferno
+    title: 10KB or Bust: The Delicate Power of Webpack and Babel
     description: >
+      Your app is bigger and slower than it needs to be. Without rewriting app code we can squeeze more performance out of your code by tweaking Webpack and Babel. These tools are immensely powerful but it's a delicate dance to get them to play nice. This talk is full of tips and tricks to get you there.
 
   - duration: 15
     type: speaker
