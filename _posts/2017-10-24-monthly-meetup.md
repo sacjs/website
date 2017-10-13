@@ -27,7 +27,7 @@ schedule:
     description: >
       Your app is bigger and slower than it needs to be. Without rewriting app code we can squeeze more performance out of your code by tweaking Webpack and Babel. These tools are immensely powerful but it's a delicate dance to get them to play nice. This talk is full of tips and tricks to get you there.
 
-  - duration: 30
+  - duration: 20
     type: speaker
     speakers:
       - name: Devon Anderson
