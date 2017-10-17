@@ -31,10 +31,10 @@ schedule:
     type: speaker
     speakers:
       - name: Devon Anderson
-        url:
-    title: TBD
+        url: https://twitter.com/devonwtanderson
+    title: Do you know how fast you were going back there?
     description: >
-      TBD
+      If you can't measure it, you can't improve it. I'll introduce you to the JavaScript Performance API's, and how they can be used to understand the impact your choices have on the performance of your web apps.
 
   - duration: 5
     type: mc
