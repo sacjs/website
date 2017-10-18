@@ -1,5 +1,6 @@
 ---
 date: 2017-10-24 19:00
+title: All classes and no semi-colons makes SacJS a dull meetup
 feature: true
 meetup:
   id: 237210918
@@ -53,3 +54,9 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Is the size of your application haunting you? 👻
+
+Scared that your app is slow? 👹
+
+Well, here are some tricks we will treat you to to make that app fast and responsive!
