@@ -1,10 +1,12 @@
 import { absoluteUrl } from '../../utils/urlFilters'
 import { bool, node, object, string } from 'prop-types'
+import './DefaultLayout.css'
 import Head from 'react-helmet'
 import { externalUrls, organization, site, socialMedia } from '../../metadata'
 import Metadata from '../../components/Metadata'
 import { organizationFromSite } from '../../transforms/Organization'
 import React from 'react'
+import VerticalRhythmGrid from '../../components/VerticalRhythmGrid'
 
 export default class DefaultLayout extends React.Component {
   static childContextTypes = {
@@ -54,6 +56,7 @@ export default class DefaultLayout extends React.Component {
           <link href={absoluteUrl(this.props.slug)} rel="canonical"/>
           <link href="/humans.txt" rel="author"/>
         </Head>
+        <VerticalRhythmGrid/>
         <Metadata.Site
           breadcrumbs={this.props.breadcrumbs}
           logo={organization.logo}

@@ -1,0 +1,16 @@
+.Event {
+  display: flex;
+  --sidebarWidth: 40vw;
+}
+
+.Event-Details {
+  margin-left: var(--sidebarWidth);
+  max-width: calc(var(--spacingUnit) * 42);
+  padding-left: calc(var(--spacingUnit) * 4);
+  padding-right: calc(var(--spacingUnit) * 4);
+  width: 100%;
+}
+
+.Event-Section {
+  margin-top: calc(var(--spacingUnit) * 3);
+}

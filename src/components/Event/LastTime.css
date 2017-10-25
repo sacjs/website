@@ -1,0 +1,5 @@
+.Event-LastTime {
+  border-top: solid 1px var(--tertiaryColorLighter);
+  margin-bottom: calc(var(--spacingUnit) * 5);
+  padding-top: var(--spacingUnit);
+}

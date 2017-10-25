@@ -1,0 +1,52 @@
+.Sidebar {
+  --linkColor: var(--senaryColor);
+  --linkColorActive: var(--senaryColor);
+  --linkColorFocus: var(--senaryColor);
+  --linkColorHover: var(--senaryColor);
+  --linkColorVisited: var(--senaryColor);
+  --selectionColorBackground: var(--quarternaryColor);
+  --selectionColor: var(--primaryColor);
+  --textColor: var(--senaryColor);
+
+  align-items: center;
+  background: var(--primaryColor);
+  bottom: 0;
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: var(--sidebarWidth);
+}
+
+.Sidebar-Header {
+  flex: 2;
+  margin-top: calc(var(--spacingUnit) * 2);
+  min-height: calc(var(--spacingUnit) * 9);
+}
+
+.Sidebar-Details {
+  flex: 2;
+  max-width: calc(var(--spacingUnit) * 10);
+  min-height: calc(var(--spacingUnit) * 4);
+}
+
+.Sidebar-Footer {
+  margin-bottom: var(--spacingUnit);
+  margin-top: calc(var(--spacingUnit) * 2);
+  max-width: calc(var(--spacingUnit) * 12);
+  text-align: center;
+}
+
+.Sidebar-LogoImg {
+  height: calc(var(--spacingUnit) * 7);
+  width: calc(var(--spacingUnit) * 7);
+  box-shadow: 0 0 0 4px #fff, 0 0 5px 3px rgba(0, 0, 0, 0.75),
+    0 3px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Sidebar-RSVP {
+  align-items: center;
+  display: flex;
+  flex: 3;
+}

@@ -1,20 +1,21 @@
 import Link from 'gatsby-link'
 import { object } from 'prop-types'
 import React from 'react'
+import './WhatElse.css'
 
 const WhatElse = (props, { socialMedia }) => (
-  <section>
+  <section className="Event-Section Event-WhatElse">
     <header>
-      <h2>What else?</h2>
+      <h2 className="gel--trafalgar">What Else?</h2>
     </header>
-    <p>
+    <p className="Event-WhatElseContent">
       Want to speak at a future meetup? We accept 15, 30, and 45-minute talks on
       a wide variety of topics.{' '}
       <Link to="/speaking">
         Let us know what you&apos;d like to talk about.
       </Link>
     </p>
-    <p>
+    <p className="Event-WhatElseContent">
       Find us on{' '}
       <a href={`https://twitter.com/${socialMedia.twitter.username}`}>
         Twitter

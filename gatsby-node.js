@@ -45,3 +45,55 @@ exports.createPages = ({ boundActionCreators, graphql }) =>
   getMarkdownPages(graphql)
     .then(partialRight(generateEventPages, boundActionCreators))
     .then(partialRight(generateGenericPages, boundActionCreators))
+
+exports.modifyWebpackConfig = ({ config, stage, store }, options) => {
+  const { program } = store.getState()
+  switch (stage) {
+    case 'build-css':
+      // NOTE: Blow away the internal reference to the PostCSS config because the
+      // functional version of merge still doesn't replace it (even though the
+      // documentation of webpack-configurator says it should ¯\_(ツ)_/¯)
+      config._config.postcss = []
+      config.merge({
+        postcss: [
+          // NOTE: This disables PostCSS customProperties because the browsers
+          // support setting properties on non-root elements to allow overrides
+          // and PostCSS does not. Evergreen browsers have decently wide
+          // support for custom properties now, so there isn't as much need to
+          // "polyfill" them via PostCSS.
+          require(`postcss-import`)(),
+          require(`postcss-cssnext`)({
+            browsers: program.browserslist,
+            features: {
+              customProperties: false
+            }
+          })
+        ]
+      })
+      return config
+    case 'develop':
+      config.merge({
+        postcss (wp) {
+          // NOTE: This disables PostCSS customProperties because the browsers
+          // support setting properties on non-root elements to allow overrides
+          // and PostCSS does not. Evergreen browsers have decently wide
+          // support for custom properties now, so there isn't as much need to
+          // "polyfill" them via PostCSS.
+          return [
+            require(`postcss-import`)({ addDependencyTo: wp }),
+            require(`postcss-cssnext`)({
+              browsers: program.browserslist,
+              features: {
+                customProperties: false
+              }
+            }),
+            require(`postcss-browser-reporter`),
+            require(`postcss-reporter`)
+          ]
+        }
+      })
+      return config
+    default:
+      return config
+  }
+}

@@ -1,18 +1,23 @@
 import { arrayOf, object, oneOf, string } from 'prop-types'
 import dateFormat from 'dateformat'
 import React from 'react'
+import './Segment.css'
 
 const Segment = ({ description, speakers, sponsors, time, title, type }) => (
-  <li>
-    <header>
-      <time dateTime={time.toISOString()}>{dateFormat(time, 'h:MM tt')}</time>
-      <span>{type}</span>
+  <li className="Segment">
+    <header className="Segment-Header">
+      <time className="Segment-Time gel--brevier" dateTime={time.toISOString()}>
+        {dateFormat(time, 'h:MM tt')}
+      </time>
+      <span className="Segment-Type gel--minion">{type}</span>
     </header>
-    <section>
-      <Segment.Speakers speakers={speakers || undefined}/>
-      <div>{title}</div>
-      <div>{description}</div>
-      <Segment.Sponsors sponsors={sponsors || undefined}/>
+    <section className="Segment-Info">
+      <Segment.Speakers speakers={speakers}/>
+      <div className="Segment-Title" data-has-speakers={Boolean(speakers)}>
+        {title}
+      </div>
+      <div className="Segment-Description gel--longPrimer">{description}</div>
+      <Segment.Sponsors sponsors={sponsors}/>
     </section>
   </li>
 )

@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import LocationLink from '../LocationLink'
 import { object, shape, string } from 'prop-types'
 import React from 'react'
+import './UpNext.css'
 
 const UpNext = ({ event }) => {
   if (!event) {
@@ -10,11 +11,11 @@ const UpNext = ({ event }) => {
   }
   const { fields: { slug }, frontmatter: { date, location, title } } = event
   return (
-    <section>
+    <section className="Event-Section Event-UpNext">
       <header>
-        <h2>What&apos;s Next?</h2>
+        <h2 className="gel--trafalgar">What&apos;s Next?</h2>
       </header>
-      <p>
+      <p className="Event-UpNextContent">
         <Link to={slug}>
           {title}
           {', '}

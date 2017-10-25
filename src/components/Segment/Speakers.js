@@ -1,5 +1,6 @@
 import { arrayOf, shape, string } from 'prop-types'
 import React from 'react'
+import './Speakers.css'
 import { toSentence } from '../../utils/array'
 
 function componentize (speaker, i) {
@@ -10,9 +11,12 @@ function componentize (speaker, i) {
   return <li key={i}>{name}</li>
 }
 
-const Speakers = ({ speakers }) => (
-  <ul>{toSentence(speakers.map(componentize))}</ul>
-)
+const Speakers = ({ speakers }) => {
+  if (!speakers || !speakers.length) {
+    return null
+  }
+  return <ul className="Speakers">{toSentence(speakers.map(componentize))}</ul>
+}
 
 Speakers.defaultProps = {
   speakers: []
@@ -24,7 +28,7 @@ Speakers.propTypes = {
       name: string,
       url: string
     })
-  ).isRequired
+  )
 }
 
 export default Speakers

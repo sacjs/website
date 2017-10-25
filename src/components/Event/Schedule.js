@@ -1,6 +1,7 @@
 import { absoluteUrl } from '../../utils/urlFilters'
 import { array, object, shape, string } from 'prop-types'
 import React from 'react'
+import './Schedule.css'
 import Segment from '../Segment'
 
 function componentize (time, segment, i) {
@@ -26,12 +27,12 @@ function segmentize (date, segments) {
 }
 
 const Schedule = ({ date, schedule }, { organization }) => (
-  <section>
-    <h2>Schedule</h2>
+  <section className="Event-Section Event-Schedule">
+    <h2 className="Event-ScheduleTitle gel--trafalgar">Schedule</h2>
     <meta content={date.toISOString()} itemProp="startDate"/>
     <meta content="EventScheduled" itemProp="eventStatus"/>
     <meta content={absoluteUrl(organization.logo.url)} itemProp="image"/>
-    <ul>{segmentize(date, schedule)}</ul>
+    <ul className="Event-ScheduleList">{segmentize(date, schedule)}</ul>
   </section>
 )
 

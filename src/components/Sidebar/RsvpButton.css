@@ -1,0 +1,25 @@
+.RsvpButton {
+  text-align: center;
+}
+
+.RsvpButton-Link {
+  display: block;
+  padding-bottom: calc(var(--spacingUnit) * 1.5);
+  padding-top: var(--spacingUnit);
+  padding-right: calc(var(--spacingUnit) * 2);
+  padding-left: calc(var(--spacingUnit) * 2);
+  outline: solid 3px var(--linkColor);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.RsvpButton-LinkPromo {
+  opacity: 0.5;
+  text-align: center;
+}
+
+.RsvpButton-Thanks {
+  background: var(--primaryColorLight);
+  padding: calc(var(--spacingUnit));
+}

@@ -1,0 +1,121 @@
+:root {
+  --fontSize: 16px;
+  --lineHeight: 1.5;
+  --viewportMinWidth: 320px;
+
+  --spacingUnit: calc(var(--fontSize) * var(--lineHeight));
+
+  --primaryColor: #b51737;
+  --secondaryColor: #f5db3a;
+  --tertiaryColor: #514028;
+  --quarternaryColor: #fff9c2;
+  --quinaryColor: #99b582;
+  --senaryColor: #fefefe;
+
+  --primaryColorDark: #950622;
+  --primaryColorDarker: #6f0016;
+  --primaryColorLight: #d03856;
+  --primaryColorLighter: #e8617c;
+
+  --tertiaryColorDark: #423017;
+  --tertiaryColorDarker: #2e1e08;
+  --tertiaryColorLight: #6c5d47;
+  --tertiaryColorLighter: #a18c6e;
+
+  --linkColor: var(--primaryColor);
+  --linkColorActive: var(--primaryColorLighter);
+  --linkColorFocus: var(--primaryColorLighter);
+  --linkColorHover: var(--primaryColorLight);
+  --linkColorVisited: var(--quinaryColor);
+  --selectionColorBackground: var(--primaryColorLight);
+  --selectionColor: var(--quarternaryColor);
+  --textColor: var(--tertiaryColor);
+  --verticalRhythmGridColor: #bbb;
+}
+
+::selection {
+  background: var(--selectionColorBackground);
+  color: var(--selectionColor);
+}
+::-moz-selection {
+  background: var(--selectionColor);
+}
+
+*,
+*:before,
+*:after {
+  border: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  color: var(--textColor);
+  /* System font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--fontSize);
+  font-weight: 300;
+  line-height: var(--lineHeight);
+  height: 100%;
+}
+
+a {
+  color: var(--linkColor);
+  &:active {
+    color: var(--linkColorActive);
+  }
+  &:focus {
+    color: var(--linkColorFocus);
+  }
+  &:hover {
+    color: var(--linkColorHover);
+  }
+  &:visited {
+    color: var(--linkColorVisited);
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.gel--canon {
+  font-size: 44px;
+  line-height: 48px;
+}
+
+.gel--trafalgar {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.gel--doublePica {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.gel--longPrimer {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gel--brevier {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.gel--minion {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+.Segment-Header {
+  display: flex;
+}
+
+.Segment-Time {
+  font-weight: 600;
+  margin-right: calc(var(--spacingUnit) / 4);
+  text-align: right;
+  text-transform: uppercase;
+  width: calc(var(--spacingUnit) * 3);
+}
+
+.Segment-Title {
+  &[data-has-speakers='true'] {
+    font-style: italic;
+  }
+}
+
+.Segment-Type {
+  font-style: italic;
+  /* Compensate for perceived baseline mis-alignment */
+  padding-top: 1px;
+  margin-bottom: -1px;
+}
+
+.Segment-Info {
+  border-left: dotted 1px #ddd;
+  margin-bottom: var(--spacingUnit);
+  margin-left: calc(var(--spacingUnit) * 2);
+  margin-top: var(--spacingUnit);
+  padding-bottom: var(--spacingUnit);
+  padding-left: var(--spacingUnit);
+  padding-top: var(--spacingUnit);
+}
+
+.Segment-Description {
+  margin-top: var(--spacingUnit);
+  &:empty {
+    display: none;
+  }
+}

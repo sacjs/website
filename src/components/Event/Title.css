@@ -1,0 +1,11 @@
+.Event-Title {
+  margin-top: calc(var(--spacingUnit) * 2);
+}
+
+.Event-TitleHeader {
+  margin-top: var(--spacingUnit);
+}
+
+.Event-TitleLocation {
+  margin-top: var(--spacingUnit);
+}

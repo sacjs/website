@@ -1,0 +1,7 @@
+.Event-UpNext {
+  margin-top: calc(var(--spacingUnit) * 4);
+}
+
+.Event-UpNextContent {
+  margin-top: calc(var(--spacingUnit) * 2);
+}

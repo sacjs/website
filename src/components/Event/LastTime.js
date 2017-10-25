@@ -1,4 +1,5 @@
 import dateFormat from 'dateformat'
+import './LastTime.css'
 import Link from 'gatsby-link'
 import LocationLink from '../LocationLink'
 import { shape, string, object } from 'prop-types'
@@ -10,13 +11,13 @@ const LastTime = ({ event }) => {
   }
   const { fields: { slug }, frontmatter: { date, location, title } } = event
   return (
-    <div>
+    <section className="Event-Section Event-LastTime gel--brevier">
       <Link to={slug}>
         &larr; {title}
         {', '} {dateFormat(date, 'dddd, mmmm dS')}
       </Link>{' '}
       <LocationLink {...location} linkPrefix="at"/>
-    </div>
+    </section>
   )
 }
 

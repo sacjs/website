@@ -1,5 +1,6 @@
 import { arrayOf, shape, string } from 'prop-types'
 import React from 'react'
+import './Sponsors.css'
 import { toSentence } from '../../utils/array'
 
 function componentize (sponsor, i) {
@@ -11,10 +12,14 @@ function componentize (sponsor, i) {
 }
 
 const Sponsors = ({ sponsors }) => {
-  if (sponsors.length === 0) {
+  if (!sponsors || !sponsors.length) {
     return null
   }
-  return <div>Sponsored by {toSentence(sponsors.map(componentize))}</div>
+  return (
+    <div className="Sponsors gel--brevier">
+      Sponsored by {toSentence(sponsors.map(componentize))}
+    </div>
+  )
 }
 
 Sponsors.defaultProps = {
@@ -26,7 +31,7 @@ Sponsors.propTypes = {
     shape({
       url: string
     })
-  ).isRequired
+  )
 }
 
 export default Sponsors
