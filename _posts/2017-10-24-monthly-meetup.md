@@ -1,7 +1,7 @@
 ---
 date: 2017-10-24 19:00
 title: All classes and no semi-colons makes SacJS a dull meetup
-feature: true
+feature: false
 meetup:
   id: 237210918
 schedule:

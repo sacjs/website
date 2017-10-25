@@ -1,6 +1,6 @@
 ---
-date: 2017-11-28 19:00
-feature: false
+date: 2017-11-21 19:00
+feature: true
 meetup:
   id: 237210922
 schedule:
