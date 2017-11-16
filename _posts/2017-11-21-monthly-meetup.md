@@ -27,13 +27,14 @@ schedule:
     description: >
       A look at how easy and fast it is to create a chatbot for all the popular messaging platforms, like Facebook Messenger, easily using nodeJS
 
-  - duration: 20
+  - duration: 25
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Billy Le
+        url: https://twitter.com/xgeewhiz
+    title: Brief Intro to Functional React Programming
     description: >
+      An introduction to basic functional programming paradigm, stateless Components, Stateless Functional Components, Functional Components, and using functional programming utility libraries.
 
   - duration: 20
     type: speaker
