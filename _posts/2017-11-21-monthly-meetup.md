@@ -1,5 +1,6 @@
 ---
 date: 2017-11-21 19:00
+title: turkey(duck(chicken)): A Functional Thanksgiving with Chatbots
 feature: true
 meetup:
   id: 237210922
@@ -18,15 +19,6 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Joseph Burchett
-        url: https://www.google.com/+josephburchett
-    title: Building chatbots with NodeJS
-    description: >
-      A look at how easy and fast it is to create a chatbot for all the popular messaging platforms, like Facebook Messenger, easily using nodeJS
-
   - duration: 25
     type: speaker
     speakers:
@@ -34,12 +26,12 @@ schedule:
         url: https://twitter.com/xgeewhiz
     title: Brief Intro to Functional React Programming
     description: >
-      An introduction to basic functional programming paradigm, stateless Components, Stateless Functional Components, Functional Components, and using functional programming utility libraries.
+      An introduction to basic functional programming paradigms, stateless Components, Stateless Functional Components, Functional Components, and using functional programming utility libraries.
 
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our Third Speaker
+      - name: Be Our Second Speaker
         url: /speaking/
     title:
     description: >
@@ -61,3 +53,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Prepare yourself for Thanksgiving by gorging yourself on some Javascript knowledge.
