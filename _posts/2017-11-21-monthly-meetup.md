@@ -1,6 +1,6 @@
 ---
 date: 2017-11-21 19:00
-title: turkey(duck(chicken)): A Functional Thanksgiving with Chatbots
+title: "turkey(duck(chicken)): A Functional Thanksgiving with Chatbots"
 feature: true
 meetup:
   id: 237210922
@@ -33,7 +33,7 @@ schedule:
     speakers:
       - name: David Novicki
         url: https://twitter.com/novicki_david
-    title: "Work it" featuring Service Workers
+    title: "\"Work it\" featuring Service Workers"
     description: >
       David will help you gain understanding of Service Workers and give some cool examples on how to use them. Unfortunately Missy Elliot could not make it.
 
