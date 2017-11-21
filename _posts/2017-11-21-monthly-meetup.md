@@ -31,10 +31,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: David Novicki
+        url: https://twitter.com/novicki_david
+    title: "Work it" featuring Service Workers
     description: >
+      David will help you gain understanding of Service Workers and give some cool examples on how to use them. Unfortunately Missy Elliot could not make it.
 
   - duration: 5
     type: mc
