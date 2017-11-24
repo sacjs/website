@@ -22,10 +22,13 @@ export default class RsvpButton extends React.Component {
     isPastEvent: true
   }
   componentWillMount () {
-    fetch(UpcomingUrl)
-      .then((response) => response.json())
-      .then(this.handleUpcomingMeetups)
-      .catch((err) => console.error(err))
+    // TODO: Fix JSON-P support in Node for server-side rendering
+    if (typeof window !== 'undefined') {
+      fetch(UpcomingUrl)
+        .then((response) => response.json())
+        .then(this.handleUpcomingMeetups)
+        .catch((err) => console.error(err))
+    }
   }
   handleUpcomingMeetups = (response) => {
     if (response.results && response.results.length) {
