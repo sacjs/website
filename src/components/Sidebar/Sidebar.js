@@ -24,7 +24,7 @@ const Sidebar = ({ className, meetup }, { organization: { location } }) => (
       </p>
     </section>
     <section className="Sidebar-RSVP">
-      <RsvpButton meetupId={meetup.id}/>
+      <RsvpButton meetupId={meetup && meetup.id}/>
     </section>
     <footer className="Sidebar-Footer gel--brevier">
       SacJS expects all speakers and attendees to follow our{' '}
@@ -40,10 +40,6 @@ Sidebar.contextTypes = {
       url: string
     })
   })
-}
-
-Sidebar.defaultProps = {
-  meetup: {}
 }
 
 Sidebar.propTypes = {
