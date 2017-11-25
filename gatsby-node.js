@@ -65,6 +65,11 @@ exports.modifyWebpackConfig = ({ config, stage, store }, options) => {
           require(`postcss-cssnext`)({
             browsers: program.browserslist,
             features: {
+              customMedia: {
+                extensions: {
+                  '--phone': '(min-width: 640px)'
+                }
+              },
               customProperties: false
             }
           })
@@ -84,6 +89,11 @@ exports.modifyWebpackConfig = ({ config, stage, store }, options) => {
             require(`postcss-cssnext`)({
               browsers: program.browserslist,
               features: {
+                customMedia: {
+                  extensions: {
+                    '--phone': '(min-width: 640px)'
+                  }
+                },
                 customProperties: false
               }
             }),

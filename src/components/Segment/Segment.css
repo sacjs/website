@@ -4,10 +4,8 @@
 
 .Segment-Time {
   font-weight: 600;
-  margin-right: calc(var(--spacingUnit) / 4);
-  text-align: right;
+  margin-right: 1ch;
   text-transform: uppercase;
-  width: calc(var(--spacingUnit) * 3);
 }
 
 .Segment-Title {
@@ -26,7 +24,7 @@
 .Segment-Info {
   border-left: dotted 1px #ddd;
   margin-bottom: var(--spacingUnit);
-  margin-left: calc(var(--spacingUnit) * 2);
+  margin-left: var(--spacingUnit);
   margin-top: var(--spacingUnit);
   padding-bottom: var(--spacingUnit);
   padding-left: var(--spacingUnit);

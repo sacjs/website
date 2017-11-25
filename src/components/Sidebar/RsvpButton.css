@@ -4,7 +4,8 @@
 
 .RsvpButton-Link {
   display: block;
-  padding-bottom: calc(var(--spacingUnit) * 1.5);
+  font-weight: bold;
+  padding-bottom: var(--spacingUnit);
   padding-top: var(--spacingUnit);
   padding-right: calc(var(--spacingUnit) * 2);
   padding-left: calc(var(--spacingUnit) * 2);
@@ -15,12 +16,10 @@
 
 .RsvpButton-LinkPromo {
   color: var(--textColorSubdued);
-  font-weight: bold;
   text-align: center;
 }
 
 .RsvpButton-Thanks {
   background: var(--primaryColorLight);
-  font-weight: bold;
   padding: calc(var(--spacingUnit));
 }
