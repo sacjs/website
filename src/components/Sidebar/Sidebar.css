@@ -7,6 +7,7 @@
   --selectionColorBackground: var(--quarternaryColor);
   --selectionColor: var(--primaryColor);
   --textColor: var(--senaryColor);
+  --textColorSubdued: #efccd1;
 
   align-items: center;
   background: var(--primaryColor);
