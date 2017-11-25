@@ -51,8 +51,13 @@ export default class DefaultLayout extends React.Component {
         <Head>
           <html lang="en"/>
           <meta content="text/html;charSet=UTF-8" httpEquiv="Content-type"/>
+          <meta content="ie=edge" httpEquiv="x-ua-compatible"/>
           <title>{title}</title>
           <meta content={description} name="description"/>
+          <meta
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+          />
           <link href={absoluteUrl(this.props.slug)} rel="canonical"/>
           <link href="/humans.txt" rel="author"/>
         </Head>
