@@ -8,6 +8,7 @@ const Event = ({ event, nextEvent, prevEvent }) => {
     return null // TODO: Add "no scheduled event" "error"
   }
   const {
+    fields: { slug },
     frontmatter: { date, location, meetup, schedule, title },
     html
   } = event
@@ -15,7 +16,12 @@ const Event = ({ event, nextEvent, prevEvent }) => {
     <main className="Event">
       <Sidebar meetup={meetup}/>
       <article className="Event-Details">
-        <Event.Title date={date} location={location} title={title}/>
+        <Event.Title
+          date={date}
+          location={location}
+          slug={slug}
+          title={title}
+        />
         <Event.Schedule date={date} schedule={schedule}/>
         {html && <div dangerouslySetInnerHTML={{ __html: html }}/>}
         <Event.UpNext event={nextEvent}/>
@@ -28,6 +34,9 @@ const Event = ({ event, nextEvent, prevEvent }) => {
 
 Event.propTypes = {
   event: shape({
+    fields: shape({
+      slug: string
+    }),
     frontmatter: shape({
       date: object,
       location: object,

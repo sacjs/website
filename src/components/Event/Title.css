@@ -6,6 +6,17 @@
   margin-top: var(--spacingUnit);
 }
 
+.Event-TitleLink {
+  text-decoration: none;
+  &,
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    color: var(--textColor);
+  }
+}
+
 .Event-TitleLocation {
   margin-top: var(--spacingUnit);
 }
