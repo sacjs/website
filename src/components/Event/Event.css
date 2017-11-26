@@ -25,6 +25,6 @@
   }
 
   .Event-Section {
-    padding-top: calc(var(--spacingUnit) * 3);
+    padding-top: calc(var(--spacingUnit) * 2);
   }
 }
