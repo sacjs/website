@@ -23,7 +23,12 @@ const Event = ({ event, nextEvent, prevEvent }) => {
           title={title}
         />
         <Event.Schedule date={date} schedule={schedule}/>
-        {html && <div dangerouslySetInnerHTML={{ __html: html }}/>}
+        {html && (
+          <div
+            className="Event-Content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        )}
         <Event.UpNext event={nextEvent}/>
         <Event.WhatElse/>
         <Event.LastTime event={prevEvent}/>
