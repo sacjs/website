@@ -3699,8 +3699,8 @@ gatsby-plugin-manifest@^1.0.8:
     bluebird "^3.5.0"
 
 gatsby-plugin-netlify@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.8.tgz#5ca183ff6f6fe9fd146cab6e4defa64caeec83e2"
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.9.tgz#dabf64a729e86f633290a23ef67d82e506adf6b0"
   dependencies:
     babel-runtime "^6.26.0"
     fs-extra "^4.0.2"
