@@ -1,7 +1,7 @@
 ---
 date: 2017-11-21 19:00
 title: "turkey(duck(chicken)): A Functional Thanksgiving with Chatbots"
-feature: true
+feature: false
 meetup:
   id: 237210922
 schedule:
