@@ -6,7 +6,7 @@ import './WhatElse.css'
 const WhatElse = (props, { socialMedia }) => (
   <section className="Event-Section Event-WhatElse">
     <header>
-      <h2 className="gel--trafalgar">What Else?</h2>
+      <h2 className="Event-WhatElseTitle">What Else?</h2>
     </header>
     <p className="Event-WhatElseContent">
       Want to speak at a future meetup? We accept 15, 30, and 45-minute talks on

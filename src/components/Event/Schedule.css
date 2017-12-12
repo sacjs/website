@@ -1,7 +1,7 @@
-.Event-Schedule {
-}
+@import '../../utils/typography.css';
 
 .Event-ScheduleTitle {
+  @extend .gel--trafalgar;
 }
 
 .Event-ScheduleList {

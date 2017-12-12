@@ -16,7 +16,7 @@ const Sponsors = ({ sponsors }) => {
     return null
   }
   return (
-    <div className="Sponsors gel--brevier">
+    <div className="Sponsors">
       Sponsored by {toSentence(sponsors.map(componentize))}
     </div>
   )

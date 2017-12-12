@@ -1,3 +1,5 @@
+@import '../../utils/typography.css';
+
 .RsvpButton {
   text-align: center;
 }
@@ -17,6 +19,10 @@
 .RsvpButton-LinkPromo {
   color: var(--textColorSubdued);
   text-align: center;
+}
+
+.RsvpButton-LinkPromoText {
+  @extend .gel--doublePica;
 }
 
 .RsvpButton-Thanks {

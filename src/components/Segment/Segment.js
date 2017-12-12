@@ -6,17 +6,17 @@ import './Segment.css'
 const Segment = ({ description, speakers, sponsors, time, title, type }) => (
   <li className="Segment">
     <header className="Segment-Header">
-      <time className="Segment-Time gel--brevier" dateTime={time.toISOString()}>
+      <time className="Segment-Time" dateTime={time.toISOString()}>
         {dateFormat(time, 'h:MM tt')}
       </time>
-      <span className="Segment-Type gel--minion">{type}</span>
+      <span className="Segment-Type">{type}</span>
     </header>
     <section className="Segment-Info">
       <Segment.Speakers speakers={speakers}/>
       <div className="Segment-Title" data-has-speakers={Boolean(speakers)}>
         {title}
       </div>
-      <div className="Segment-Description gel--longPrimer">{description}</div>
+      <div className="Segment-Description">{description}</div>
       <Segment.Sponsors sponsors={sponsors}/>
     </section>
   </li>

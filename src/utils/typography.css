@@ -1,0 +1,30 @@
+.gel--canon {
+  font-size: 44px;
+  line-height: 48px;
+}
+
+.gel--trafalgar {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.gel--doublePica {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.gel--longPrimer {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gel--brevier {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.gel--minion {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

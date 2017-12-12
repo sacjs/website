@@ -1,3 +1,5 @@
+@import '../../utils/typography.css';
+
 .Sidebar {
   --linkColor: var(--senaryColor);
   --linkColorActive: var(--senaryColor);
@@ -29,6 +31,7 @@
 }
 
 .Sidebar-Footer {
+  @extend .gel--brevier;
   margin-bottom: var(--spacingUnit);
   margin-top: var(--spacingUnit);
   max-width: calc(var(--spacingUnit) * 12);

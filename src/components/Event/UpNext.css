@@ -1,5 +1,11 @@
+@import '../../utils/typography.css';
+
 .Event-UpNext {
   margin-top: calc(var(--spacingUnit) * 4);
+}
+
+.Event-UpNextTitle {
+  @extend .gel--trafalgar;
 }
 
 .Event-UpNextContent {

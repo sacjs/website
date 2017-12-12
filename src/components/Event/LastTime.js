@@ -11,7 +11,7 @@ const LastTime = ({ event }) => {
   }
   const { fields: { slug }, frontmatter: { date, location, title } } = event
   return (
-    <section className="Event-Section Event-LastTime gel--brevier">
+    <section className="Event-Section Event-LastTime">
       <Link to={slug}>
         &larr; {title}
         {', '} {dateFormat(date, 'dddd, mmmm dS')}

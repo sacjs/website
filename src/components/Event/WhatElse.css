@@ -1,4 +1,7 @@
-.Event-WhatElse {
+@import '../../utils/typography.css';
+
+.Event-WhatElseTitle {
+  @extend .gel--trafalgar;
 }
 
 .Event-WhatElseContent {

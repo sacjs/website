@@ -1,4 +1,7 @@
+@import '../../utils/typography.css';
+
 .Event-LastTime {
+  @extend .gel--brevier;
   border-top: solid 1px var(--tertiaryColorLighter);
   margin-bottom: var(--spacingUnit);
   margin-top: calc(var(--spacingUnit) * 2);

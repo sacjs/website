@@ -72,7 +72,8 @@ exports.modifyWebpackConfig = ({ config, stage, store }, options) => {
               },
               customProperties: false
             }
-          })
+          }),
+          require(`postcss-extend`)
         ]
       })
       return config
@@ -97,6 +98,7 @@ exports.modifyWebpackConfig = ({ config, stage, store }, options) => {
                 customProperties: false
               }
             }),
+            require(`postcss-extend`),
             require(`postcss-browser-reporter`),
             require(`postcss-reporter`)
           ]

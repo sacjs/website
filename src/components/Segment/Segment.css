@@ -1,8 +1,11 @@
+@import '../../utils/typography.css';
+
 .Segment-Header {
   display: flex;
 }
 
 .Segment-Time {
+  @extend .gel--brevier;
   font-weight: 600;
   margin-right: 1ch;
   text-transform: uppercase;
@@ -15,6 +18,7 @@
 }
 
 .Segment-Type {
+  @extend .gel--minion;
   font-style: italic;
   /* Compensate for perceived baseline mis-alignment */
   padding-top: 1px;
@@ -32,6 +36,7 @@
 }
 
 .Segment-Description {
+  @extend .gel--longPrimer;
   margin-top: var(--spacingUnit);
   &:empty {
     display: none;

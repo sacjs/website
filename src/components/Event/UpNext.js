@@ -13,7 +13,7 @@ const UpNext = ({ event }) => {
   return (
     <section className="Event-Section Event-UpNext">
       <header>
-        <h2 className="gel--trafalgar">What&apos;s Next?</h2>
+        <h2 className="Event-UpNextTitle">What&apos;s Next?</h2>
       </header>
       <p className="Event-UpNextContent">
         <Link to={slug}>

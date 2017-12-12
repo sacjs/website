@@ -1,3 +1,6 @@
+@import '../../utils/typography.css';
+
 .Sponsors {
+  @extend .gel--brevier;
   margin-top: var(--spacingUnit);
 }

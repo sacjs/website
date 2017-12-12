@@ -28,7 +28,7 @@ function segmentize (date, segments) {
 
 const Schedule = ({ date, schedule }, { organization }) => (
   <section className="Event-Section Event-Schedule">
-    <h2 className="Event-ScheduleTitle gel--trafalgar">Schedule</h2>
+    <h2 className="Event-ScheduleTitle">Schedule</h2>
     <meta content={date.toISOString()} itemProp="startDate"/>
     <meta content="EventScheduled" itemProp="eventStatus"/>
     <meta content={absoluteUrl(organization.logo.url)} itemProp="image"/>

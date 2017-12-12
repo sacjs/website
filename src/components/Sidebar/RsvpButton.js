@@ -58,7 +58,7 @@ export default class RsvpButton extends React.Component {
           <div className="RsvpButton-LinkPromo">
             Join {this.state.count} {pluralize('other', this.state.count)}
           </div>
-          <div className="gel--doublePica">RSVP Today</div>
+          <div className="RsvpButton-LinkPromoText">RSVP Today</div>
         </a>
       )
     }

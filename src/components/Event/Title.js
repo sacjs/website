@@ -8,7 +8,7 @@ import './Title.css'
 const EventTitle = ({ date, location, slug, title }) => (
   <header className="Event-Section Event-Title">
     <p>{dateFormat(date, 'dddd, mmmm d')}</p>
-    <h1 className="Event-TitleHeader gel--canon">
+    <h1 className="Event-TitleHeader">
       <a className="Event-TitleLink" href={slug}>
         {title}
       </a>

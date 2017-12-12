@@ -1,4 +1,7 @@
+@import '../../utils/typography.css';
+
 .Event-TitleHeader {
+  @extend .gel--canon;
   margin-top: var(--spacingUnit);
 }
 
