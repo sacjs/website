@@ -1,4 +1,4 @@
-import Logo from '../../../static/img/sac_js.min.svg'
+import Logo from '../../components/Logo'
 import { object, shape, string } from 'prop-types'
 import React from 'react'
 import RsvpButton from './RsvpButton'
@@ -7,15 +7,7 @@ import './Sidebar.css'
 const Sidebar = ({ className, meetup }, { organization: { location } }) => (
   <aside className="Sidebar">
     <header className="Sidebar-Header">
-      <a aria-label="Home" href="/">
-        <img
-          alt=""
-          className="Sidebar-LogoImg"
-          height="150"
-          src={Logo}
-          width="150"
-        />
-      </a>
+      <Logo className="Sidebar-LogoImg"/>
     </header>
     <section className="Sidebar-Details">
       <p>
