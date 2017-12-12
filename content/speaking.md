@@ -16,16 +16,18 @@ You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ s
 
 If you are choosing the easier GitHub Issue option, please use the following as a template:
 
-    Name:
-    Twitter Handle:
-    GitHub Username:
-    Employer:
-    Talk Length:
+```
+Name:
+Twitter Handle:
+GitHub Username:
+Employer:
+Talk Length:
 
-    ---
+---
 
-    Title:
-    Brief Description:
+Title:
+Brief Description:
+```
 
 #### Do I need to be an expert to talk?
 

@@ -1,0 +1,69 @@
+@import '../../utils/typography.css';
+
+.Page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px;
+}
+
+.Page-Header {
+  margin-bottom: var(--spacingUnit);
+  margin-top: var(--spacingUnit);
+  text-align: center;
+}
+
+.Page-Logo {
+  height: calc(var(--spacingUnit) * 7);
+  width: calc(var(--spacingUnit) * 7);
+}
+
+.Page-Content {
+  padding-bottom: calc(var(--spacingUnit) * 7);
+}
+
+.Page-Content > h1 {
+  @extend .gel--canon;
+  margin-top: calc(var(--spacingUnit) * 2);
+  text-align: center;
+}
+
+.Page-Content > h2 {
+  @extend .gel--trafalgar;
+  margin-top: calc(var(--spacingUnit) * 2);
+}
+
+.Page-Content > h4 {
+  @extend .gel--doublePica;
+  margin-top: calc(var(--spacingUnit) * 2);
+}
+
+.Page-Content > h5 {
+  @extend .gel--longPrimer;
+  margin-top: calc(var(--spacingUnit) * 2);
+}
+
+.Page-Content > p {
+  margin-top: var(--spacingUnit);
+}
+
+.Page-Content > pre {
+  @extend .gel--longPrimer;
+  background-color: var(--senaryColor);
+  border: solid 1px #c6ae8c;
+  border-radius: 3px;
+  margin-top: var(--spacingUnit);
+  padding-bottom: calc(var(--spacingUnit) - 1px);
+  padding-left: var(--spacingUnit);
+  padding-right: var(--spacingUnit);
+  padding-top: calc(var(--spacingUnit) - 1px);
+}
+
+.Page-Content > pre > code {
+  font-family: monospace;
+  padding-bottom: var(--spacingUnit);
+  padding-top: var(--spacingUnit);
+}
+
+.Page-Content li {
+  margin-top: var(--spacingUnit);
+}
