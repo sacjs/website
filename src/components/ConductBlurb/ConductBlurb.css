@@ -1,0 +1,7 @@
+@import '../../utils/typography.css';
+
+.ConductBlurb {
+  @extend .gel--brevier;
+  margin-top: var(--spacingUnit);
+  text-align: center;
+}

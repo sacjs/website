@@ -1,3 +1,4 @@
+import ConductBlurb from '../../components/ConductBlurb'
 import Logo from '../../components/Logo'
 import { object, shape, string } from 'prop-types'
 import React from 'react'
@@ -19,8 +20,7 @@ const Sidebar = ({ className, meetup }, { organization: { location } }) => (
       <RsvpButton meetupId={meetup && meetup.id}/>
     </section>
     <footer className="Sidebar-Footer">
-      SacJS expects all speakers and attendees to follow our{' '}
-      <a href="/code-of-conduct/">Code of Conduct</a>.
+      <ConductBlurb/>
     </footer>
   </aside>
 )
