@@ -1,0 +1,18 @@
+@import '../../utils/typography.css';
+
+.SocialMediaLinks {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.SocialMediaLink {
+  @extend .gel--brevier;
+  text-align: center;
+}
+
+.SocialMediaLink-Img {
+  height: 1rem;
+  margin-right: 0.5ch;
+  vertical-align: text-bottom;
+}

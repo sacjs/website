@@ -2,6 +2,7 @@ import ConductBlurb from '../../components/ConductBlurb'
 import Logo from '../../components/Logo'
 import './Page.css'
 import React from 'react'
+import SocialMediaLinks from '../../components/SocialMediaLinks'
 import { string } from 'prop-types'
 
 const Page = ({ content }) => (
@@ -14,6 +15,7 @@ const Page = ({ content }) => (
       dangerouslySetInnerHTML={{ __html: content }}
     />
     <footer className="Page-Footer">
+      <SocialMediaLinks/>
       <ConductBlurb/>
     </footer>
   </article>
