@@ -14,7 +14,7 @@ All attendees, speakers, sponsors, and volunteers at our meetup group are requir
 
 ## Propose a Talk
 
-If you are interested in proposing a talk, please create an [issue](https://github.com/sacjs/sacjs.github.io/issues) using the following format:
+If you are interested in proposing a talk, please create an [issue](https://github.com/sacjs/website/issues) using the following format:
 
 ```
 Name:

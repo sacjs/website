@@ -7,24 +7,21 @@
     "build": "NODE_ENV=production gatsby build",
     "develop": "gatsby develop",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "prettier-eslint --write \"./*.js\" \"./src/**/*.js\" && eslint --ignore-path .gitignore --fix .",
+    "lint:js":
+      "prettier-eslint --write \"./*.js\" \"./src/**/*.js\" && eslint --ignore-path .gitignore --fix .",
     "pretest": "npm run lint",
     "serve": "gatsby serve"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/sacjs/sacjs.github.io/issues"
+    "url": "https://github.com/sacjs/website/issues"
   },
   "license": "BSD-2-Clause",
   "author": "Derek Lindahl",
-  "contributors": [
-    "Derek Lindahl",
-    "Sam Thompson",
-    "Andy Axton"
-  ],
+  "contributors": ["Derek Lindahl", "Sam Thompson", "Andy Axton"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sacjs/sacjs.github.io.git"
+    "url": "https://github.com/sacjs/website.git"
   },
   "homepage": "http://sacjs.com",
   "dependencies": {

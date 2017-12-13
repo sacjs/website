@@ -12,7 +12,7 @@ description: >
 
 #### How do I submit a talk?
 
-You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ socialMedia.github.username }}/sacjs.github.io/issues) or [email us](mailto:{{ socialMedia.email.address }}) with your talk proposal.
+You can either create a new "Issue" in [our GitHub repo](https://github.com/{{ socialMedia.github.username }}/website/issues) or [email us](mailto:{{ socialMedia.email.address }}) with your talk proposal.
 
 If you are choosing the easier GitHub Issue option, please use the following as a template:
 
