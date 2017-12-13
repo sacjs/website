@@ -49,10 +49,10 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Fourth Speaker
-        url: /speaking/
-    title:
+      - name: Rima Seiilova-Olson
+    title: Web Analytics using Google Analytics
     description: >
+      Who visits your website? Where do they come from? What's their intent? What do they do when they land on your website? Do they perform actions you want them to perform? How can you improve their experience? These questions and many more can be answered using data from Google Analytics.
 
   - duration: 5
     type: speaker
