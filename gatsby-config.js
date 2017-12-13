@@ -46,6 +46,10 @@ module.exports = {
         theme_color: site.themeColor
       },
       resolve: 'gatsby-plugin-manifest'
-    }
-  ]
+    },
+    'gatsby-plugin-sitemap'
+  ],
+  siteMetadata: {
+    siteUrl: 'https://www.sacjs.com'
+  }
 }

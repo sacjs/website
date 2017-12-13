@@ -58,6 +58,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gatsby-plugin-sitemap": "^1.2.7",
     "npm-run-all": "^4.1.1",
     "postcss-extend": "^1.0.5",
     "prettier-eslint-cli": "^4.4.0"
