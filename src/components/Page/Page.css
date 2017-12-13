@@ -67,3 +67,7 @@
 .Page-Content li {
   margin-top: var(--spacingUnit);
 }
+
+.Page-Footer {
+  margin-bottom: var(--spacingUnit);
+}

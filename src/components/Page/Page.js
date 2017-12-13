@@ -1,3 +1,4 @@
+import ConductBlurb from '../../components/ConductBlurb'
 import Logo from '../../components/Logo'
 import './Page.css'
 import React from 'react'
@@ -12,6 +13,9 @@ const Page = ({ content }) => (
       className="Page-Content md"
       dangerouslySetInnerHTML={{ __html: content }}
     />
+    <footer className="Page-Footer">
+      <ConductBlurb/>
+    </footer>
   </article>
 )
 
