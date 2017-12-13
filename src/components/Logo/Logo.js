@@ -7,7 +7,7 @@ import { string } from 'prop-types'
 
 const Logo = ({ className }) => (
   <a aria-label="Home" href="/">
-    <picture alt="" className={`LogoImg ${className}`} height="150" width="150">
+    <picture alt="" className={`LogoImg ${className}`} height="168" width="168">
       <source srcSet={`${LogoRetinaWebP}, ${LogoWebP}`} type="image/webp"/>
       <source srcSet={`${LogoRetinaPng}, ${LogoPng}`} type="image/png"/>
       <img
