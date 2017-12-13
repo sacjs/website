@@ -40,10 +40,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
+      - name: Evghenii Ghimazitdinov
+        url: https://twitter.com/evgimov_i
+    title: API Testing with Postman & Newman
     description: >
+      Learn how to use Postman & Newman to test APIs
 
   - duration: 5
     type: speaker
