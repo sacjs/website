@@ -42,7 +42,7 @@ schedule:
         company_url: http://beaconsafety.co/
     title: Cavalcade, an attempt to incorporate network effects on MapMe.io
     description: >
-        We use Angular/Ionic to drive all of our products. We're a team of two founder over at [www.beaconsafety.co](www.beaconsafety.co)
+        We use Angular/Ionic to drive all of our products. We're a team of two founder over at [www.beaconsafety.co](http://www.beaconsafety.co)
 
 
         I'll go over Cavalcade, an attempt to incorporate network effects on [MapMe.io](http://MapMe.io).
