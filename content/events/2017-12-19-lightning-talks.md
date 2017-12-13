@@ -21,18 +21,20 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Billy Le
+        url: https://twitter.com/xgeewhiz
+    title: Build a Gatsby.js and Deploy with Netlify
     description: >
+      Quick show and tell of using Gatsby.js and deploying a website with Netlify.
 
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Miguel T. Rivera
+        url: https://twitter.com/mtrivera3
+    title: Model-View-Controller with Cats 🐱
     description: >
+      Learn about model-view-controller with cats
 
   - duration: 5
     type: speaker
