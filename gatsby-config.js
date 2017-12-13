@@ -47,7 +47,8 @@ module.exports = {
       },
       resolve: 'gatsby-plugin-manifest'
     },
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline'
   ],
   siteMetadata: {
     siteUrl: 'https://www.sacjs.com'
