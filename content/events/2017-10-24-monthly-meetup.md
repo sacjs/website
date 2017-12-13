@@ -1,6 +1,6 @@
 ---
-title: The setState call is coming from INSIDE the house
 date: 2017-10-24 19:00
+title: All classes and no semi-colons makes SacJS a dull meetup
 feature: false
 meetup:
   id: 237210918
@@ -24,24 +24,18 @@ schedule:
     speakers:
       - name: Brian Holt
         url: https://twitter.com/holtbt
-    title: React Alternatives with Preact and Inferno
+    title: '10KB or Bust: The Delicate Power of Webpack and Babel'
     description: >
+      Your app is bigger and slower than it needs to be. Without rewriting app code we can squeeze more performance out of your code by tweaking Webpack and Babel. These tools are immensely powerful but it's a delicate dance to get them to play nice. This talk is full of tips and tricks to get you there.
 
-  - duration: 15
+  - duration: 20
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Devon Anderson
+        url: https://twitter.com/devonwtanderson
+    title: Do you know how fast you were going back there?
     description: >
-
-  - duration: 15
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
+      If you can't measure it, you can't improve it. I'll introduce you to the JavaScript Performance API's, and how they can be used to understand the impact your choices have on the performance of your web apps.
 
   - duration: 5
     type: mc
@@ -60,3 +54,9 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+Is the size of your application haunting you? 👻
+
+Scared that your app is slow? 👹
+
+Well, here are some tricks we will treat you to to make that app fast and responsive!
