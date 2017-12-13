@@ -21,6 +21,17 @@
   padding-bottom: calc(var(--spacingUnit) * 7);
 }
 
+.Page-Content p > code {
+  @extend .gel--longPrimer;
+  border: solid 1px var(--tertiaryColor);
+  border-radius: 3px;
+  font-family: monospace;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+}
+
 .Page-Content > h1 {
   @extend .gel--canon;
   margin-top: calc(var(--spacingUnit) * 2);
