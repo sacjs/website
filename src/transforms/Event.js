@@ -8,9 +8,11 @@ const COFFEEJS = /coffee_js/
 const COFFEEJS_PREAMBLE =
   'Enjoy a warm, roasty beverage and have a friendly chat about Javascript, the web, and technology!'
 const DEFAULT_TITLE = 'Monthly Meetup'
+const DATE_DELIMITER = /-/g
 const LEARNING_PREAMBLE = 'Learn more about the amazing world of Javascript'
 const MEETUP = /monthly-meetup/
 const MEETUP_PREAMBLE = 'Featuring amazing Javascript-related talks'
+const SAFARI_SAFE_DATE_DELIMITER = '/'
 
 function generateDescription (performers, slug) {
   if (!performers.length) {
@@ -63,7 +65,7 @@ export function eventFromContent (event, organization) {
   const { frontmatter: { date, location, title } } = event
   return Object.assign({}, event, {
     frontmatter: Object.assign({}, event.frontmatter, {
-      date: new Date(date),
+      date: new Date(date.replace(DATE_DELIMITER, SAFARI_SAFE_DATE_DELIMITER)),
       location: location || organization.location,
       title: title || DEFAULT_TITLE
     })
