@@ -57,10 +57,12 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Fifth Speaker
-        url: /speaking/
-    title:
+      - name: Craig Merry
+        url: https://github.com/craigm26
+    title: PyBot Racing - Building self-driving toy cars
     description: >
+      A short introduction to the PyBot Racing hobby of putting together RC cars with self-driving features. 1. What is PyBot Racing? 2. How is a typical car put together? 3. How is the model trained? 4. How is the car "re-programmed" to drive better? 5. Racing Day in Oakland.
+
 
   - duration: 5
     type: speaker
