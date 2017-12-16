@@ -26,6 +26,7 @@ const EventTemplate = ({
       title={title}
     >
       <Metadata.Calendar eventsLD={events}/>
+      <Metadata.Event event={events[0]}/>
       <Event event={event} nextEvent={nextEvent} prevEvent={prevEvent}/>
     </EventLayout>
   )
