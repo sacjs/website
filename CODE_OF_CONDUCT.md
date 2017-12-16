@@ -1,5 +1,6 @@
 ---
 title: Code of Conduct
+description: Our official Code of Conduct policy
 ---
 
 # Code of Conduct
