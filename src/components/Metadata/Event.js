@@ -5,7 +5,7 @@ import React from 'react'
 
 const EventMetadata = ({ event }) => {
   const { location, startDate } = event
-  const data1 = dateformat(startDate, 'dddd, mmmm dS, yyyy, h:MM TT')
+  const data1 = dateformat(startDate, 'dddd, mmmm dS, yyyy, h:MMtt')
   const data2 = `${location.name}, ${location.address.address1}`
   return (
     <Head>
