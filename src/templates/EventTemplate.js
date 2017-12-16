@@ -19,7 +19,12 @@ const EventTemplate = ({
     .map((ev) => eventLDFromContent(ev, organization)) // transform
   const { fields: { slug }, frontmatter: { title } } = event
   return (
-    <EventLayout root={root} slug={slug} title={title}>
+    <EventLayout
+      description={events[0].description}
+      root={root}
+      slug={slug}
+      title={title}
+    >
       <Metadata.Calendar eventsLD={events}/>
       <Event event={event} nextEvent={nextEvent} prevEvent={prevEvent}/>
     </EventLayout>
