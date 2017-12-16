@@ -17,9 +17,9 @@ const EventTemplate = ({
   const events = [event, nextEvent, nextNextEvent]
     .filter((ev) => ev) // compact
     .map((ev) => eventLDFromContent(ev, organization)) // transform
-  const { fields: { slug } } = event
+  const { fields: { slug }, frontmatter: { title } } = event
   return (
-    <EventLayout root={root} slug={slug}>
+    <EventLayout root={root} slug={slug} title={title}>
       <Metadata.Calendar eventsLD={events}/>
       <Event event={event} nextEvent={nextEvent} prevEvent={prevEvent}/>
     </EventLayout>
@@ -31,6 +31,9 @@ EventTemplate.propTypes = {
     eventPage: shape({
       fields: shape({
         slug: string
+      }),
+      frontmatter: shape({
+        title: string
       })
     }),
     nextEventPage: object,

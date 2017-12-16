@@ -64,10 +64,12 @@ export default class DefaultLayout extends React.Component {
         <VerticalRhythmGrid/>
         <Metadata.Site
           breadcrumbs={this.props.breadcrumbs}
+          description={description}
           logo={organization.logo}
+          siteName={site.title}
           slug={this.props.slug}
           themeColor={this.props.site.themeColor}
-          title={site.title}
+          title={this.props.pageTitle || site.description}
         />
         <Metadata.Organization
           organization={organizationFromSite(organization, site, socialMedia)}

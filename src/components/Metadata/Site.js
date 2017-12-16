@@ -4,7 +4,15 @@ import BreadcrumbListBuilder from '../../builders/JSON-LD/BreadcrumbList'
 import Head from 'react-helmet'
 import React from 'react'
 
-const SiteMetadata = ({ breadcrumbs, slug, logo, themeColor, title }) => {
+const SiteMetadata = ({
+  breadcrumbs,
+  description,
+  logo,
+  slug,
+  siteName,
+  themeColor,
+  title
+}) => {
   let breadcrumbsLD = ''
   if (breadcrumbs) {
     breadcrumbsLD = (
@@ -31,8 +39,8 @@ const SiteMetadata = ({ breadcrumbs, slug, logo, themeColor, title }) => {
   }
   return (
     <Head>
-      <meta content={title} name="apple-mobile-web-app-title"/>
-      <meta content={title} name="application-name"/>
+      <meta content={siteName} name="apple-mobile-web-app-title"/>
+      <meta content={siteName} name="application-name"/>
       <link
         href="/img/favicons/apple-touch-icon.png"
         rel="apple-touch-icon"
@@ -44,12 +52,14 @@ const SiteMetadata = ({ breadcrumbs, slug, logo, themeColor, title }) => {
         href="/img/favicons/safari-pinned-tab.svg"
         rel="mask-icon"
       />
-      <meta content={title} property="og:site_name"/>
+      <meta content={siteName} property="og:site_name"/>
+      <meta content={title} property="og:title"/>
       <meta content="website" property="og:type"/>
       <meta content={absoluteUrl(slug)} property="og:url"/>
       <meta content={absoluteUrl(logo.url)} property="og:image"/>
       <meta content={logo.width} property="og:image:width"/>
       <meta content={logo.height} property="og:image:height"/>
+      <meta content={description} property="twitter:description"/>
       {breadcrumbsLD}
     </Head>
   )
@@ -57,10 +67,12 @@ const SiteMetadata = ({ breadcrumbs, slug, logo, themeColor, title }) => {
 
 SiteMetadata.propTypes = {
   breadcrumbs: bool,
+  description: string.isRequired,
   logo: object,
+  siteName: string,
   slug: string.isRequired,
   themeColor: string,
-  title: string
+  title: string.isRequired
 }
 
 export default SiteMetadata
