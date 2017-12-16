@@ -57,8 +57,8 @@ const SiteMetadata = ({
       <meta content="website" property="og:type"/>
       <meta content={absoluteUrl(slug)} property="og:url"/>
       <meta content={absoluteUrl(logo.url)} property="og:image"/>
-      <meta content={logo.width} property="og:image:width"/>
-      <meta content={logo.height} property="og:image:height"/>
+      {/* <meta content={logo.width} property="og:image:width"/> */}
+      {/* <meta content={logo.height} property="og:image:height"/> */}
       <meta content={description} property="twitter:description"/>
       {breadcrumbsLD}
     </Head>
