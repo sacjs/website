@@ -39,7 +39,7 @@ const SiteMetadata = ({
   }
   return (
     <Head>
-      <meta content={siteName} name="apple-mobile-web-app-title"/>
+      {/* <meta content={siteName} name="apple-mobile-web-app-title"/> */}
       {/* <meta content={siteName} name="application-name"/> */}
       {/* <link
         href="/img/favicons/apple-touch-icon.png"
@@ -60,7 +60,18 @@ const SiteMetadata = ({
         content="https://avatars1.githubusercontent.com/u/6962987?s=400&amp;v=4"
         property="og:image"
       />
+      <meta content="1401488693436528" property="fb:app_id"/>
       <meta content="object" property="og:type"/>
+      <meta content="GitHub" property="og:site_name"/>
+      <meta content="slackapi/sample-app-unfurls" property="og:title"/>
+      <meta
+        content="https://github.com/slackapi/sample-app-unfurls"
+        property="og:url"
+      />
+      <meta
+        content="sample-app-unfurls - An example Slack app that demonstrates use of App Unfurls"
+        property="og:description"
+      />
       {/* <meta content={absoluteUrl(logo.url)} property="og:image"/> */}
       {/* <meta content={logo.width} property="og:image:width"/> */}
       {/* <meta content={logo.height} property="og:image:height"/> */}
