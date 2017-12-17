@@ -39,7 +39,7 @@ const SiteMetadata = ({
   }
   return (
     <Head>
-      {/* <meta content={siteName} name="apple-mobile-web-app-title"/> */}
+      <meta content={siteName} name="apple-mobile-web-app-title"/>
       {/* <meta content={siteName} name="application-name"/> */}
       {/* <link
         href="/img/favicons/apple-touch-icon.png"
