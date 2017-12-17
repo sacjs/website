@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/sacjs/website.git"
   },
-  "homepage": "http://sacjs.com",
+  "homepage": "https://www.sacjs.com",
   "dependencies": {
     "dateformat": "^3.0.2",
     "fetch-jsonp": "^1.1.3",

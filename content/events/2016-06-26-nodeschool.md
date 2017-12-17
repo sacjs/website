@@ -15,7 +15,7 @@ schedule:
     type: mc
     title: NodeSchool Kickoff
     description: >
-      Our hosts will formally kickoff the day by going over the [Code of Conduct](http://sacjs.com/code-of-conduct/) and an overview of how NodeSchool works.
+      Our hosts will formally kickoff the day by going over the [Code of Conduct](https://sacjs.com/code-of-conduct/) and an overview of how NodeSchool works.
 
   - duration: 75
     type: learn

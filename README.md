@@ -6,7 +6,7 @@ SacJS is dedicated to providing the Sacramento Javascript community a place to l
 
 ## Code of Conduct
 
-SacJS expects all speakers and attendees to follow our [Code of Conduct](http://sacjs.com/code-of-conduct/).
+SacJS expects all speakers and attendees to follow our [Code of Conduct](https://sacjs.com/code-of-conduct/).
 
 All attendees, speakers, sponsors, and volunteers at our meetup group are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 
