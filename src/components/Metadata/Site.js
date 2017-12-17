@@ -39,7 +39,7 @@ const SiteMetadata = ({
   }
   return (
     <Head>
-      <meta content={siteName} name="apple-mobile-web-app-title"/>
+      {/* <meta content={siteName} name="apple-mobile-web-app-title"/>
       <meta content={siteName} name="application-name"/>
       <link
         href="/img/favicons/apple-touch-icon.png"
@@ -55,7 +55,7 @@ const SiteMetadata = ({
       <meta content={siteName} property="og:site_name"/>
       <meta content={title} property="og:title"/>
       <meta content="website" property="og:type"/>
-      <meta content={absoluteUrl(slug)} property="og:url"/>
+      <meta content={absoluteUrl(slug)} property="og:url"/> */}
       <meta
         content="https://avatars1.githubusercontent.com/u/6962987?s=400&amp;v=4"
         property="og:image"
@@ -63,8 +63,8 @@ const SiteMetadata = ({
       {/* <meta content={absoluteUrl(logo.url)} property="og:image"/> */}
       {/* <meta content={logo.width} property="og:image:width"/> */}
       {/* <meta content={logo.height} property="og:image:height"/> */}
-      <meta content={description} property="twitter:description"/>
-      {breadcrumbsLD}
+      {/* <meta content={description} property="twitter:description"/> */}
+      {/* {breadcrumbsLD} */}
     </Head>
   )
 }
