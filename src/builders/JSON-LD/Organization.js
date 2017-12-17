@@ -40,13 +40,13 @@ export default function Organization ({
   }
   if (logo) {
     Object.assign(org, {
-      logo: {
-        '@context': 'http://www.schema.org',
-        '@type': 'ImageObject',
-        height: logo.height,
-        url: absoluteUrl(logo.url),
-        width: logo.width
-      }
+      // logo: {
+      //   '@context': 'http://www.schema.org',
+      //   '@type': 'ImageObject',
+      //   height: logo.height,
+      //   url: absoluteUrl(logo.url),
+      //   width: logo.width
+      // }
     })
   }
   if (sameAs) {
