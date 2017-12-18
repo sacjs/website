@@ -79,10 +79,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Seventh Speaker
-        url: /speaking/
-    title:
+      - name: Eliot Lash
+        url: https://twitter.com/Eliot_L
+    title: Let's talk about pixels!
     description: >
+      Very brief introduction to what shaders are. Time permitting, also a quick walkthrough of a simple video generator and video filter using GLSL/ISF
 
   - duration: 5
     type: speaker
