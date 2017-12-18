@@ -88,10 +88,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Eighth Speaker
-        url: /speaking/
-    title:
+      - name: Chris Cacciatore
+        url: https://twitter.com/cacciatc
+    title: Green Glass Doors
     description: >
+      A game with the audience. Will mostly use JavaScript/programming/computer-themed clues.
 
   - duration: 5
     type: speaker
