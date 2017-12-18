@@ -67,10 +67,14 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Sixth Speaker
-        url: /speaking/
-    title:
+      - name: Mark Takata
+        url: https://twitter.com/thefatpanther
+    title: Intro to E-Bikes
     description: >
+      - Watts: what do they really mean?
+      - Hubs (geared & direct) vs mid-drive
+      - Battery specs, what's "good"?
+      - New or DIY: making the most of dollar per miles/smiles
 
   - duration: 5
     type: speaker
