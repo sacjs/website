@@ -103,15 +103,6 @@ schedule:
     description: >
       I use several handouts in my classroom throughout the school year and need a way to organize them on my website. I decided to use the bootstrap drop-down menu which led to more nested lists than I wanted to deal with. Because of this, I decided to write a small program to help me out.
 
-  - duration: 5
-    type: speaker
-    speakers:
-      - name: Rizwan Javaid
-        url: https://twitter.com/rizwanjavaid
-    title: The Power of Sketching
-    description: >
-      Coming back to present to the amazing SacJS group about the importance of sketching, especially for developers. I will also squeeze in a sketching exercise so it would be good if everyone had a pen and paper to follow along. It's going to be fast and furious! 🙌
-
   - duration: 15
     type: mc
     title: Holiday Prize Raffle
