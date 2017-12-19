@@ -106,10 +106,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Tenth Speaker
-        url: /speaking/
-    title:
+      - name: Rizwan Javaid
+        url: https://twitter.com/rizwanjavaid
+    title: The Power of Sketching
     description: >
+      Coming back to present to the amazing SacJS group about the importance of sketching, especially for developers. I will also squeeze in a sketching exercise so it would be good if everyone had a pen and paper to follow along. It's going to be fast and furious! 🙌
 
   - duration: 5
     type: mc
