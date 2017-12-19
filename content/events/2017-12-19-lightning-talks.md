@@ -112,6 +112,15 @@ schedule:
     description: >
       Coming back to present to the amazing SacJS group about the importance of sketching, especially for developers. I will also squeeze in a sketching exercise so it would be good if everyone had a pen and paper to follow along. It's going to be fast and furious! 🙌
 
+  - duration: 15
+    type: mc
+    title: Holiday Prize Raffle
+    description: >
+      Its the season of giving and we've got some great prizes to raffle off! All attendees will get a ticket to win. Earn extra entries by wearing your favorite ugly holiday sweater! Tonight's speakers and past speakers will also get an extra ticket. Speaking has its privileges!
+    sponsors:
+      - name: Cloudreach
+        url: https://www.cloudreach.com/
+
   - duration: 5
     type: mc
     title: Closing Remarks
