@@ -97,10 +97,11 @@ schedule:
   - duration: 5
     type: speaker
     speakers:
-      - name: Be Our Ninth Speaker
-        url: /speaking/
-    title:
+      - name: Clay Dagler
+        url: https://twitter.com/cdagler
+    title: How I organize handouts for my high school students.
     description: >
+      I use several handouts in my classroom throughout the school year and need a way to organize them on my website. I decided to use the bootstrap drop-down menu which led to more nested lists than I wanted to deal with. Because of this, I decided to write a small program to help me out.
 
   - duration: 5
     type: speaker
