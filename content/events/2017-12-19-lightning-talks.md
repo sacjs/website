@@ -1,7 +1,7 @@
 ---
 date: 2017-12-19 19:00
 title: "Have Yourself a Merry Little ⚡️ Lightning Talk ⚡️"
-feature: true
+feature: false
 meetup:
   id: 237210926
 schedule:

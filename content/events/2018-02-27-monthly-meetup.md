@@ -1,7 +1,7 @@
 ---
 date: 2018-02-27 19:00
 title: Monthly Meetup
-feature: false
+feature: true
 meetup:
   id: 247295413
 schedule:
