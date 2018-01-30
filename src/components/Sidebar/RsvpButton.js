@@ -4,7 +4,7 @@ import './RsvpButton.css'
 import { number } from 'prop-types'
 
 const UpcomingUrl =
-  'https://api.meetup.com/2/events?member_id=13188390&offset=0&format=json&limited_events=False&photo-host=public&page=200&fields=&order=time&desc=false&status=upcoming&sig_id=13188390&sig=b95cc8677b14087f7797814774cb19dccabc6f5b'
+  'https://api.meetup.com/2/events?member_id=13188390&offset=0&format=json&limited_events=False&photo-host=public&page=200&fields=&order=time&desc=false&status=upcoming'
 
 function pluralize (str, count = 0) {
   if (count === 1) {

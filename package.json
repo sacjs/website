@@ -7,8 +7,8 @@
     "build": "NODE_ENV=production gatsby build",
     "develop": "gatsby develop",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:js":
-      "prettier-eslint --write \"./*.js\" \"./src/**/*.js\" && eslint --ignore-path .gitignore --fix .",
+    "lint:js": "prettier-eslint --write \"./*.js\" \"./src/**/*.js\" && eslint --ignore-path .gitignore --fix .",
+    "meetup:sync": "node dev/meetup_sync.js",
     "pretest": "npm run lint",
     "serve": "gatsby serve"
   },
@@ -18,7 +18,11 @@
   },
   "license": "BSD-2-Clause",
   "author": "Derek Lindahl",
-  "contributors": ["Derek Lindahl", "Sam Thompson", "Andy Axton"],
+  "contributors": [
+    "Derek Lindahl",
+    "Sam Thompson",
+    "Andy Axton"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/sacjs/website.git"
@@ -39,7 +43,8 @@
     "gatsby-transformer-remark": "^1.7.15",
     "lodash.get": "^4.4.2",
     "lodash.padstart": "^4.6.1",
-    "lodash.partialright": "^4.2.1"
+    "lodash.partialright": "^4.2.1",
+    "node-fetch": "^1.7.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
