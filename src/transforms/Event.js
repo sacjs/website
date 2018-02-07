@@ -12,9 +12,10 @@ const DATE_DELIMITER = /-/g
 const LEARNING_PREAMBLE = 'Learn more about the amazing world of Javascript'
 const MEETUP = /monthly-meetup/
 const MEETUP_PREAMBLE = 'Featuring amazing Javascript-related talks'
+const MEETUP_DESCR = `${MEETUP_PREAMBLE} from {{SPEAKERS}}`
 const SAFARI_SAFE_DATE_DELIMITER = '/'
 
-function generateDescription (performers, slug) {
+function generateDescription (description, performers, slug) {
   if (!performers.length) {
     if (slug.match(BEERJS)) {
       return BEERJS_PREAMBLE
@@ -28,13 +29,16 @@ function generateDescription (performers, slug) {
     return LEARNING_PREAMBLE
   }
   const names = performers.map((p) => p.name)
-  return `${MEETUP_PREAMBLE} from ${toSentence(names)}`
+  return (description || MEETUP_DESCR).replace(
+    '{{SPEAKERS}}',
+    toSentence(names)
+  )
 }
 
 export function eventLDFromContent (event, organization, site) {
   const {
     fields: { slug },
-    frontmatter: { date, location, meetup, schedule }
+    frontmatter: { date, description, location, meetup, schedule }
   } = event
   const { doorTime, endDate } = getDuration(date, schedule)
   const works = schedule.filter(
@@ -44,7 +48,7 @@ export function eventLDFromContent (event, organization, site) {
     .reduce((speakerSet, work) => speakerSet.concat(work.speakers), [])
     .filter((speaker, index, set) => set.indexOf(speaker.url || speaker.name))
   return {
-    description: generateDescription(performers, slug),
+    description: generateDescription(description, performers, slug),
     doorTime,
     endDate,
     eventStatus: 'http://schema.org/EventScheduled',

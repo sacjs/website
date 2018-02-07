@@ -110,6 +110,7 @@ export const query = graphql`
 
   fragment meetup on MarkdownRemark {
     frontmatter {
+      description
       meetup {
         id
       }
