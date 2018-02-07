@@ -8,14 +8,16 @@ function componentize (speaker, i) {
   if (speaker.url) {
     name = <a href={speaker.url}>{name}</a>
   }
-  return <li key={i}>{name}</li>
+  return <span key={i}>{name}</span>
 }
 
 const Speakers = ({ speakers }) => {
   if (!speakers || !speakers.length) {
     return null
   }
-  return <ul className="Speakers">{toSentence(speakers.map(componentize))}</ul>
+  return (
+    <div className="Speakers">{toSentence(speakers.map(componentize))}</div>
+  )
 }
 
 Speakers.defaultProps = {
