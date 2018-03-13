@@ -1,7 +1,7 @@
 module.exports = function getEventPages (graphql) {
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
         edges {
           node {
             fields {
@@ -9,6 +9,7 @@ module.exports = function getEventPages (graphql) {
             }
             frontmatter {
               feature
+              date
             }
           }
         }
