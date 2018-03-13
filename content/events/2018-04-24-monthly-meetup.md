@@ -19,28 +19,20 @@ schedule:
       - name: The Urban Hive
         url: http://www.theurbanhive.com/
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Nic Raboy
+        url: https://twitter.com/nraboy
+    title: Express yourself with Node; NoSQL needed
     description: >
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
+      - name: Corbin Crutchley
+        url: https://twitter.com/crutchcorn
+    title: Smooth sailing with Angular
     description: >
 
   - duration: 5
