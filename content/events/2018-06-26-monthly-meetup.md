@@ -24,7 +24,7 @@ schedule:
     speakers:
       - name: Alain Chautard
         url: https://twitter.com/alainchautard
-    title: Introduction to Angular 5
+    title: Introduction to Angular 6
     description: >
       Alain Chautard will go through an introduction to the Angular framework. If you don't know anything about Angular, that's a perfect opportunity to learn all of the basics and get you started with the framework! Alain will talk about TypeScript, components, services, pipes, and how to work with Angular CLI through live coding.
 
