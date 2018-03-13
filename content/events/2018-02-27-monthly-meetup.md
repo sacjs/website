@@ -1,7 +1,7 @@
 ---
 date: 2018-02-27 19:00
 title: Front End Happy Hour Live!
-feature: true
+feature: false
 description: "Join us for a live recording of Front Happy Hour with {{SPEAKERS}}"
 meetup:
   id: 247295413
