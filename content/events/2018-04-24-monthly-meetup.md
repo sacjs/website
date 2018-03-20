@@ -24,16 +24,18 @@ schedule:
     speakers:
       - name: Nic Raboy
         url: https://twitter.com/nraboy
-    title: Express yourself with Node; NoSQL needed
+    title: Express Yourself with Node; NoSQL Needed
     description: >
+      In this session, participants will learn how to create a RESTful API with CRUD endpoints using the Hapi.js JavaScript framework for Node.js and the open source NoSQL database, Couchbase. We'll explore everything from key-value operations to rich querying of JSON data with SQL, yielding results that can be easily applied towards any client facing front-end application.
 
   - duration: 30
     type: speaker
     speakers:
       - name: Corbin Crutchley
         url: https://twitter.com/crutchcorn
-    title: Smooth sailing with Angular
+    title: Smooth Sailing with Angular
     description: >
+      Ever wondered how to create an Angular webapp that efficiently communicates with a NoSQL backend? We'll cover the basics such as routing, HttpClient listeners, and more! We'll even PWA-ify the place up! If you're curious how to structure your Angular application, allowing future growth and expansion, or even just want to dip your toes into the framework to see how to do things - this is the talk for you!
 
   - duration: 5
     type: mc
