@@ -11,11 +11,11 @@ body {
   background-size: auto var(--spacingUnit);
   bottom: 0;
   left: 0;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
   pointer-events: none;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 16777271;
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
 }

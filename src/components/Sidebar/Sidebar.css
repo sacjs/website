@@ -4,8 +4,8 @@
   --linkColorFocus: var(--senaryColor);
   --linkColorHover: var(--senaryColor);
   --linkColorVisited: var(--senaryColor);
-  --selectionColorBackground: var(--quarternaryColor);
   --selectionColor: var(--primaryColor);
+  --selectionColorBackground: var(--quarternaryColor);
   --textColor: var(--senaryColor);
   --textColorSubdued: #efccd1;
 
@@ -35,10 +35,10 @@
 }
 
 .Sidebar-LogoImg {
-  height: calc(var(--spacingUnit) * 7);
-  width: calc(var(--spacingUnit) * 7);
   box-shadow: 0 0 0 4px #fff, 0 0 5px 3px rgba(0, 0, 0, 0.75),
     0 3px 5px 4px rgba(0, 0, 0, 0.3);
+  height: calc(var(--spacingUnit) * 7);
+  width: calc(var(--spacingUnit) * 7);
 }
 
 .Sidebar-RSVP {

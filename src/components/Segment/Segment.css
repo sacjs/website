@@ -21,8 +21,8 @@
   @extend .gel--minion;
   font-style: italic;
   /* Compensate for perceived baseline mis-alignment */
-  padding-top: 1px;
   margin-bottom: -1px;
+  padding-top: 1px;
 }
 
 .Segment-Info {

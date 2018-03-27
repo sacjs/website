@@ -16,8 +16,8 @@
 
 @media (--phone) {
   .Event {
-    display: flex;
     --sidebarWidth: 40vw;
+    display: flex;
   }
 
   .Event-Details {
