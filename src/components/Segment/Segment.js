@@ -1,6 +1,7 @@
 import { arrayOf, object, oneOf, string } from 'prop-types'
 import dateFormat from 'dateformat'
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import './Segment.css'
 
 const Segment = ({ description, speakers, sponsors, time, title, type }) => (
@@ -16,7 +17,7 @@ const Segment = ({ description, speakers, sponsors, time, title, type }) => (
       <div className="Segment-Title" data-has-speakers={Boolean(speakers)}>
         {title}
       </div>
-      <div className="Segment-Description">{description}</div>
+      <ReactMarkdown className="Segment-Description" source={description}/>
       <Segment.Sponsors sponsors={sponsors}/>
     </section>
   </li>

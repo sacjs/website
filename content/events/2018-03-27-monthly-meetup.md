@@ -43,15 +43,24 @@ schedule:
 
       But many different systems need to be evolved in order for it to become possible to implement Continuous Delivery in an organization.  Therefore, implementation of Continuous Delivery requires participation from people in many parts of an organization.
 
+
       All of these stakeholders need to understand the building blocks of Continuous Delivery, so that they can understand how their own groups would need to evolve in order to integrate into a Continuous Delivery system.  Fortunately, the technical work of setting up Continuous Delivery is relatively inexpensive and straightforward using built-in integrations available in widely used tools such as the Atlassian suite (Confluence, JIRA, Bitbucket, Bamboo, Crowd), if you know how to architect a system and set up the integrations.
 
+
       In this presentation, we will describe:
+
       * What Continuous Delivery is
+
       * Which 4 types of systems need to be integrated in order to make Continuous Delivery possible
+
       * What the 6 Building Blocks of Continuous Delivery are
+
       * How Continuous Delivery is really a new approach to IT Project Management that can enable organizations of any size to become more agile
+
       * How to integrate each of the 6 Building Blocks into a process for creating each new IT project
+
       * A global view of Continuous Delivery, starting with requirements gathering, and continuing all the way through to delivery of new working functionality in production
+      
       * An economical approach to starting a Continuous Delivery program in any organization using built-in integrations that ship with Atlassian tools, including Confluence, JIRA, Bitbucket, Bamboo, and Crowd
 
 

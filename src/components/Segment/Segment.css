@@ -41,4 +41,12 @@
   &:empty {
     display: none;
   }
+  & > p {
+    margin-top: var(--spacingUnit);
+  }
+  & > ul {
+    list-style: inside;
+    list-style-type: disc;
+    margin-top: var(--spacingUnit);
+  }
 }
