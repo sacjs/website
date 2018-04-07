@@ -1,4 +1,5 @@
 const createEventPage = require('../utils/createEventPage')
+const createMeetupDetailsPage = require('../utils/createMeetupDetailsPage')
 
 function extractEventPages (result) {
   return result.data.allMarkdownRemark.edges.reduce(
@@ -44,6 +45,18 @@ function generateEventPages (eventPages, boundActionCreators) {
   )
 }
 
+function generateMeetupDetails (eventPages, boundActionCreators) {
+  return Promise.all(
+    eventPages.data.allMarkdownRemark.edges.map(({ node }, idx) =>
+      createMeetupDetailsPage(idx, {
+        boundActionCreators,
+        eventPages,
+        node
+      })
+    )
+  )
+}
+
 module.exports = function eventPageGenerator (
   markdownPages,
   boundActionCreators
@@ -51,6 +64,7 @@ module.exports = function eventPageGenerator (
   const { eventPages, pages } = extractEventPages(markdownPages)
   return Promise.all([
     generateActiveEventPage(eventPages, boundActionCreators),
-    generateEventPages(eventPages, boundActionCreators)
+    generateEventPages(eventPages, boundActionCreators),
+    generateMeetupDetails(eventPages, boundActionCreators)
   ]).then(() => pages)
 }

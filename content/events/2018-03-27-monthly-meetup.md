@@ -22,10 +22,11 @@ schedule:
   - duration: 20
     type: speaker
     speakers:
-      - name: Be Our First Speaker
-        url: /speaking/
-    title:
+      - name: Dennis Stevense
+        url: https://twitter.com/decafdennis
+    title: Easy front-end JavaScript testing with Cypress
     description: >
+      Cypress is a new(ish?) test framework that makes testing front-end code easy and fast right out of the box. I'll demonstrate how we're using it with a non-trivial real-world example, and I'll also go over some of the great recommendations from the Cypress documentation that have helped us keep our front-end tests manageable.
 
   - duration: 20
     type: speaker

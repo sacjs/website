@@ -49,22 +49,6 @@ schedule:
     description: >
       Front End Happy Hour is a podcast featuring panelists of engineers from Netflix, Evernote, Atlassian, Microsoft, and LinkedIn talking over drinks about all things Front End development. Join us as they record their next episode in front of a live studio audience, ask some questions, and hang out afterwards to get to know the panelists.
 
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
-    description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
-
   - duration: 5
     type: mc
     title: Closing Remarks
@@ -82,3 +66,5 @@ schedule:
       hanging out afterwards and socializing with our other attendees. We'll
       keep it going until we get kicked out!
 ---
+
+We are excited to be hosting Front End Happy Hour on Ice!^H^H^H^H^H^H^H Live! Front End Happy Hour is a podcast featuring panelists of engineers from Netflix, Evernote, Atlassian, Microsoft, and LinkedIn talking over drinks about all things Front End development. Join us as they record their next episode in front of a live studio audience, ask some questions, and hang out afterwards to get to know the panelists. We will be sharing some of that "sweet, sweet, Sacramento Beer" with:

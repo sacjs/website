@@ -44,7 +44,8 @@
     "lodash.get": "^4.4.2",
     "lodash.padstart": "^4.6.1",
     "lodash.partialright": "^4.2.1",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^1.7.3",
+    "string-strip-html": "^1.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
