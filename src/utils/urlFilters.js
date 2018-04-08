@@ -1,10 +1,15 @@
 import { site } from '../metadata'
 
+const EXTERNAL_LINK = /^https?:\/\//
+
 // Ported from Jekyll
 // See also:
 //   https://github.com/jekyll/jekyll/pull/5399
 export function absoluteUrl (input) {
   if (!input) {
+    return input
+  }
+  if (EXTERNAL_LINK.test(input)) {
     return input
   }
   if (!site.url) {
