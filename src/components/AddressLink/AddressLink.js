@@ -1,10 +1,16 @@
 /* eslint-disable camelcase */
+import { formatAddress } from '../../utils/string'
 import { number, string } from 'prop-types'
 import React from 'react'
 
 const AddressLink = ({ address1, address2, city, postal_code, state }) => {
-  const address = `${address1} ${address2}`.trim()
-  const content = `${address}, ${city}, ${postal_code}, ${state}`
+  const content = formatAddress({
+    address1,
+    address2,
+    city,
+    postal_code,
+    state
+  })
   const url = `http://maps.google.com/maps?q=${encodeURIComponent(
     content
   ).replace('%20', '+')}`
