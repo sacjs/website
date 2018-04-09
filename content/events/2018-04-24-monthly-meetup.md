@@ -1,7 +1,7 @@
 ---
 date: 2018-04-24 19:00
-title: Monthly Meetup
 feature: false
+title: Ambitious Angular & Abstract API Aspirations
 meetup:
   id: 247295930
 schedule:
