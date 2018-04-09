@@ -1,7 +1,7 @@
 ---
 date: 2018-03-27 19:00
 title: How to B Real about Cypress Testing
-feature: true
+feature: false
 meetup:
   id: 247295428
 schedule:
