@@ -2,6 +2,14 @@
 date: 2018-04-24 19:00
 title: Ambitious Angular & Abstract API Aspirations
 feature: true
+location:
+  name: The Urban Hive at The Cannery
+  url: http://www.theurbanhive.com/
+  address:
+    address1: 1601 Alhambra Blvd
+    city: Sacramento
+    state: CA
+    postal_code: 95816
 meetup:
   id: 247295930
 schedule:
