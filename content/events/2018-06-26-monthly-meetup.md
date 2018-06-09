@@ -31,21 +31,14 @@ schedule:
     description: >
       Alain Chautard will go through an introduction to the Angular framework. If you don't know anything about Angular, that's a perfect opportunity to learn all of the basics and get you started with the framework! Alain will talk about TypeScript, components, services, pipes, and how to work with Angular CLI through live coding.
 
-  - duration: 20
+  - duration: 30
     type: speaker
     speakers:
-      - name: Be Our Second Speaker
-        url: /speaking/
-    title:
+      - name: Sam Thompson
+        url: https://twitter.com/samdtho
+    title: Web USB
     description: >
-
-  - duration: 20
-    type: speaker
-    speakers:
-      - name: Be Our Third Speaker
-        url: /speaking/
-    title:
-    description: >
+      Imagine a world where you plug in your USB printer and a webpage opens up to the manufacturer's website, and without leaving your web browser, drivers are installed and a test page is already printing. What if you could plug in an Arduino and immediately be directed to a web app that lets you program it on the spot, all without having to set up your toolchain? This is a reality that is coming upon us sooner than we think.
 
   - duration: 5
     type: mc
