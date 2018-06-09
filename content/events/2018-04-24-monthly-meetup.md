@@ -1,7 +1,7 @@
 ---
 date: 2018-04-24 19:00
 title: Ambitious Angular & Abstract API Aspirations
-feature: true
+feature: false
 location:
   name: The Urban Hive at The Cannery
   url: http://www.theurbanhive.com/
