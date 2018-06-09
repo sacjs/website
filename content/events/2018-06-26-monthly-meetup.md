@@ -1,6 +1,6 @@
 ---
 date: 2018-06-26 19:00
-title: Monthly Meetup
+title: Intro to Angular 6 & Web USB
 feature: true
 meetup:
   id: 247295940
