@@ -1,7 +1,7 @@
 ---
 date: 2018-06-26 19:00
-title: Intro to Angular 6 & Web USB
-feature: true
+title: Web USB
+feature: false
 meetup:
   id: 247295940
 schedule:
