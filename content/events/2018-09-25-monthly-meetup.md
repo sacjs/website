@@ -1,7 +1,7 @@
 ---
 date: 2018-09-25 19:00
 title: Monthly Meetup
-feature: true
+feature: false
 meetup:
   id: 247295951
 schedule:
