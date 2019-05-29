@@ -1,7 +1,7 @@
 ---
 date: 2018-10-23 19:00
 title: Trick or Treat Yo' Self
-feature: true
+feature: false
 meetup:
   id: 247295952
 schedule:
