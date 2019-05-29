@@ -14,8 +14,9 @@ function validateFeatures (node) {
     // We cannot have *two* featured events!
     if (FEATURED_NODE && FEATURED_NODE.id !== node.id) {
       throw new Error(
-        `Multiple "featured" events detected: ${FEATURED_NODE.frontmatter
-          .date} and ${node.frontmatter.date}`
+        `Multiple "featured" events detected: ${
+          FEATURED_NODE.frontmatter.date
+        } and ${node.frontmatter.date}`
       )
     }
     FEATURED_NODE = node

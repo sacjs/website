@@ -17,7 +17,10 @@ const EventTemplate = ({
   const events = [event, nextEvent, nextNextEvent]
     .filter((ev) => ev) // compact
     .map((ev) => eventLDFromContent(ev, organization)) // transform
-  const { fields: { slug }, frontmatter: { title } } = event
+  const {
+    fields: { slug },
+    frontmatter: { title }
+  } = event
   return (
     <EventLayout
       description={events[0].description}

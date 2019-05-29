@@ -21,7 +21,7 @@ export default class RsvpButton extends React.Component {
     count: -1,
     isPastEvent: true
   }
-  componentWillMount () {
+  componentDidMount () {
     // TODO: Fix JSON-P support in Node for server-side rendering
     if (typeof window !== 'undefined') {
       fetch(UpcomingUrl)
@@ -52,8 +52,9 @@ export default class RsvpButton extends React.Component {
       content = (
         <a
           className="RsvpButton-Link"
-          href={`http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/${this
-            .props.meetupId}`}
+          href={`http://www.meetup.com/The-Sacramento-Javascript-Meetup/events/${
+            this.props.meetupId
+          }`}
         >
           <div className="RsvpButton-LinkPromo">
             Join {this.state.count} {pluralize('other', this.state.count)}

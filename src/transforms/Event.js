@@ -66,7 +66,9 @@ export function eventFromContent (event, organization) {
   if (!event) {
     return null
   }
-  const { frontmatter: { date, location, title } } = event
+  const {
+    frontmatter: { date, location, title }
+  } = event
   return Object.assign({}, event, {
     frontmatter: Object.assign({}, event.frontmatter, {
       date: new Date(date.replace(DATE_DELIMITER, SAFARI_SAFE_DATE_DELIMITER)),

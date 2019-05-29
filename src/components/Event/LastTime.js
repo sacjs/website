@@ -9,7 +9,10 @@ const LastTime = ({ event }) => {
   if (!event) {
     return null
   }
-  const { fields: { slug }, frontmatter: { date, location, title } } = event
+  const {
+    fields: { slug },
+    frontmatter: { date, location, title }
+  } = event
   return (
     <section className="Event-Section Event-LastTime">
       <Link to={slug}>

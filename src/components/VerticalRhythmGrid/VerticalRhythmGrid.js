@@ -5,7 +5,7 @@ export default class VerticalRhythmGrid extends React.Component {
   state = {
     show: false
   }
-  componentWillMount () {
+  componentDidMount () {
     if (process.env.NODE_ENV !== 'production') {
       document.body.addEventListener('mouseenter', this.handleMouseEnter)
       document.body.addEventListener('mouseleave', this.handleMouseLeave)

@@ -8,7 +8,10 @@ const MeetupDetailsTemplate = ({
   pathContext: { typeCounter },
   ...props
 }) => {
-  const { frontmatter: { date, schedule }, html } = eventPage
+  const {
+    frontmatter: { date, schedule },
+    html
+  } = eventPage
   const location = eventPage.frontmatter.location || organization.location
   return (
     <MeetupDetails

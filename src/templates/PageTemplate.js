@@ -5,7 +5,11 @@ import PageLayout from '../layouts/PageLayout'
 import React from 'react'
 
 const PageTemplate = ({ data: { page }, pathContext: { root } }) => {
-  const { fields: { slug }, frontmatter: { description, title }, html } = page
+  const {
+    fields: { slug },
+    frontmatter: { description, title },
+    html
+  } = page
   return (
     <PageLayout description={description} root={root} slug={slug} title={title}>
       <Metadata.Page/>
