@@ -1,10 +1,10 @@
 const organization = {
   location: {
     address: {
-      address1: '1931 H Street',
+      address1: '1601 Alhambra Blvd Suite 100',
       city: 'Sacramento',
       country: 'USA',
-      postal_code: 95811,
+      postal_code: 95816,
       state: 'CA'
     },
     name: 'The Urban Hive',
